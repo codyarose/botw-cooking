@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RecipeProvider } from './components/Context'
+import { MaterialsContainer } from './containers/MaterialsContainer'
+import { OutputContainer } from './containers/OutputContainer'
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<RecipeProvider>
+			<OutputContainer />
+			<MaterialsContainer />
+		</RecipeProvider>
+	);
 }
 
 export default App;
+
+// each ingredient is additive
+
+// single state that shows the total state of the ingredients added
+//	price
+//	hearts
+//	duration
+//	extra hearts
+//	stamina
+//	extra stamina
+//	resistance
+//	cold
+//	heat
+//	electric
+//	fire
+//	buff
+//	hasty
+//	sneaky
+//	mighty
+//	tough
+//	elixir
+//	bonus
