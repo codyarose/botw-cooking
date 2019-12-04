@@ -1,8 +1,10 @@
-import React, { useState, createContext, useContext, ReactNode, FormEvent } from 'react'
+import React, { useState, createContext, useContext, ReactNode } from 'react'
+import { materials } from '../materials'
 
 interface IContext {
 	data: any
 	updateState: any
+	updateState2: any
 	resetState: any
 }
 
@@ -16,6 +18,32 @@ interface IState {
 	hearts: number
 	duration: number
 	time: number
+}
+
+const findById = (obj: any, id: string) => {
+	for (const key in obj) {
+		if (!obj.hasOwnProperty(key)) continue
+		return obj[key].find((item: any) => item.id === id)
+	}
+}
+
+const parseBuff = (obj: any) => {
+	const type = obj.type
+	if (type === null) return 0
+	switch (type) {
+		case 'attack':
+		case 'defense':
+			return 20
+		case 'cold resist':
+		case 'heat resist':
+		case 'shock resist':
+		case 'fireproof':
+			return 120
+		case 'speed':
+			return 30
+		case 'stealth':
+			return 90
+	}
 }
 
 export const RecipeContext = createContext<Partial<IContext>>({})
@@ -37,15 +65,16 @@ export const RecipeProvider = ({ children }: IProvider) => {
 		<RecipeContext.Provider
 			value={{
 				data: state,
-				updateState: (e: FormEvent<HTMLInputElement>) => {
-					let target = e.currentTarget.dataset
+				updateState: (id: string) => {
+					const itemData = findById(materials, id)
+					const buffTime = parseBuff(itemData.buff)
 					setState({
 						...state,
 						ingredients: ingredients += 1,
-						price: price += Number(target.price),
-						hearts: hearts += Number(target.hearts) * 2,
-						duration: duration += Number(target.duration),
-						time: duration + (ingredients * 30),
+						price: price += itemData.price,
+						hearts: hearts += itemData.hearts * 2,
+						duration: duration += buffTime!,
+						time: duration + (ingredients * 30)
 					})
 				},
 				resetState: () => {
