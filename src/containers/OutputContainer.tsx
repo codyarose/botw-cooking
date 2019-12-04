@@ -11,7 +11,7 @@ export const OutputContainer = () => {
 			<div>Ingredients: {data.ingredients}</div>
 			<div>Price: {priceCalculator(data.ingredients, data.price)}</div>
 			<div>Hearts: {data.hearts}</div>
-			<div>Duration: {secToMin(data.duration)}</div>
+			<div>Time: {secToMin(data.time)}</div>
 		</>
 	)
 }

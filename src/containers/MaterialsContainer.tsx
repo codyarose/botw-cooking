@@ -9,8 +9,8 @@ export const MaterialsContainer = () => {
 
 	return (
 		<>
-			<Button disabled={disabled} price={3} hearts={0.5} duration={30} onClick={updateState}>apple</Button>
-			<Button disabled={disabled} price={5} hearts={0.5} duration={50} onClick={updateState}>banana</Button>
+			<Button disabled={disabled} price={3} hearts={0.5} duration={0} onClick={updateState}>apple</Button>
+			<Button disabled={disabled} price={5} hearts={0.5} duration={20} onClick={updateState}>banana</Button>
 			<Button onClick={resetState}>reset</Button>
 		</>
 	)

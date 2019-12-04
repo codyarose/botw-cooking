@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { RecipeProvider } from './components/Context'
 import { MaterialsContainer } from './containers/MaterialsContainer'
 import { OutputContainer } from './containers/OutputContainer'

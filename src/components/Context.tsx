@@ -15,6 +15,7 @@ interface IState {
 	price: number
 	hearts: number
 	duration: number
+	time: number
 }
 
 export const RecipeContext = createContext<Partial<IContext>>({})
@@ -25,6 +26,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 		price: 0,
 		hearts: 0,
 		duration: 0,
+		time: 0
 	}
 
 	const [state, setState] = useState<IState>(initialState)
@@ -43,6 +45,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 						price: price += Number(target.price),
 						hearts: hearts += Number(target.hearts) * 2,
 						duration: duration += Number(target.duration),
+						time: duration + (ingredients * 30),
 					})
 				},
 				resetState: () => {
