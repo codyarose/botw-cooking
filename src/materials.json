@@ -1,0 +1,1744 @@
+{
+	"materials": [
+		{
+			"food": [
+				{
+					"name": "Acorn",
+					"price": 2,
+					"hearts": 0.25,
+					"first": {
+						"duration": 20,
+						"hearts": 1
+					},
+					"buff": null,
+					"locations": [
+						"Base of trees"
+					]
+				},
+				{
+					"name": "Apple",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Hyrule Field",
+						"East Necluda"
+					]
+				},
+				{
+					"name": "Armored Carp",
+					"price": 10,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 2
+					},
+					"locations": [
+						"Lanayru Great Spring",
+						"East Necluda"
+					]
+				},
+				{
+					"name": "Armored Porgy",
+					"price": 10,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 3
+					},
+					"locations": [
+						"Necluda Sea",
+						"Lanayru Sea"
+					]
+				},
+				{
+					"name": "Big Hearty Radish",
+					"price": 15,
+					"hearts": 4,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 5
+					},
+					"locations": [
+						"Akkala Highlands",
+						"Lanayru Great Spring"
+					]
+				},
+				{
+					"name": "Big Hearty Truffle",
+					"price": 15,
+					"hearts": 3,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 4
+					},
+					"locations": [
+						"Hebra Mountains",
+						"Great Hyrule Forest"
+					]
+				},
+				{
+					"name": "Bird Egg",
+					"price": 3,
+					"hearts": 1,
+					"first": {
+						"duration": 60
+					},
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 4
+					},
+					"locations": [
+						"Nests in trees and cliffs"
+					]
+				},
+				{
+					"name": "Bright-Eyed Crab",
+					"price": 10,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "stamina",
+						"potency": 2
+					},
+					"locations": [
+						"Lanayru Great Spring",
+						"Eldin Canyon"
+					]
+				},
+				{
+					"name": "Chickaloo Tree Nut",
+					"price": 3,
+					"hearts": 0.25,
+					"first": {
+						"duration": 10,
+						"hearts": 1
+					},
+					"buff": null,
+					"locations": [
+						"Dropped by sparrows"
+					]
+				},
+				{
+					"name": "Chillfin Trout",
+					"price": 6,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "heat resist",
+						"potency": 2
+					},
+					"locations": [
+						"Tabantha Frontier",
+						"Hebra Mountains"
+					]
+				},
+				{
+					"name": "Chillshroom",
+					"price": 4,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "heat resist",
+						"potency": 2
+					},
+					"locations": [
+						"Hebra Mountains",
+						"Mount Lanayru"
+					]
+				},
+				{
+					"name": "Courser Bee Honey",
+					"price": 10,
+					"hearts": 2,
+					"first": null,
+					"buff": {
+						"type": "stamina",
+						"potency": 2
+					},
+					"locations": [
+						"Hyrule Field",
+						"Tabantha Frontier"
+					]
+				},
+				{
+					"name": "Endura Shroom",
+					"price": 6,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "enduras",
+						"potency": 1
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Hyrule Field"
+					]
+				},
+				{
+					"name": "Fleet-Lotus Seeds",
+					"price": 5,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 2
+					},
+					"locations": [
+						"Lanayru Wetlands",
+						"Lanayru Great Spring"
+					]
+				},
+				{
+					"name": "Fresh Milk",
+					"price": 3,
+					"hearts": 0.5,
+					"first": {
+						"duration": 50
+					},
+					"buff": null,
+					"locations": [
+						"East Wind store in Hateno Village",
+						"Merchant Yammo at Tabantha Bridge Stable",
+						"Merchant Angus at Dueling Peaks Stable"
+					]
+				},
+				{
+					"name": "Goat Butter",
+					"price": 3,
+					"hearts": 0,
+					"first": {
+						"duration": 50
+					},
+					"buff": null,
+					"locations": [
+						"High Spirits Produce store in Kakariko Village",
+						"The Slippery Falcon store in Rito Village",
+						"Merchant Angus at Dueling Peaks Stable"
+					]
+				},
+				{
+					"name": "Goron Spice",
+					"price": 4,
+					"hearts": 0,
+					"first": {
+						"duration": 60
+					},
+					"buff": null,
+					"locations": [
+						"Goron Gusto Shop in Goron City",
+						"Merchant Yammo at Tabantha Bridge Stable"
+					]
+				},
+				{
+					"name": "Hearty Bass",
+					"price": 18,
+					"hearts": 2,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 2
+					},
+					"locations": [
+						"Hyrule Field",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Hearty Blueshell Snail",
+					"price": 15,
+					"hearts": 3,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 3
+					},
+					"locations": [
+						"Lanayru Sea",
+						"Necluda Sea"
+					]
+				},
+				{
+					"name": "Hearty Durian",
+					"price": 15,
+					"hearts": 3,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 4
+					},
+					"locations": [
+						"West Necluda",
+						"Faron Grasslands"
+					]
+				},
+				{
+					"name": "Hearty Radish",
+					"price": 8,
+					"hearts": 2.5,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 3
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"East Necluda",
+						"Beedle at East Akkala Stable"
+					]
+				},
+				{
+					"name": "Hearty Salmon",
+					"price": 10,
+					"hearts": 4,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 4
+					},
+					"locations": [
+						"Tabantha Frontier",
+						"Hebra Mountains"
+					]
+				},
+				{
+					"name": "Hearty Truffle",
+					"price": 6,
+					"hearts": 2,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 1
+					},
+					"locations": [
+						"Great Hyrule Forest",
+						"Hyrule Field"
+					]
+				},
+				{
+					"name": "Hydromelon",
+					"price": 4,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "heat resist",
+						"potency": 1
+					},
+					"locations": [
+						"Gerudo Desert",
+						"Faron Grasslands"
+					]
+				},
+				{
+					"name": "Hylian Shroom",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Hyrule Field",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Hyrule Bass",
+					"price": 6,
+					"hearts": 1,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Hyrule Field",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Ironshell Crab",
+					"price": 8,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 2
+					},
+					"locations": [
+						"Necluda Sea",
+						"East Necluda"
+					]
+				},
+				{
+					"name": "Ironshroom",
+					"price": 5,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 2
+					},
+					"locations": [
+						"West Necluda",
+						"East Necluda"
+					]
+				},
+				{
+					"name": "Mighty Bananas",
+					"price": 5,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "attack",
+						"potency": 2
+					},
+					"locations": [
+						"Faron",
+						"Yiga Clan Hideout"
+					]
+				},
+				{
+					"name": "Mighty Carp",
+					"price": 10,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "attack",
+						"potency": 2
+					},
+					"locations": [
+						"Akkala Highlands",
+						"Lanayru Great Spring"
+					]
+				},
+				{
+					"name": "Mighty Porgy",
+					"price": 10,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "attack",
+						"potency": 3
+					},
+					"locations": [
+						"Necluda Sea",
+						"Lanayru Sea"
+					]
+				},
+				{
+					"name": "Monster Extract",
+					"price": 3,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "random",
+						"potency": 0
+					},
+					"locations": [
+						"Kilton the Monster Parts Merchant"
+					]
+				},
+				{
+					"name": "Palm Fruit",
+					"price": 4,
+					"hearts": 1,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"East Necluda",
+						"Gerudo Desert"
+					]
+				},
+				{
+					"name": "Raw Bird Drumstick",
+					"price": 8,
+					"hearts": 1,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Wood Pigeon",
+						"Mountain Crow",
+						"Bright-Chested Duck",
+						"Blue-Winged Heron",
+						"Pink Heron",
+						"Seagull"
+					]
+				},
+				{
+					"name": "Raw Bird Thigh",
+					"price": 15,
+					"hearts": 1.5,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Rainbow Pigeon",
+						"Hotfeather Pigeon",
+						"White Pigeon",
+						"Islander Hawk",
+						"Eldin Ostrich"
+					]
+				},
+				{
+					"name": "Raw Gourmet Meat",
+					"price": 35,
+					"hearts": 3,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Water Buffalo",
+						"Snowcoat Fox",
+						"Maraudo Wolf"
+					]
+				},
+				{
+					"name": "Raw Meat",
+					"price": 8,
+					"hearts": 1,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Woodland Boar",
+						"Mountain Goat"
+					]
+				},
+				{
+					"name": "Raw Prime Meat",
+					"price": 15,
+					"hearts": 1.5,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Red-Tusked Boar",
+						"Mountain Buck",
+						"Mountain Doe",
+						"Water Buffalo"
+					]
+				},
+				{
+					"name": "Raw Whole Bird",
+					"price": 35,
+					"hearts": 3,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"White Pigeon",
+						"Eldin Ostrich"
+					]
+				},
+				{
+					"name": "Razorclaw Crab",
+					"price": 8,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "attack",
+						"potency": 2
+					},
+					"locations": [
+						"Necluda Sea",
+						"East Necluda"
+					]
+				},
+				{
+					"name": "Razorshroom",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 1
+					},
+					"locations": [
+						"Great Hyrule Forest",
+						"Tabantha Frontier"
+					]
+				},
+				{
+					"name": "Rock Salt",
+					"price": 2,
+					"hearts": 0,
+					"first": {
+						"duration": 30
+					},
+					"buff": null,
+					"locations": [
+						"Ore Deposits",
+						"Marot Mart in Zora's Domain",
+						"Goron Gusto Shop in Goron City"
+					]
+				},
+				{
+					"name": "Rushroom",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 1
+					},
+					"locations": [
+						"Gerudo Highlands",
+						"Hyrule Ridge"
+					]
+				},
+				{
+					"name": "Sanke Carp",
+					"price": 20,
+					"hearts": 1,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Silent Shroom",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "stealth",
+						"potency": 2
+					},
+					"locations": [
+						"Lanayru Great Spring",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Sizzlefin Trout",
+					"price": 6,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "cold resist",
+						"potency": 2
+					},
+					"locations": [
+						"Eldin Canyon",
+						"Eldin Mountains"
+					]
+				},
+				{
+					"name": "Sneaky River Snail",
+					"price": 6,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "stealth",
+						"potency": 1
+					},
+					"locations": [
+						"West Necluda",
+						"Lanayru Great Spring"
+					]
+				},
+				{
+					"name": "Spicy Pepper",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "cold resist",
+						"potency": 1
+					},
+					"locations": [
+						"Gerudo Desert",
+						"Tabantha Frontier"
+					]
+				},
+				{
+					"name": "Stamella Shroom",
+					"price": 5,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "stamina",
+						"potency": 1
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Hyrule Field"
+					]
+				},
+				{
+					"name": "Staminoka Bass",
+					"price": 18,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "stamina",
+						"potency": 4
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Stealthfin Trout",
+					"price": 10,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "stealth",
+						"potency": 2
+					},
+					"locations": [
+						"Great Hyrule Forest",
+						"Eldin Mountains"
+					]
+				},
+				{
+					"name": "Sunshroom",
+					"price": 4,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "cold resist",
+						"potency": 2
+					},
+					"locations": [
+						"Eldin Canyon",
+						"Gerudo Highlands"
+					]
+				},
+				{
+					"name": "Voltfin Trout",
+					"price": 6,
+					"hearts": 1,
+					"first": null,
+					"buff": {
+						"type": "shock resist",
+						"potency": 2
+					},
+					"locations": [
+						"Tabantha Frontier",
+						"Hyrule Ridge",
+						"Zora River"
+					]
+				},
+				{
+					"name": "Voltfruit",
+					"price": 4,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "shock resist",
+						"potency": 1
+					},
+					"locations": [
+						"Gerudo Desert",
+						"Gerudo Highlands"
+					]
+				},
+				{
+					"name": "Wildberry",
+					"price": 3,
+					"hearts": 0.5,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Gerudo Highlands",
+						"Hebra Mountains"
+					]
+				},
+				{
+					"name": "Zapshroom",
+					"price": 4,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "shock resist",
+						"potency": 2
+					},
+					"locations": [
+						"Deep Akkala",
+						"Gerudo Highlands"
+					]
+				}
+			],
+			"plants": [
+				{
+					"name": "Armoranth",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 1
+					},
+					"locations": [
+						"Akkala Highlands",
+						"Hyrule Ridge"
+					]
+				},
+				{
+					"name": "Blue Nightshade",
+					"price": 4,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "stealth",
+						"potency": 1
+					},
+					"locations": [
+						"West Necluda",
+						"Lanayru Great Spring"
+					]
+				},
+				{
+					"name": "Cane Sugar",
+					"price": 3,
+					"hearts": 0,
+					"first": {
+						"duration": 50
+					},
+					"buff": null,
+					"locations": [
+						"Goron Gusto Shop in Goron City",
+						"The Slippery Falcon store in Rito Village",
+						"General Shoppe in Korok Forest",
+						"Merchant Yammo at Tabantha Bridge Stable"
+					]
+				},
+				{
+					"name": "Cool Safflina",
+					"price": 3,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "heat resist",
+						"potency": 1
+					},
+					"locations": [
+						"Goron Gusto Shop in Goron City",
+						"The Slippery Falcon store in Rito Village",
+						"General Shoppe in Korok Forest",
+						"Merchant Yammo at Tabantha Bridge Stable"
+					]
+				},
+				{
+					"name": "Electric Safflina",
+					"price": 3,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "shock resist",
+						"potency": 1
+					},
+					"locations": [
+						"Gerudo Desert",
+						"Hyrule Ridge"
+					]
+				},
+				{
+					"name": "Endura Carrot",
+					"price": 30,
+					"hearts": 2,
+					"first": null,
+					"buff": {
+						"type": "enduras",
+						"potency": 4
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Faron Grasslands"
+					]
+				},
+				{
+					"name": "Fortified Pumpkin",
+					"price": 5,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 2
+					},
+					"locations": [
+						"Kakariko Village"
+					]
+				},
+				{
+					"name": "Hylian Rice",
+					"price": 3,
+					"hearts": 1,
+					"first": {
+						"duration": 30
+					},
+					"buff": null,
+					"locations": [
+						"Cut tall grass in Necluda",
+						"East Wind store in Hateno Village",
+						"Marot Mart in Zora's Domain",
+						"Merchant Yammo at Tabantha Bridge Stable"
+					]
+				},
+				{
+					"name": "Hyrule Herb",
+					"price": 3,
+					"hearts": 1,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Hyrule Field",
+						"Akkala Highlands"
+					]
+				},
+				{
+					"name": "Mighty Thistle",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "attack",
+						"potency": 1
+					},
+					"locations": [
+						"West Necluda",
+						"Faron Grasslands"
+					]
+				},
+				{
+					"name": "Silent Princess",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "stealth",
+						"potency": 3
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Swift Carrot",
+					"price": 4,
+					"hearts": 0.5,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 1
+					},
+					"locations": [
+						"Kakariko Village",
+						"Beedle in East Akkala and Woodland Stables"
+					]
+				},
+				{
+					"name": "Swift Violet",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 2
+					},
+					"locations": [
+						"Gerudo Highlands",
+						"Hebra Mountains",
+						"Zora's Domain"
+					]
+				},
+				{
+					"name": "Tabantha Wheat",
+					"price": 3,
+					"hearts": 1,
+					"first": {
+						"duration": 30
+					},
+					"buff": null,
+					"locations": [
+						"Cut tall grass in Tabantha Fields",
+						"The Slippery Falcon store in Rito Village",
+						"Merchant Yammo at Snowfield Stable"
+					]
+				},
+				{
+					"name": "Warm Safflina",
+					"price": 3,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "cold resist",
+						"potency": 1
+					},
+					"locations": [
+						"Gerudo Desert",
+						"Hyrule Ridge"
+					]
+				}
+			],
+			"critters": [
+				{
+					"name": "Bladed Rhino Beetle",
+					"price": 4,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "attack",
+						"potency": 1
+					},
+					"locations": [
+						"West Necluda",
+						"East Necluda"
+					]
+				},
+				{
+					"name": "Cold Darner",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "heat resist",
+						"potency": 2
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Gerudo Desert",
+						"Merchant at Gerudo Canyon Stable",
+						"Beedle at Kara Kara Bazaar and Woodland Stable"
+					]
+				},
+				{
+					"name": "Electric Darner",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "shock resist",
+						"potency": 2
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Gerudo Desert",
+						"Beedle at Riverside Stable"
+					]
+				},
+				{
+					"name": "Energetic Rhino Beetle",
+					"price": 30,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "stamina",
+						"potency": 6
+					},
+					"locations": [
+						"Akkala Highlands",
+						"West Necluda"
+					]
+				},
+				{
+					"name": "Fireproof Lizard",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "fireproof",
+						"potency": 1
+					},
+					"locations": [
+						"Eldin Canyon",
+						"Death Mountain"
+					]
+				},
+				{
+					"name": "Hearty Lizard",
+					"price": 20,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "temp-hearts",
+						"potency": 4
+					},
+					"locations": [
+						"Gerudo Desert",
+						"Necluda Sea",
+						"Beedle at Foothill, Gerudo Canyon, Highland, Outskirt, South Akkala, and Woodland Stables"
+					]
+				},
+				{
+					"name": "Hightail Lizard",
+					"price": 20,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 1
+					},
+					"locations": [
+						"West Necluda",
+						"East Necluda",
+						"Beedle at Ladeside and South Akkala Stables"
+					]
+				},
+				{
+					"name": "Hot-Footed Frog",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "speed",
+						"potency": 2
+					},
+					"locations": [
+						"Lanayru Great Spring",
+						"Hyrule Ridge",
+						"Beedle at Dueling Peaks, Outskirt, and Wetland Stables"
+					]
+				},
+				{
+					"name": "Restless Cricket",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "stamina",
+						"potency": 1
+					},
+					"locations": [
+						"Hyrule Field",
+						"East Necluda",
+						"Merchant at Gerudo Canyon Stable",
+						"Beedle at Outskirt Stable"
+					]
+				},
+				{
+					"name": "Rugged Rhino Beetle",
+					"price": 4,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "defense",
+						"potency": 1
+					},
+					"locations": [
+						"Hyrule Field",
+						"Faron Grasslands"
+					]
+				},
+				{
+					"name": "Smotherwing Butterfly",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "fireproof",
+						"potency": 2
+					},
+					"locations": [
+						"Eldin Canyon",
+						"Death Mountain",
+						"Beedle at East Akkala and Wetland Stables"
+					]
+				},
+				{
+					"name": "Summerwing Butterfly",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "cold resist",
+						"potency": 1
+					},
+					"locations": [
+						"Great Hyrule Forest",
+						"Eldin Mountains",
+						"Beedle at Snowfield Stable"
+					]
+				},
+				{
+					"name": "Sunset Firefly",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "stealth",
+						"potency": 1
+					},
+					"locations": [
+						"West Necluda",
+						"Great Hyrule Forest",
+						"Beedle at Highland, Rito, Serenne, and Woodland Stables"
+					]
+				},
+				{
+					"name": "Thunderwing Butterfly",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "shock resist",
+						"potency": 1
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Gerudo Highlands",
+						"Beedle at Lakeside, Riverside, and Tabantha Bridge Stables"
+					]
+				},
+				{
+					"name": "Tireless Frog",
+					"price": 20,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "enduras",
+						"potency": 2
+					},
+					"locations": [
+						"Lanayru Great Spring",
+						"Hyrule Ridge",
+						"Beedle at Foothill, Lakeside, Rito, Riverside, Serenne, and Snowfield Stables"
+					]
+				},
+				{
+					"name": "Warm Darner",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "cold resist",
+						"potency": 2
+					},
+					"locations": [
+						"Akkala Highlands",
+						"Hyrule Field",
+						"Beedle at Gerudo Canyon, Rito, Serenne, and Snowfield Stables"
+					]
+				},
+				{
+					"name": "Winterwing Butterfly",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": {
+						"type": "heat resist",
+						"potency": 2
+					},
+					"locations": [
+						"Hyrule Ridge",
+						"Tabantha Frontier",
+						"Beedle at Gerudo Canyon and Tabantha Bridge Stables"
+					]
+				}
+			],
+			"minerals": [
+				{
+					"name": "Amber",
+					"price": 30,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus",
+						"Stone Pebblit"
+					]
+				},
+				{
+					"name": "Diamond",
+					"price": 500,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus"
+					]
+				},
+				{
+					"name": "Flint",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus",
+						"Stone Pebblit"
+					]
+				},
+				{
+					"name": "Luminous Stone",
+					"price": 70,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Luminous ore deposits",
+						"Stone Talus (Luminous)"
+					]
+				},
+				{
+					"name": "Opal",
+					"price": 60,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus"
+					]
+				},
+				{
+					"name": "Ruby",
+					"price": 210,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus (Rare, Igneo)"
+					]
+				},
+				{
+					"name": "Sapphire",
+					"price": 260,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus (Rare, Frost)"
+					]
+				},
+				{
+					"name": "Topaz",
+					"price": 180,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"locations": [
+						"Ore deposits",
+						"Stone Talus (Rare, Igneo, Frost)"
+					]
+				}
+			],
+			"monster": [
+				{
+					"name": "Ancient Core",
+					"price": 80,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Guardian Stalker, Skywatcher, Turret, Sentry, and Scouts III & IV"
+					]
+				},
+				{
+					"name": "Ancient Gear",
+					"price": 30,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"All Guardian types except Scout I"
+					]
+				},
+				{
+					"name": "Ancient Screw",
+					"price": 12,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"All Guardian types"
+					]
+				},
+				{
+					"name": "Ancient Shaft",
+					"price": 40,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"All Guardian types except Scout I"
+					]
+				},
+				{
+					"name": "Ancient Spring",
+					"price": 15,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"All Guardian types"
+					]
+				},
+				{
+					"name": "Bokoblin Fang",
+					"price": 8,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Bokoblins"
+					]
+				},
+				{
+					"name": "Bokoblin Guts",
+					"price": 20,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Bokoblins (Blue or stronger)"
+					]
+				},
+				{
+					"name": "Bokoblin Horn",
+					"price": 3,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Bokoblins"
+					]
+				},
+				{
+					"name": "Chuchu Jelly",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Chuchus (Blue)"
+					]
+				},
+				{
+					"name": "Electric Keese Wing",
+					"price": 6,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Keese (Electric)"
+					]
+				},
+				{
+					"name": "Fire Keese Wing",
+					"price": 6,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Keese (Fire)"
+					]
+				},
+				{
+					"name": "Giant Ancient Core",
+					"price": 200,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Guardian Stalker, Skywatcher, and Turret"
+					]
+				},
+				{
+					"name": "Hinox Guts",
+					"price": 80,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Hinox"
+					]
+				},
+				{
+					"name": "Hinox Toenail",
+					"price": 20,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Hinox"
+					]
+				},
+				{
+					"name": "Hinox Tooth",
+					"price": 35,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Hinox"
+					]
+				},
+				{
+					"name": "Ice Keese Wing",
+					"price": 6,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Keese (Ice)"
+					]
+				},
+				{
+					"name": "Icy Lizalfos Tail",
+					"price": 35,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Lizalfos (Ice-Breath)"
+					]
+				},
+				{
+					"name": "Keese Eyeball",
+					"price": 20,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Keese"
+					]
+				},
+				{
+					"name": "Keese Wing",
+					"price": 2,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Keese (Normal)"
+					]
+				},
+				{
+					"name": "Lizalfos Horn",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Lizalfos"
+					]
+				},
+				{
+					"name": "Lizalfos Tail",
+					"price": 28,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Lizalfos (Normal)"
+					]
+				},
+				{
+					"name": "Lizalfos Talon",
+					"price": 15,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Lizalfos"
+					]
+				},
+				{
+					"name": "Lynel Guts",
+					"price": 200,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Lynels"
+					]
+				},
+				{
+					"name": "Lynel Hoof",
+					"price": 50,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Lynels"
+					]
+				},
+				{
+					"name": "Lynel Horn",
+					"price": 40,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Lynels"
+					]
+				},
+				{
+					"name": "Moblin Fang",
+					"price": 12,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Moblins"
+					]
+				},
+				{
+					"name": "Moblin Guts",
+					"price": 25,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Moblins (Blue or stronger)"
+					]
+				},
+				{
+					"name": "Moblin Horn",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Moblins"
+					]
+				},
+				{
+					"name": "Molduga Fin",
+					"price": 30,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Molduga"
+					]
+				},
+				{
+					"name": "Molduga Guts",
+					"price": 110,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Molduga"
+					]
+				},
+				{
+					"name": "Octo Balloon",
+					"price": 5,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Octoroks"
+					]
+				},
+				{
+					"name": "Octorok Eyeball",
+					"price": 25,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Octoroks"
+					]
+				},
+				{
+					"name": "Octorok Tentacle",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 1,
+					"locations": [
+						"Octoroks"
+					]
+				},
+				{
+					"name": "Red Chuchu Jelly",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Chuchus (Red)"
+					]
+				},
+				{
+					"name": "Red Lizalfos Tail",
+					"price": 35,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Lizalfos (Fire-Breath)"
+					]
+				},
+				{
+					"name": "White Chuchu Jelly",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Chuchus (White)"
+					]
+				},
+				{
+					"name": "Yellow Chuchu Jelly",
+					"price": 10,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 2,
+					"locations": [
+						"Chuchus (Yellow)"
+					]
+				},
+				{
+					"name": "Yellow Lizalfos Tail",
+					"price": 35,
+					"hearts": 0,
+					"first": null,
+					"buff": null,
+					"tier": 3,
+					"locations": [
+						"Lizalfos (Electric)"
+					]
+				}
+			]
+		}
+	]
+}
