@@ -64,7 +64,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 						price: price += itemData.price,
 					})
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
-					setHearts((prevHearts: number) => prevHearts += itemData.hearts * 2)
+					setHearts((prevHearts: number) => prevHearts += itemData.hearts)
 				},
 				resetState: () => {
 					setState(initialState)

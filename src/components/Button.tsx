@@ -1,6 +1,6 @@
 import React, { SFC } from 'react'
 
-export interface IProps {
+interface IProps {
 	disabled?: boolean
 	onClick: () => any
 	id?: string | number
