@@ -1,11 +1,13 @@
-import React, { useState, createContext, useContext, ReactNode } from 'react'
+import React, { useState, createContext, useContext, useEffect, ReactNode } from 'react'
 import { materials } from '../materials'
 
 interface IContext {
 	data: any
-	updateState: any
-	updateState2: any
-	resetState: any
+	ingredients: Array<object>
+	time: number
+	updateState: (id: string) => void
+	resetState: () => void
+	removeIngredient: (index: number) => void
 }
 
 interface IProvider {
@@ -13,7 +15,7 @@ interface IProvider {
 }
 
 interface IState {
-	ingredients: number
+	ingredients: any
 	price: number
 	hearts: number
 	duration: number
@@ -50,7 +52,7 @@ export const RecipeContext = createContext<Partial<IContext>>({})
 
 export const RecipeProvider = ({ children }: IProvider) => {
 	const initialState = {
-		ingredients: 0,
+		ingredients: [],
 		price: 0,
 		hearts: 0,
 		duration: 0,
@@ -58,27 +60,43 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	}
 
 	const [state, setState] = useState<IState>(initialState)
+	const [ingredients, setIngredients]: any = useState([])
+	const [time, setTime] = useState(0)
 
-	let { ingredients, price, hearts, duration } = state
+	useEffect(() => {
+		setTime(ingredients.length * 30)
+	}, [ingredients])
+
+	let { price, hearts, duration } = state
 
 	return (
 		<RecipeContext.Provider
 			value={{
 				data: state,
-				updateState: (id: string) => {
+				ingredients,
+				time,
+				updateState: (id) => {
 					const itemData = findById(materials, id)
 					const buffTime = parseBuff(itemData.buff)
 					setState({
 						...state,
-						ingredients: ingredients += 1,
 						price: price += itemData.price,
 						hearts: hearts += itemData.hearts * 2,
 						duration: duration += buffTime!,
-						time: duration + (ingredients * 30)
+						// time: duration + (ingredients.length * 30)
 					})
+					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
 				},
 				resetState: () => {
 					setState(initialState)
+					setIngredients([])
+					setTime(0)
+				},
+				removeIngredient: (index) => {
+					const newIngredients = ingredients.filter((_: any, i: number) => {
+						return i !== index - 1
+					})
+					setIngredients(newIngredients)
 				}
 			}}
 		>
