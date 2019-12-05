@@ -1,17 +1,19 @@
 import React from 'react'
+import { SelectedMaterials } from './SelectedMaterials'
 import { useRecipeValue } from '../components/Context'
 import { secToMin } from '../utils/secToMin'
 import { priceCalculator } from '../utils/priceCalculator'
 
 export const OutputContainer = () => {
-	const { data } = useRecipeValue()
+	const { data, time } = useRecipeValue()
 
+	const { price, hearts } = data
 	return (
 		<>
-			<div>Ingredients: {data.ingredients}</div>
-			<div>Price: {priceCalculator(data.ingredients, data.price)}</div>
-			<div>Hearts: {data.hearts}</div>
-			<div>Time: {secToMin(data.time)}</div>
+			<SelectedMaterials />
+			{/* <div>Price: {priceCalculator(ingredients, price)}</div> */}
+			<div>Hearts: {hearts}</div>
+			<div>Time: {secToMin(time!)}</div>
 		</>
 	)
 }
