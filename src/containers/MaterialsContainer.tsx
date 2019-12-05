@@ -14,7 +14,7 @@ export const MaterialsContainer = () => {
 		<Button
 			key={food.id}
 			disabled={disabled}
-			onClick={() => updateState(food.id)}
+			onClick={() => updateState!(food.id)}
 		>
 			{food.name}
 		</Button>
@@ -22,7 +22,7 @@ export const MaterialsContainer = () => {
 
 	return (
 		<>
-			<Button onClick={resetState}>reset</Button>
+			<Button onClick={() => resetState!()}>reset</Button>
 			{listFood}
 		</>
 	)
