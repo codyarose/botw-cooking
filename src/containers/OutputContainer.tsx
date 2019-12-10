@@ -6,7 +6,7 @@ import { secToMin } from '../utils/secToMin'
 // import { priceCalculator } from '../utils/priceCalculator'
 
 export const OutputContainer = () => {
-	const { data, ingredients, time, hearts } = useRecipeValue()
+	const { ingredients, time, hearts } = useRecipeValue()
 
 	// const { price } = data
 

@@ -32,7 +32,7 @@ const extraTimeFromBuff = (array: Array<object>, baseTime: number) => {
 	// value to the baseTime parameter
 	array.forEach((element: any) => {
 		const fromBuff = parseBuffTime(((element || {}).buff || {}).type)
-		baseTime += fromBuff!
+		baseTime += fromBuff ? fromBuff : 0
 	})
 	return baseTime
 }

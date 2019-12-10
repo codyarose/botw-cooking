@@ -1,5 +1,3 @@
-import React from 'react'
-import { shallow } from 'enzyme'
 import { priceCalculator } from './priceCalculator'
 
 describe('priceCalculator', () => {
