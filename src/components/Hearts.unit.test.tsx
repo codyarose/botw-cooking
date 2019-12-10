@@ -2,7 +2,6 @@ import React from 'react'
 import 'jest-styled-components'
 import { mount, shallow } from 'enzyme'
 import { Heart, StyledHeart } from './Heart'
-// import toJson from 'enzyme-to-json'
 
 describe('Heart', () => {
 	it(`Renders element with corrent size attribute`, () => {
