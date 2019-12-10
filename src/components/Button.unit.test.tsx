@@ -6,8 +6,8 @@ describe('Button', () => {
 	it(`Renders button element with children as text`, () => {
 		window.alert = jest.fn()
 
-		const button = shallow(<Button onClick={() => console.log('button')}>button</Button>)
-		expect(button.text()).toEqual('button')
+		const button = shallow(<Button>Submit</Button>)
+		expect(button.text()).toEqual('Submit')
 
 	})
 	it(`Handles click event`, () => {
