@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount, shallow } from 'enzyme'
+import { shallow } from 'enzyme'
 import { HeartsContainer } from './HeartsContainer'
 import { Heart } from '../components/Heart'
 
