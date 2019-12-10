@@ -1,12 +1,14 @@
 import React, { useState, createContext, useContext, useEffect, ReactNode } from 'react'
 import { materials } from '../materials'
 import { extraTime } from '../utils/extraTime'
+import { priceCalculator } from '../utils/priceCalculator'
 
 interface IContext {
 	data: any
 	ingredients: Array<object>
 	time: number
 	hearts: number
+	price: number
 	updateState: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
@@ -42,13 +44,12 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [ingredients, setIngredients]: any = useState([])
 	const [time, setTime] = useState(0)
 	const [hearts, setHearts] = useState(0)
+	const [price, setPrice] = useState(0)
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
+		setPrice(priceCalculator(ingredients))
 	}, [ingredients])
-
-
-	let { price } = state
 
 	return (
 		<RecipeContext.Provider
@@ -57,14 +58,14 @@ export const RecipeProvider = ({ children }: IProvider) => {
 				ingredients,
 				time,
 				hearts,
+				price,
 				updateState: (id) => {
 					const itemData = findById(materials, id)
 					setState({
 						...state,
-						price: price += itemData.price,
+						// price: price += itemData.price,
 					})
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
-					// TODO: Move hearts out of here
 					setHearts((prevHearts: number) => prevHearts += itemData.hearts)
 				},
 				resetState: () => {
