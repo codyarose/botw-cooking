@@ -6,15 +6,15 @@ import { materials } from '../materials'
 const foods = materials.food
 
 export const MaterialsContainer = () => {
-	const { data, updateState, resetState } = useRecipeValue()
+	const { ingredients, updateState, resetState } = useRecipeValue()
 
-	const disabled = data.ingredients === 5 && true
+	const disabled = ingredients && ingredients.length === 5 && true
 
 	const listFood = foods.map(food =>
 		<Button
 			key={food.id}
 			disabled={disabled}
-			onClick={() => updateState(food.id)}
+			onClick={() => updateState!(food.id)}
 		>
 			{food.name}
 		</Button>
@@ -22,7 +22,7 @@ export const MaterialsContainer = () => {
 
 	return (
 		<>
-			<Button onClick={resetState}>reset</Button>
+			<Button onClick={() => resetState && resetState()}>reset</Button>
 			{listFood}
 		</>
 	)

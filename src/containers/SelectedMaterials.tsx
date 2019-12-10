@@ -1,0 +1,21 @@
+import React from 'react'
+import { useRecipeValue } from '../components/Context'
+import { Button } from '../components/Button'
+
+export const SelectedMaterials = ({ selected }: any) => {
+	const { removeIngredient } = useRecipeValue()
+
+	const listIngredients = selected.map((ingredient: any, index: number) =>
+		<Button
+			key={ingredient.id + index++}
+			onClick={() => removeIngredient && removeIngredient(index)}
+		>
+			{ingredient.name}
+		</Button>
+	)
+	return (
+		<div>
+			Ingredients: {listIngredients}
+		</div>
+	)
+}

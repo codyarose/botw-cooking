@@ -1,11 +1,17 @@
-import React, { useState, createContext, useContext, ReactNode } from 'react'
+import React, { useState, createContext, useContext, useEffect, ReactNode } from 'react'
 import { materials } from '../materials'
+import { extraTime } from '../utils/extraTime'
+import { priceCalculator } from '../utils/priceCalculator'
 
 interface IContext {
 	data: any
-	updateState: any
-	updateState2: any
-	resetState: any
+	ingredients: Array<object>
+	time: number
+	hearts: number
+	price: number
+	updateState: (id: string) => void
+	resetState: () => void
+	removeIngredient: (index: number) => void
 }
 
 interface IProvider {
@@ -13,10 +19,8 @@ interface IProvider {
 }
 
 interface IState {
-	ingredients: number
+	ingredients: any
 	price: number
-	hearts: number
-	duration: number
 	time: number
 }
 
@@ -27,58 +31,54 @@ const findById = (obj: any, id: string) => {
 	}
 }
 
-const parseBuff = (obj: any) => {
-	const type = obj.type
-	if (type === null) return 0
-	switch (type) {
-		case 'attack':
-		case 'defense':
-			return 20
-		case 'cold resist':
-		case 'heat resist':
-		case 'shock resist':
-		case 'fireproof':
-			return 120
-		case 'speed':
-			return 30
-		case 'stealth':
-			return 90
-	}
-}
-
 export const RecipeContext = createContext<Partial<IContext>>({})
 
 export const RecipeProvider = ({ children }: IProvider) => {
 	const initialState = {
-		ingredients: 0,
+		ingredients: [],
 		price: 0,
-		hearts: 0,
-		duration: 0,
 		time: 0
 	}
 
 	const [state, setState] = useState<IState>(initialState)
+	const [ingredients, setIngredients]: any = useState([])
+	const [time, setTime] = useState(0)
+	const [hearts, setHearts] = useState(0)
+	const [price, setPrice] = useState(0)
 
-	let { ingredients, price, hearts, duration } = state
+	useEffect(() => {
+		setTime(extraTime(ingredients) + (ingredients.length * 30))
+		setPrice(priceCalculator(ingredients))
+	}, [ingredients])
 
 	return (
 		<RecipeContext.Provider
 			value={{
 				data: state,
-				updateState: (id: string) => {
+				ingredients,
+				time,
+				hearts,
+				price,
+				updateState: (id) => {
 					const itemData = findById(materials, id)
-					const buffTime = parseBuff(itemData.buff)
 					setState({
 						...state,
-						ingredients: ingredients += 1,
-						price: price += itemData.price,
-						hearts: hearts += itemData.hearts * 2,
-						duration: duration += buffTime!,
-						time: duration + (ingredients * 30)
+						// price: price += itemData.price,
 					})
+					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
+					setHearts((prevHearts: number) => prevHearts += itemData.hearts)
 				},
 				resetState: () => {
 					setState(initialState)
+					setIngredients([])
+					setTime(0)
+					setHearts(0)
+				},
+				removeIngredient: (index) => {
+					const newIngredients = ingredients.filter((_: any, i: number) => {
+						return i !== index - 1
+					})
+					setIngredients(newIngredients)
 				}
 			}}
 		>

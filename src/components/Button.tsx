@@ -1,11 +1,11 @@
 import React, { SFC } from 'react'
 
-export interface IProps {
+interface IProps {
 	disabled?: boolean
-	onClick: () => any
-	id?: string | number
+	onClick?: () => any
+	id?: any
 }
 
 export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, id }) => (
-	<button disabled={disabled} onClick={handleClick}>{children}</button>
+	<button disabled={disabled} onClick={handleClick} id={id}>{children}</button>
 )
