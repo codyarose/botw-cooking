@@ -5,7 +5,7 @@ import { Button } from '../components/Button'
 import { materials } from '../materials'
 
 describe('MaterialsContainer', () => {
-	it(`Renders`, () => {
+	it(`Renders container with correct number of button`, () => {
 		const wrapper = shallow(<MaterialsContainer />)
 		// + 1 for reset button
 		const num = materials.food.length + 1

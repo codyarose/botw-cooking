@@ -4,7 +4,7 @@ import { SelectedMaterials } from './SelectedMaterials'
 import { Button } from '../components/Button'
 
 describe('SelectedMaterials', () => {
-	it(`renders`, () => {
+	it(`Renders container with correct number of buttons`, () => {
 		const mock = [
 			{
 				id: 'Material1',
