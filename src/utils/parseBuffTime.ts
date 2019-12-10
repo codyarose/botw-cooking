@@ -1,6 +1,6 @@
 // Returns the amount of extra time the ingredient gives based on it's
 // buff type
-export const parseBuffTime = (type: any) => {
+export const parseBuffTime = (type: string) => {
 	if (type === null) return 0
 	switch (type) {
 		case 'attack':
@@ -15,5 +15,7 @@ export const parseBuffTime = (type: any) => {
 			return 30
 		case 'stealth':
 			return 90
+		default:
+			return 0
 	}
 }
