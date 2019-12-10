@@ -6,9 +6,9 @@ import { materials } from '../materials'
 const foods = materials.food
 
 export const MaterialsContainer = () => {
-	const { data, updateState, resetState } = useRecipeValue()
+	const { data, ingredients, updateState, resetState } = useRecipeValue()
 
-	const disabled = data.ingredients === 5 && true
+	const disabled = ingredients!.length === 5 && true
 
 	const listFood = foods.map(food =>
 		<Button
