@@ -64,6 +64,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 						price: price += itemData.price,
 					})
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
+					// TODO: Move hearts out of here
 					setHearts((prevHearts: number) => prevHearts += itemData.hearts)
 				},
 				resetState: () => {

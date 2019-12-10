@@ -4,8 +4,6 @@ import { Button } from './Button'
 
 describe('Button', () => {
 	it(`Renders button element with children as text`, () => {
-		window.alert = jest.fn()
-
 		const button = shallow(<Button>Submit</Button>)
 		expect(button.text()).toEqual('Submit')
 

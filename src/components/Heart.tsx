@@ -18,12 +18,11 @@ const StyledHeartContainer = styled.div`
 	margin: 0 2px;
 `
 
-const StyledHeart = styled.div<IHeart>`
+export const StyledHeart = styled.div<IHeart>`
 	position: relative;
 	width: 100%;
 	height: 0;
 	padding-top: 90%;
-	clip-path: inset(-1px 50% 50% -1px);
 	clip-path: ${props => props.size === 1 ? 'none'
 		: props.size === 0.25 ? 'inset(-1px 50% 50% -1px)'
 			: props.size === 0.5 ? 'inset(-1px 50% -1px -1px)'
