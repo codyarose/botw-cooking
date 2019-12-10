@@ -2,20 +2,20 @@ import React from 'react'
 import { useRecipeValue } from '../components/Context'
 import { Button } from '../components/Button'
 
-export const SelectedMaterials = () => {
-	const { ingredients, removeIngredient } = useRecipeValue()
+export const SelectedMaterials = ({ selected }: any) => {
+	const { removeIngredient } = useRecipeValue()
 
-	const listIngredients = ingredients && ingredients.map((ingredient: any, index) =>
+	const listIngredients = selected.map((ingredient: any, index: number) =>
 		<Button
 			key={ingredient.id + index++}
-			onClick={() => removeIngredient!(index)}
+			onClick={() => removeIngredient && removeIngredient(index)}
 		>
 			{ingredient.name}
 		</Button>
 	)
 	return (
 		<div>
-			{listIngredients}
+			Ingredients: {listIngredients}
 		</div>
 	)
 }
