@@ -1,4 +1,4 @@
-import { priceCalculator } from './priceCalculator'
+import { priceCalculator } from '../priceCalculator'
 
 describe('priceCalculator', () => {
 	const mock = [

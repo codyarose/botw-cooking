@@ -1,4 +1,4 @@
-import { extraTime } from './extraTime'
+import { extraTime } from '../extraTime'
 
 describe('extraTime', () => {
 	it('Calculates correct extra time from ingredients', () => {

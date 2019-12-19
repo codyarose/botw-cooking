@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { HeartsContainer } from './HeartsContainer'
-import { Heart } from '../components/Heart'
+import { HeartsContainer } from '../HeartsContainer'
+import { Heart } from '../../components/Heart'
 
 describe('HeartsContainer', () => {
 	it(`Renders container with correct number of Heart components`, () => {
