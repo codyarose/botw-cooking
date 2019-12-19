@@ -52,6 +52,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 		setPrice(priceCalculator(ingredients))
 		// console.log(heartsCalculator(ingredients))
 		setHearts(heartsCalculator(ingredients))
+		// console.log((ingredients[0] || {}).first['hearts'])
 	}, [ingredients])
 
 	return (

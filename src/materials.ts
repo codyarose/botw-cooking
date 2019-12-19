@@ -7,7 +7,7 @@ export const materials = {
 			hearts: 0.25,
 			first: {
 				duration: 20,
-				hearts: 0.5
+				hearts: 0.25
 			},
 			buff: {
 				type: null,
@@ -130,7 +130,7 @@ export const materials = {
 			hearts: 0.25,
 			first: {
 				duration: 10,
-				hearts: 0.5
+				hearts: 0.25
 			},
 			buff: {
 				type: null,

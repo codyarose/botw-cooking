@@ -1,20 +1,10 @@
 import { parseBuffTime } from './parseBuffTime'
-
-const removeDuplicates = (array: Array<object>) => (
-	array.filter((element: any, index: number) =>
-		array.indexOf(element) === index
-	)
-)
+import { findFirsts } from './findFirsts'
 
 // Returns the extra time from ingredients that give extra time
 // on the first occurrence of the ingredient
 const extraTimeFromFirst = (array: Array<object>, baseTime: number) => {
-	// Filters array for only ingredients that have the 'first' key
-	const hasFirstKey = array.filter((element: any) => element.first !== null)
-
-	// Removes duplicate ingredients because the extra time only applies to
-	// the first occurrence of that ingredient
-	const uniqueArray = removeDuplicates(hasFirstKey)
+	const uniqueArray = findFirsts(array, 'duration')
 
 	// Gets the `first.duration` value from each ingredient and adds them
 	// to the baseTime parameter
