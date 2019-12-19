@@ -50,9 +50,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
 		setPrice(priceCalculator(ingredients))
-		// console.log(heartsCalculator(ingredients))
 		setHearts(heartsCalculator(ingredients))
-		// console.log((ingredients[0] || {}).first['hearts'])
 	}, [ingredients])
 
 	return (
@@ -67,8 +65,6 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					const itemData = findById(materials, id)
 
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
-
-					// setHearts((prevHearts: number) => prevHearts += itemData.hearts)
 				},
 				resetState: () => {
 					setState(initialState)
