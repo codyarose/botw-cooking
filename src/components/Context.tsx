@@ -2,6 +2,7 @@ import React, { useState, createContext, useContext, useEffect, ReactNode } from
 import { materials } from '../materials'
 import { extraTime } from '../utils/extraTime'
 import { priceCalculator } from '../utils/priceCalculator'
+import { heartsCalculator } from '../utils/heartsCalculator'
 
 interface IContext {
 	data: any
@@ -49,6 +50,8 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
 		setPrice(priceCalculator(ingredients))
+		// console.log(heartsCalculator(ingredients))
+		setHearts(heartsCalculator(ingredients))
 	}, [ingredients])
 
 	return (
@@ -61,12 +64,10 @@ export const RecipeProvider = ({ children }: IProvider) => {
 				price,
 				updateState: (id) => {
 					const itemData = findById(materials, id)
-					setState({
-						...state,
-						// price: price += itemData.price,
-					})
+
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
-					setHearts((prevHearts: number) => prevHearts += itemData.hearts)
+
+					// setHearts((prevHearts: number) => prevHearts += itemData.hearts)
 				},
 				resetState: () => {
 					setState(initialState)

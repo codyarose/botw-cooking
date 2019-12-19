@@ -11,7 +11,7 @@ export const OutputContainer = () => {
 		<>
 			<SelectedMaterials selected={ingredients} />
 			<div>Price: {price}</div>
-			<HeartsContainer amount={hearts! * 2} />
+			<HeartsContainer amount={hearts} />
 			<div>Time: {time && secToMin(time)}</div>
 		</>
 	)
