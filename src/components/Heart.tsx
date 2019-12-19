@@ -1,21 +1,37 @@
 import React from 'react'
 import styled from 'styled-components'
 
+interface IHeartContainer {
+	readonly abbr: number
+}
+
 interface IHeart {
 	readonly size: number
 }
 
-export const Heart = ({ size }: any) => {
+export const Heart = ({ size, abbr }: any) => {
 	return (
-		<StyledHeartContainer>
+		<StyledHeartContainer abbr={abbr}>
 			<StyledHeart size={size} />
 		</StyledHeartContainer>
 	)
 }
 
-const StyledHeartContainer = styled.div`
+const StyledHeartContainer = styled.div<IHeartContainer>`
+	position: relative;
 	width: 20px;
 	margin: 0 2px;
+	&::before {
+		content: '${props => props.abbr && props.abbr}';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		font-family: Arial;
+		line-height: 0.5;
+		font-size: 1rem;
+		/* color: #fff; */
+	}
 `
 
 export const StyledHeart = styled.div<IHeart>`
