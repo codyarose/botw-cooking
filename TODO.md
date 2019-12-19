@@ -1,0 +1,19 @@
+## Todo
+
+### Add:
+- [ ] temp hearts
+- [ ] buff type readout
+- [ ] buff potency calculator
+- [ ] heart shortening over 6
+- [ ] hover stats
+	- [ ] locations
+	- [ ] buff type
+- [ ] materials button styles
+- [ ] container styles
+- [ ] ingredient images
+
+### Remove:
+-
+
+### Refactor:
+-
