@@ -12,7 +12,7 @@ export interface IMaterial {
 	locations: string[]
 }
 
-interface IBuff {
+export interface IBuff {
 	type: string | null
 	potency: number | null
 }
