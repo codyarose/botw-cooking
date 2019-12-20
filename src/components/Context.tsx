@@ -3,6 +3,7 @@ import { materials } from '../materials'
 import { extraTime } from '../utils/extraTime'
 import { priceCalculator } from '../utils/priceCalculator'
 import { heartsCalculator } from '../utils/heartsCalculator'
+import { parseBuff } from '../utils/parseBuff'
 
 interface IContext {
 	data: any
@@ -10,6 +11,7 @@ interface IContext {
 	time: number
 	hearts: number
 	price: number
+	buff: string
 	updateState: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
@@ -46,11 +48,13 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [time, setTime] = useState(0)
 	const [hearts, setHearts] = useState(0)
 	const [price, setPrice] = useState(0)
+	const [buff, setBuff] = useState('')
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
 		setPrice(priceCalculator(ingredients))
 		setHearts(heartsCalculator(ingredients))
+		console.log(parseBuff(ingredients))
 	}, [ingredients])
 
 	return (
@@ -61,6 +65,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 				time,
 				hearts,
 				price,
+				buff,
 				updateState: (id) => {
 					const itemData = findById(materials, id)
 
@@ -71,6 +76,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					setIngredients([])
 					setTime(0)
 					setHearts(0)
+					setBuff('')
 				},
 				removeIngredient: (index) => {
 					const newIngredients = ingredients.filter((_: any, i: number) => {
