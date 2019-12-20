@@ -1,16 +1,16 @@
 import { IMaterial } from './interfaces'
 
-const removeDuplicates = (array: Array<object>) => (
-	array.filter((element: any, index: number) =>
+const removeDuplicates = (array: IMaterial[]) => (
+	array.filter((element, index: number) =>
 		array.indexOf(element) === index
 	)
 )
 
-export const findFirsts = (array: IMaterial[], term: any) => {
+export const findFirsts = (array: IMaterial[], term: string) => {
 	// Filters array for only ingredients that have the 'first' key
-	const hasFirstKey = array.filter((element) => element.first !== null)
+	const hasFirstKey = array.filter(({ first }) => first !== null)
 	// Filters hasFirstKey by term
-	const filterByTerm = hasFirstKey.filter((element: any) => ((element || {}).first || {})[term])
+	const filterByTerm = hasFirstKey.filter(({ first }) => first![term])
 	// Removes duplicate ingredients because the extra time only applies to
 	// the first occurrence of that ingredient
 	return removeDuplicates(filterByTerm)
