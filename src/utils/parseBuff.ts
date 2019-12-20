@@ -8,7 +8,10 @@ export const parseBuff = (array: object[]) => {
 	// If multiple buff types are added they'll cancel each other
 	// in-game and no buff will be added
 	if (buffTypes.length > 1) return null
-
+	// Sum of buff potencies
 	const potency = nullsRemoved.length && nullsRemoved.reduce((acc, item) => acc + item.potency, 0)
-	return potency
+	return {
+		type: buffTypes[0] || null,
+		potency: potency
+	}
 }
