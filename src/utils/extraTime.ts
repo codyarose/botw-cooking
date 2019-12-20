@@ -24,7 +24,6 @@ const extraTimeFromBuff = (array: IMaterial[]) => {
 
 // Returns total extra time from all ingredients
 export const extraTime = (array: IMaterial[]) => {
-	let time = 0
 	const fromBuff = extraTimeFromBuff(array)
 	const fromFirst = extraTimeFromFirst(array)
 	return fromBuff + fromFirst
