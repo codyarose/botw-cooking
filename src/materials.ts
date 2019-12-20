@@ -101,8 +101,8 @@ export const materials = {
 				duration: 60
 			},
 			buff: {
-				type: "temp-hearts",
-				potency: 4
+				type: null,
+				potency: null
 			},
 			locations: [
 				"Nests in trees and cliffs"
