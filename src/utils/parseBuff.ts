@@ -1,4 +1,6 @@
-export const parseBuff = (array: object[]) => {
+import { IMaterial } from './interfaces'
+
+export const parseBuff = (array: IMaterial[]) => {
 	// Array of buff values for current ingredients
 	const buffs = array.map((item: any) => (item || {}).buff)
 	// Removes any that have null buff type
