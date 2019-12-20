@@ -23,7 +23,7 @@ export const MaterialsContainer = () => {
 
 	return (
 		<StyledMaterialsContainer>
-			<Button onClick={() => resetState && resetState()}>reset</Button>
+			<Button onClick={resetState}>reset</Button>
 			{listFood}
 		</StyledMaterialsContainer>
 	)
