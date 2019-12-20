@@ -13,8 +13,8 @@ export interface IMaterial {
 }
 
 interface IBuff {
-	type: string
-	potency: number
+	type: string | null
+	potency: number | null
 }
 
 interface IFirst {
