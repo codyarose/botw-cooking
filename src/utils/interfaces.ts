@@ -3,7 +3,21 @@ export interface IMaterial {
 	name: string
 	price: number
 	hearts: number
-	first: object | null
-	buff: object
+	first: null | {
+		[key: string]: IFirst
+	}
+	buff: {
+		[key: string]: IBuff
+	}
 	locations: string[]
+}
+
+interface IBuff {
+	type: string
+	potency: number
+}
+
+interface IFirst {
+	duration: number
+	hearts: number
 }
