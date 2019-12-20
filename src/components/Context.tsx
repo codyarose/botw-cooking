@@ -4,27 +4,22 @@ import { extraTime } from '../utils/extraTime'
 import { priceCalculator } from '../utils/priceCalculator'
 import { heartsCalculator } from '../utils/heartsCalculator'
 import { parseBuff } from '../utils/parseBuff'
+import { IMaterial, IBuff } from '../utils/interfaces'
 
 interface IContext {
 	data: any
-	ingredients: Array<object>
+	ingredients: IMaterial[]
 	time: number
 	hearts: number
 	price: number
-	buff: any
-	updateState: (id: string) => void
+	buff: IBuff
+	updateIngredients: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
 }
 
 interface IProvider {
 	children: ReactNode
-}
-
-interface IState {
-	ingredients: any
-	price: number
-	time: number
 }
 
 const findById = (obj: any, id: string) => {
@@ -37,13 +32,7 @@ const findById = (obj: any, id: string) => {
 export const RecipeContext = createContext<Partial<IContext>>({})
 
 export const RecipeProvider = ({ children }: IProvider) => {
-	const initialState = {
-		ingredients: [],
-		price: 0,
-		time: 0
-	}
 
-	const [state, setState] = useState<IState>(initialState)
 	const [ingredients, setIngredients]: any = useState([])
 	const [time, setTime] = useState(0)
 	const [hearts, setHearts] = useState(0)
@@ -60,19 +49,17 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	return (
 		<RecipeContext.Provider
 			value={{
-				data: state,
 				ingredients,
 				time,
 				hearts,
 				price,
 				buff,
-				updateState: (id) => {
+				updateIngredients: (id) => {
 					const itemData = findById(materials, id)
 
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
 				},
 				resetState: () => {
-					// setState(initialState)
 					setIngredients([])
 					setTime(0)
 					setHearts(0)

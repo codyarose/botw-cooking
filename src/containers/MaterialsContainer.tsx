@@ -7,7 +7,7 @@ import { materials } from '../materials'
 const foods = materials.food
 
 export const MaterialsContainer = () => {
-	const { ingredients, updateState, resetState } = useRecipeValue()
+	const { ingredients, updateIngredients, resetState } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
@@ -15,7 +15,7 @@ export const MaterialsContainer = () => {
 		<Button
 			key={food.id}
 			disabled={disabled}
-			onClick={() => updateState!(food.id)}
+			onClick={() => updateIngredients!(food.id)}
 		>
 			{food.name}
 		</Button>
