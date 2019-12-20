@@ -2,8 +2,8 @@
 
 ### Add:
 - [ ] temp hearts
-- [ ] buff type readout
-- [ ] buff potency calculator
+- [x] buff type readout
+- [x] buff potency calculator
 - [x] heart shortening over 6
 - [ ] hover stats
 	- [ ] locations
@@ -17,4 +17,4 @@
 -
 
 ### Refactor:
-- [ ] calculators to use reduce
+- [x] calculators to use reduce
