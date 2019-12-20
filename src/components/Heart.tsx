@@ -7,12 +7,13 @@ interface IHeartContainer {
 
 interface IHeart {
 	readonly size: number
+	readonly type?: string
 }
 
-export const Heart = ({ size, abbr }: any) => {
+export const Heart = ({ size, abbr, type }: any) => {
 	return (
 		<StyledHeartContainer abbr={abbr}>
-			<StyledHeart size={size} />
+			<StyledHeart size={size} type={type} />
 		</StyledHeartContainer>
 	)
 }
@@ -51,7 +52,8 @@ export const StyledHeart = styled.div<IHeart>`
 		top: 0;
 		width: 50%;
 		height: 100%;
-		background: #F53D3F;
+		background: ${props => props.type === 'normal' ? '#F53D3F'
+		: props.type === 'temp' && '#FDFC04'};
 		border-radius: 10px 10px 0 0;
 		transform: rotate(-45deg);
 		transform-origin: 0 100%;
