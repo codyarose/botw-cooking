@@ -11,7 +11,7 @@ interface IContext {
 	time: number
 	hearts: number
 	price: number
-	buff: string
+	buff: any
 	updateState: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
@@ -48,13 +48,13 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [time, setTime] = useState(0)
 	const [hearts, setHearts] = useState(0)
 	const [price, setPrice] = useState(0)
-	const [buff, setBuff] = useState('')
+	const [buff, setBuff] = useState()
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
 		setPrice(priceCalculator(ingredients))
 		setHearts(heartsCalculator(ingredients))
-		console.log(parseBuff(ingredients))
+		setBuff(parseBuff(ingredients))
 	}, [ingredients])
 
 	return (
@@ -72,7 +72,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
 				},
 				resetState: () => {
-					setState(initialState)
+					// setState(initialState)
 					setIngredients([])
 					setTime(0)
 					setHearts(0)
