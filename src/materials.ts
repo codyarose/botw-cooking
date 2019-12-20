@@ -7,7 +7,7 @@ export const materials = {
 			hearts: 0.25,
 			first: {
 				duration: 20,
-				hearts: 1
+				hearts: 0.25
 			},
 			buff: {
 				type: null,
@@ -101,8 +101,8 @@ export const materials = {
 				duration: 60
 			},
 			buff: {
-				type: "temp-hearts",
-				potency: 4
+				type: null,
+				potency: null
 			},
 			locations: [
 				"Nests in trees and cliffs"
@@ -130,7 +130,7 @@ export const materials = {
 			hearts: 0.25,
 			first: {
 				duration: 10,
-				hearts: 1
+				hearts: 0.25
 			},
 			buff: {
 				type: null,

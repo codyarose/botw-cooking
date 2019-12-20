@@ -1,4 +1,4 @@
-import { parseBuffTime } from './parseBuffTime'
+import { parseBuffTime } from '../parseBuffTime'
 
 describe('parseBuffTime', () => {
 	it(`Returns the added time from the provided buff type`, () => {

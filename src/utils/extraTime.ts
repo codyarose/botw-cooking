@@ -1,46 +1,30 @@
 import { parseBuffTime } from './parseBuffTime'
-
-const removeDuplicates = (array: Array<object>) => (
-	array.filter((element: any, index: number) =>
-		array.indexOf(element) === index
-	)
-)
+import { findFirsts } from './findFirsts'
+import { IMaterial } from './interfaces'
 
 // Returns the extra time from ingredients that give extra time
 // on the first occurrence of the ingredient
-const extraTimeFromFirst = (array: Array<object>, baseTime: number) => {
-	// Filters array for only ingredients that have the 'first' key
-	const hasFirstKey = array.filter((element: any) => element.first !== null)
-
-	// Removes duplicate ingredients because the extra time only applies to
-	// the first occurrence of that ingredient
-	const uniqueArray = removeDuplicates(hasFirstKey)
-
-	// Gets the `first.duration` value from each ingredient and adds them
-	// to the baseTime parameter
-	uniqueArray.forEach((element: any) => {
-		const fromFirst = ((element || {}).first || {}).duration
-		baseTime += fromFirst
-	})
-
-	return baseTime
+const extraTimeFromFirst = (array: IMaterial[]) => {
+	const uniqueArray = findFirsts(array, 'duration')
+	// Gets sum of the `first.duration` value from each ingredient
+	return uniqueArray.length && uniqueArray.reduce((acc, item: any) => acc + item.first.duration, 0)
 }
 
 // Returns the extra time from ingredients that have a buff
-const extraTimeFromBuff = (array: Array<object>, baseTime: number) => {
+const extraTimeFromBuff = (array: IMaterial[]) => {
 	// Runs parseBuffTime on each ingredients `buff.type` and adds the returned
 	// value to the baseTime parameter
+	let result = 0
 	array.forEach((element: any) => {
 		const fromBuff = parseBuffTime(((element || {}).buff || {}).type)
-		baseTime += fromBuff
+		result += fromBuff
 	})
-	return baseTime
+	return result
 }
 
 // Returns total extra time from all ingredients
-export const extraTime = (array: Array<object>) => {
-	let time = 0
-	const fromBuff = extraTimeFromBuff(array, time)
-	const fromFirst = extraTimeFromFirst(array, time)
+export const extraTime = (array: IMaterial[]) => {
+	const fromBuff = extraTimeFromBuff(array)
+	const fromFirst = extraTimeFromFirst(array)
 	return fromBuff + fromFirst
 }

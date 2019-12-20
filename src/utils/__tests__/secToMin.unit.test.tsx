@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { secToMin } from './secToMin'
+import { secToMin } from '../secToMin'
 
 describe('secToMin', () => {
 	it('Converts seconds to minutes', () => {

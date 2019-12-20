@@ -1,21 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface IHeart {
-	readonly size: number
+interface IHeartContainer {
+	readonly abbr?: number
 }
 
-export const Heart = ({ size }: any) => {
+interface IHeart {
+	readonly size: number
+	readonly type?: string
+}
+
+type IHeartAndContainer = IHeartContainer & IHeart
+
+export const Heart = ({ size, abbr, type }: IHeartAndContainer) => {
 	return (
-		<StyledHeartContainer>
-			<StyledHeart size={size} />
+		<StyledHeartContainer abbr={abbr}>
+			<StyledHeart size={size} type={type} />
 		</StyledHeartContainer>
 	)
 }
 
-const StyledHeartContainer = styled.div`
+const StyledHeartContainer = styled.div<IHeartContainer>`
+	position: relative;
 	width: 20px;
 	margin: 0 2px;
+	&::before {
+		content: '${props => props.abbr && props.abbr}';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		font-family: Arial;
+		line-height: 0.5;
+		font-size: 1rem;
+		/* color: #fff; */
+	}
 `
 
 export const StyledHeart = styled.div<IHeart>`
@@ -35,7 +54,8 @@ export const StyledHeart = styled.div<IHeart>`
 		top: 0;
 		width: 50%;
 		height: 100%;
-		background: #F53D3F;
+		background: ${props => props.type === 'normal' ? '#F53D3F'
+		: props.type === 'temp' && '#FDFC04'};
 		border-radius: 10px 10px 0 0;
 		transform: rotate(-45deg);
 		transform-origin: 0 100%;

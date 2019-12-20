@@ -1,4 +1,6 @@
-export const priceCalculator = (ingredients: object[]) => {
+import { IMaterial } from './interfaces'
+
+export const priceCalculator = (ingredients: IMaterial[]) => {
 	const length = ingredients.length
 	const multiplier =
 		length === 1 ? 1.5
@@ -8,16 +10,9 @@ export const priceCalculator = (ingredients: object[]) => {
 						: length === 5 ? 2.8
 							: 0
 
-	const totalBasePrice: any = () => {
-		let result = 0
-		ingredients.forEach((ingredient: any) => {
-			const amount = (ingredient || {}).price
-			result += amount
-		})
-		return result
-	}
+	const totalBasePrice = ingredients.length && ingredients.reduce((acc, item) => acc + item.price, 0)
 
 	return (
-		length === 0 ? 0 : Math.ceil((totalBasePrice() * multiplier) / 10) * 10
+		length === 0 ? 0 : Math.ceil((totalBasePrice * multiplier) / 10) * 10
 	)
 }

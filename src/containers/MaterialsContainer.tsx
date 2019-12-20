@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Button } from '../components/Button'
 import { useRecipeValue } from '../components/Context'
 import { materials } from '../materials'
@@ -6,7 +7,7 @@ import { materials } from '../materials'
 const foods = materials.food
 
 export const MaterialsContainer = () => {
-	const { ingredients, updateState, resetState } = useRecipeValue()
+	const { ingredients, updateIngredients, resetState } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
@@ -14,16 +15,23 @@ export const MaterialsContainer = () => {
 		<Button
 			key={food.id}
 			disabled={disabled}
-			onClick={() => updateState!(food.id)}
+			onClick={() => updateIngredients!(food.id)}
 		>
 			{food.name}
 		</Button>
 	)
 
 	return (
-		<>
-			<Button onClick={() => resetState && resetState()}>reset</Button>
+		<StyledMaterialsContainer>
+			<Button onClick={resetState}>reset</Button>
 			{listFood}
-		</>
+		</StyledMaterialsContainer>
 	)
 }
+
+const StyledMaterialsContainer = styled.div`
+	--auto-grid-min-size: 9rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+	gap: .5rem;
+`
