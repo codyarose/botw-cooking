@@ -17,4 +17,4 @@
 -
 
 ### Refactor:
--
+- [ ] calculators to use reduce
