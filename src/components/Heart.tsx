@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 interface IHeartContainer {
-	readonly abbr: number
+	readonly abbr?: number
 }
 
 interface IHeart {
@@ -10,7 +10,9 @@ interface IHeart {
 	readonly type?: string
 }
 
-export const Heart = ({ size, abbr, type }: any) => {
+type IHeartAndContainer = IHeartContainer & IHeart
+
+export const Heart = ({ size, abbr, type }: IHeartAndContainer) => {
 	return (
 		<StyledHeartContainer abbr={abbr}>
 			<StyledHeart size={size} type={type} />

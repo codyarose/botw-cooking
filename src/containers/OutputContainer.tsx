@@ -11,7 +11,7 @@ export const OutputContainer = () => {
 		<>
 			<SelectedMaterials selected={ingredients} />
 			<div>Price: {price}</div>
-			<HeartsContainer amount={hearts} />
+			<HeartsContainer amount={hearts || 0} />
 			<div>Time: {time && secToMin(time)}</div>
 			<div>Buff: {buff && buff.type}</div>
 			<div>Potency: {buff && buff.potency}</div>

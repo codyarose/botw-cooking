@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Heart } from '../components/Heart'
 
 interface IHearts {
-	amount: any
+	amount: number
 }
 
 export const HeartsContainer: SFC<IHearts> = ({ amount }) => {

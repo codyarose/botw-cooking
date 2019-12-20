@@ -7,7 +7,6 @@ import { parseBuff } from '../utils/parseBuff'
 import { IMaterial, IBuff } from '../utils/interfaces'
 
 interface IContext {
-	data: any
 	ingredients: IMaterial[]
 	time: number
 	hearts: number
@@ -25,7 +24,7 @@ interface IProvider {
 const findById = (obj: any, id: string) => {
 	for (const key in obj) {
 		if (!obj.hasOwnProperty(key)) continue
-		return obj[key].find((item: any) => item.id === id)
+		return obj[key].find((item: IMaterial) => item.id === id)
 	}
 }
 
@@ -66,7 +65,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					setBuff('')
 				},
 				removeIngredient: (index) => {
-					const newIngredients = ingredients.filter((_: any, i: number) => {
+					const newIngredients = ingredients.filter((_: object, i: number) => {
 						return i !== index - 1
 					})
 					setIngredients(newIngredients)
