@@ -11,6 +11,7 @@
 - [ ] materials button styles
 - [ ] container styles
 - [ ] ingredient images
+- [ ] local storage
 
 ### Remove:
 -
