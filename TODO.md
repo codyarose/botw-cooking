@@ -1,7 +1,7 @@
 ## Todo
 
 ### Add:
-- [ ] temp hearts
+- [x] temp hearts
 - [x] buff type readout
 - [x] buff potency calculator
 - [x] heart shortening over 6
