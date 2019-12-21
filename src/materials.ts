@@ -10,8 +10,8 @@ export const materials = {
 				hearts: 0.25
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Base of trees"
@@ -24,8 +24,8 @@ export const materials = {
 			hearts: 0.5,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Hyrule Field",
@@ -101,8 +101,8 @@ export const materials = {
 				duration: 60
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Nests in trees and cliffs"
@@ -133,8 +133,8 @@ export const materials = {
 				hearts: 0.25
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Dropped by sparrows"
@@ -224,8 +224,8 @@ export const materials = {
 				duration: 50
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"East Wind store in Hateno Village",
@@ -242,8 +242,8 @@ export const materials = {
 				duration: 50
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"High Spirits Produce store in Kakariko Village",
@@ -260,8 +260,8 @@ export const materials = {
 				duration: 60
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Goron Gusto Shop in Goron City",
@@ -381,8 +381,8 @@ export const materials = {
 			hearts: 0.5,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Hyrule Field",
@@ -396,8 +396,8 @@ export const materials = {
 			hearts: 1,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Hyrule Field",
@@ -500,8 +500,8 @@ export const materials = {
 			hearts: 1,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"East Necluda",
@@ -515,8 +515,8 @@ export const materials = {
 			hearts: 1,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Wood Pigeon",
@@ -534,8 +534,8 @@ export const materials = {
 			hearts: 1.5,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Rainbow Pigeon",
@@ -552,8 +552,8 @@ export const materials = {
 			hearts: 3,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Water Buffalo",
@@ -568,8 +568,8 @@ export const materials = {
 			hearts: 1,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Woodland Boar",
@@ -583,8 +583,8 @@ export const materials = {
 			hearts: 1.5,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Red-Tusked Boar",
@@ -600,8 +600,8 @@ export const materials = {
 			hearts: 3,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"White Pigeon",
@@ -647,8 +647,8 @@ export const materials = {
 				duration: 30
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore Deposits",
@@ -678,8 +678,8 @@ export const materials = {
 			hearts: 1,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"West Necluda"
@@ -843,8 +843,8 @@ export const materials = {
 			hearts: 0.5,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Gerudo Highlands",
@@ -907,8 +907,8 @@ export const materials = {
 				duration: 50
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Goron Gusto Shop in Goron City",
@@ -987,8 +987,8 @@ export const materials = {
 				duration: 30
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Cut tall grass in Necluda",
@@ -1004,8 +1004,8 @@ export const materials = {
 			hearts: 1,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Hyrule Field",
@@ -1082,8 +1082,8 @@ export const materials = {
 				duration: 30
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Cut tall grass in Tabantha Fields",
@@ -1387,8 +1387,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1403,8 +1403,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1418,8 +1418,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1434,8 +1434,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Luminous ore deposits",
@@ -1449,8 +1449,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1464,8 +1464,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1479,8 +1479,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1494,8 +1494,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Ore deposits",
@@ -1511,8 +1511,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1526,8 +1526,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1541,8 +1541,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1556,8 +1556,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1571,8 +1571,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1586,8 +1586,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1601,8 +1601,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1616,8 +1616,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1631,8 +1631,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1646,8 +1646,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1661,8 +1661,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1676,8 +1676,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1691,8 +1691,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1706,8 +1706,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1721,8 +1721,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1736,8 +1736,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1751,8 +1751,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1766,8 +1766,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1781,8 +1781,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1796,8 +1796,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1811,8 +1811,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1826,8 +1826,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1841,8 +1841,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1856,8 +1856,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1871,8 +1871,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1886,8 +1886,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1901,8 +1901,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1916,8 +1916,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1931,8 +1931,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1946,8 +1946,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -1961,8 +1961,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -1976,8 +1976,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -1991,8 +1991,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 1,
 			locations: [
@@ -2006,8 +2006,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -2021,8 +2021,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
@@ -2036,8 +2036,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -2051,8 +2051,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 2,
 			locations: [
@@ -2066,8 +2066,8 @@ export const materials = {
 			hearts: 0,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			"tier": 3,
 			locations: [
