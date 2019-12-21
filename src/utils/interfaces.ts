@@ -4,12 +4,16 @@ export interface IMaterial {
 	price: number
 	hearts: number
 	first: null | {
-		duration: number
-		hearts: number
+		[key: string]: IFirst
 	}
 	buff: {
 		type: string
 		potency: number
 	}
 	locations: string[]
+}
+
+interface IFirst {
+	duration: number
+	hearts: number
 }
