@@ -4,14 +4,14 @@ import { extraTime } from '../utils/extraTime'
 import { priceCalculator } from '../utils/priceCalculator'
 import { heartsCalculator } from '../utils/heartsCalculator'
 import { parseBuff } from '../utils/parseBuff'
-import { IMaterial, IBuff } from '../utils/interfaces'
+import { IMaterial } from '../utils/interfaces'
 
 interface IContext {
 	ingredients: IMaterial[]
 	time: number
 	hearts: number
 	price: number
-	buff: IBuff
+	buff: any
 	updateIngredients: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
@@ -27,6 +27,7 @@ const findById = (obj: any, id: string) => {
 		return obj[key].find((item: IMaterial) => item.id === id)
 	}
 }
+
 
 export const RecipeContext = createContext<Partial<IContext>>({})
 
