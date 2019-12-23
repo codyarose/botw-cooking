@@ -1,7 +1,7 @@
 export const materials = {
 	food: [
 		{
-			id: 'Material1',
+			id: 'material1',
 			name: "Acorn",
 			price: 2,
 			hearts: 0.25,
@@ -18,7 +18,7 @@ export const materials = {
 			]
 		},
 		{
-			id: 'Material2',
+			id: 'material2',
 			name: "Apple",
 			price: 3,
 			hearts: 0.5,
@@ -33,7 +33,7 @@ export const materials = {
 			]
 		},
 		{
-			id: 'Material3',
+			id: 'material3',
 			name: "Armored Carp",
 			price: 10,
 			hearts: 1,
@@ -48,7 +48,7 @@ export const materials = {
 			]
 		},
 		{
-			id: 'Material4',
+			id: 'material4',
 			name: "Armored Porgy",
 			price: 10,
 			hearts: 1,
@@ -63,7 +63,7 @@ export const materials = {
 			]
 		},
 		{
-			id: 'Material5',
+			id: 'material5',
 			name: "Big Hearty Radish",
 			price: 15,
 			hearts: 4,
@@ -78,7 +78,7 @@ export const materials = {
 			]
 		},
 		{
-			id: 'Material6',
+			id: 'material6',
 			name: "Big Hearty Truffle",
 			price: 15,
 			hearts: 3,
@@ -93,7 +93,7 @@ export const materials = {
 			]
 		},
 		{
-			id: 'Material7',
+			id: 'material7',
 			name: "Bird Egg",
 			price: 3,
 			hearts: 1,
