@@ -1,20 +1,20 @@
 ## Todo
 
 ### Add:
-- [ ] temp hearts
-- [ ] buff type readout
-- [ ] buff potency calculator
+- [x] temp hearts
+- [x] buff type readout
+- [x] buff potency calculator
 - [x] heart shortening over 6
+- [x] local storage
+- [x] ingredient images
+- [ ] materials button styles
+- [ ] container styles
 - [ ] hover stats
 	- [ ] locations
 	- [ ] buff type
-- [ ] materials button styles
-- [ ] container styles
-- [ ] ingredient images
-- [ ] local storage
 
 ### Remove:
 -
 
 ### Refactor:
-- [ ] calculators to use reduce
+- [x] calculators to use reduce

@@ -1,4 +1,4 @@
-import { IMaterial } from './interfaces'
+import { IMaterial } from 'utils/interfaces'
 
 export const priceCalculator = (ingredients: IMaterial[]) => {
 	const length = ingredients.length

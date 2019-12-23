@@ -1,7 +1,11 @@
 module.exports = {
 	roots: [
-		'<rootDir>/src'
+		'src'
 	],
+	moduleDirectories: ['node_modules', 'src'],
+	moduleNameMapper: {
+		'src/(.*)': '<rootDir>/src/$1'
+	},
 	transform: {
 		'^.+\\.tsx?$': 'ts-jest'
 	},

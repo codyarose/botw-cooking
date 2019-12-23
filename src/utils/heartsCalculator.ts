@@ -1,5 +1,5 @@
-import { findFirsts } from './findFirsts'
-import { IMaterial } from './interfaces'
+import { findFirsts } from 'utils/findFirsts'
+import { IMaterial } from 'utils/interfaces'
 
 // Calculate total hearts from currently selected ingredients
 export const heartsCalculator = (ingredients: Array<IMaterial>) => {

@@ -1,7 +1,7 @@
 import React from 'react'
-import { useRecipeValue } from '../components/Context'
-import { Button } from '../components/Button'
-import { IMaterial } from '../utils/interfaces'
+import { useRecipeValue } from 'components/Context'
+import { Button } from 'components/Button'
+import { IMaterial } from 'utils/interfaces'
 
 export const SelectedMaterials = ({ selected }: any) => {
 	const { removeIngredient } = useRecipeValue()
@@ -11,6 +11,7 @@ export const SelectedMaterials = ({ selected }: any) => {
 			key={ingredient.id + index++}
 			onClick={() => removeIngredient && removeIngredient(index)}
 		>
+			<img src={require(`./images/${ingredient.id}.png`)} alt={ingredient.name} />
 			{ingredient.name}
 		</Button>
 	)

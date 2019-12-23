@@ -1,23 +1,17 @@
+interface IFirst {
+	duration: number
+	hearts: number
+}
+
 export interface IMaterial {
 	id: string
 	name: string
 	price: number
 	hearts: number
-	first: null | {
-		[key: string]: IFirst
-	}
+	first: null | IFirst
 	buff: {
-		[key: string]: IBuff
+		type: string
+		potency: number
 	}
 	locations: string[]
-}
-
-export interface IBuff {
-	type: string | null
-	potency: number | null
-}
-
-interface IFirst {
-	duration: number
-	hearts: number
 }

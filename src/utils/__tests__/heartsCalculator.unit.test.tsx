@@ -1,8 +1,9 @@
-import { heartsCalculator } from '../heartsCalculator'
+import { heartsCalculator } from 'utils/heartsCalculator'
+import { IMaterial } from 'utils/interfaces'
 
 describe('heartsCalculator', () => {
 	it(`Calculates total hearts from ingredients`, () => {
-		const mock = [
+		const mock: IMaterial[] = [
 			{
 				id: 'Material1',
 				name: "Acorn",
@@ -13,8 +14,8 @@ describe('heartsCalculator', () => {
 					hearts: .25
 				},
 				buff: {
-					type: null,
-					potency: null
+					type: 'none',
+					potency: 0
 				},
 				locations: [
 					"Base of trees"
@@ -27,8 +28,8 @@ describe('heartsCalculator', () => {
 				hearts: 0.5,
 				first: null,
 				buff: {
-					type: null,
-					potency: null
+					type: 'none',
+					potency: 0
 				},
 				locations: [
 					"Hyrule Field",

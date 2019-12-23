@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { MaterialsContainer } from '../MaterialsContainer'
-import { Button } from '../../components/Button'
-import { materials } from '../../materials'
+import { Button } from 'components/Button'
+import { materials } from 'materials'
 
 describe('MaterialsContainer', () => {
 	it(`Renders container with correct number of button`, () => {

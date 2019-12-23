@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -21,5 +23,5 @@
   },
   "include": [
     "src"
-  ]
+  ],
 }

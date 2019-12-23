@@ -1,6 +1,6 @@
-import { parseBuffTime } from './parseBuffTime'
-import { findFirsts } from './findFirsts'
-import { IMaterial } from './interfaces'
+import { parseBuffTime } from 'utils/parseBuffTime'
+import { findFirsts } from 'utils/findFirsts'
+import { IMaterial } from 'utils/interfaces'
 
 // Returns the extra time from ingredients that give extra time
 // on the first occurrence of the ingredient
