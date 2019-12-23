@@ -10,14 +10,13 @@ export const MaterialsContainer = () => {
 	const { ingredients, updateIngredients, resetState } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
-
 	const listFood = foods.map(food =>
 		<Button
 			key={food.id}
 			disabled={disabled}
 			onClick={() => updateIngredients!(food.id)}
 		>
-			<img src={`../images/${food.id}.png`} alt={food.name} />
+			<img src={require(`./images/${food.id}.png`)} alt={food.name} />
 			{food.name}
 		</Button>
 	)
