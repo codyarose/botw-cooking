@@ -5,13 +5,13 @@
 - [x] buff type readout
 - [x] buff potency calculator
 - [x] heart shortening over 6
+- [ ] local storage
+- [ ] ingredient images
+- [ ] materials button styles
+- [ ] container styles
 - [ ] hover stats
 	- [ ] locations
 	- [ ] buff type
-- [ ] materials button styles
-- [ ] container styles
-- [ ] ingredient images
-- [ ] local storage
 
 ### Remove:
 -
