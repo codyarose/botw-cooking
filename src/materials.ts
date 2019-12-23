@@ -1514,7 +1514,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Guardian Stalker, Skywatcher, Turret, Sentry, and Scouts III & IV"
 			]
@@ -1529,7 +1529,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"All Guardian types except Scout I"
 			]
@@ -1544,7 +1544,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"All Guardian types"
 			]
@@ -1559,7 +1559,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"All Guardian types except Scout I"
 			]
@@ -1574,7 +1574,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"All Guardian types"
 			]
@@ -1589,7 +1589,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Bokoblins"
 			]
@@ -1604,7 +1604,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Bokoblins (Blue or stronger)"
 			]
@@ -1619,7 +1619,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Bokoblins"
 			]
@@ -1634,7 +1634,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Chuchus (Blue)"
 			]
@@ -1649,7 +1649,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Keese (Electric)"
 			]
@@ -1664,7 +1664,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Keese (Fire)"
 			]
@@ -1679,7 +1679,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Guardian Stalker, Skywatcher, and Turret"
 			]
@@ -1694,7 +1694,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Hinox"
 			]
@@ -1709,7 +1709,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Hinox"
 			]
@@ -1724,7 +1724,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Hinox"
 			]
@@ -1739,7 +1739,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Keese (Ice)"
 			]
@@ -1754,7 +1754,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Lizalfos (Ice-Breath)"
 			]
@@ -1769,7 +1769,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Keese"
 			]
@@ -1784,7 +1784,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Keese (Normal)"
 			]
@@ -1799,7 +1799,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Lizalfos"
 			]
@@ -1814,7 +1814,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Lizalfos (Normal)"
 			]
@@ -1829,7 +1829,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Lizalfos"
 			]
@@ -1844,7 +1844,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Lynels"
 			]
@@ -1859,7 +1859,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Lynels"
 			]
@@ -1874,7 +1874,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Lynels"
 			]
@@ -1889,7 +1889,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Moblins"
 			]
@@ -1904,7 +1904,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Moblins (Blue or stronger)"
 			]
@@ -1919,7 +1919,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Moblins"
 			]
@@ -1934,7 +1934,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Molduga"
 			]
@@ -1949,7 +1949,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Molduga"
 			]
@@ -1964,7 +1964,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Octoroks"
 			]
@@ -1979,7 +1979,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Octoroks"
 			]
@@ -1994,7 +1994,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 1,
+			tier: 1,
 			locations: [
 				"Octoroks"
 			]
@@ -2009,7 +2009,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Chuchus (Red)"
 			]
@@ -2024,7 +2024,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Lizalfos (Fire-Breath)"
 			]
@@ -2039,7 +2039,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Chuchus (White)"
 			]
@@ -2054,7 +2054,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 2,
+			tier: 2,
 			locations: [
 				"Chuchus (Yellow)"
 			]
@@ -2069,7 +2069,7 @@ export const materials = {
 				type: 'none',
 				potency: 0
 			},
-			"tier": 3,
+			tier: 3,
 			locations: [
 				"Lizalfos (Electric)"
 			]
