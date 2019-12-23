@@ -1,7 +1,7 @@
 import React, { SFC } from 'react'
 import styled from 'styled-components'
-import { useRecipeValue } from '../components/Context'
-import { Heart } from '../components/Heart'
+import { useRecipeValue } from 'components/Context'
+import { Heart } from 'components/Heart'
 
 interface IHearts {
 	amount: number

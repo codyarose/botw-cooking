@@ -1,8 +1,8 @@
 import React from 'react'
-import { SelectedMaterials } from './SelectedMaterials'
-import { HeartsContainer } from './HeartsContainer'
-import { useRecipeValue } from '../components/Context'
-import { secToMin } from '../utils/secToMin'
+import { SelectedMaterials } from 'containers/SelectedMaterials'
+import { HeartsContainer } from 'containers/HeartsContainer'
+import { useRecipeValue } from 'components/Context'
+import { secToMin } from 'utils/secToMin'
 
 export const OutputContainer = () => {
 	const { ingredients, time, hearts, price, buff } = useRecipeValue()

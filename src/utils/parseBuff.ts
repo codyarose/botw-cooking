@@ -1,4 +1,4 @@
-import { IMaterial } from './interfaces'
+import { IMaterial } from 'utils/interfaces'
 
 export const parseBuff = (array: IMaterial[]) => {
 	// Array of buff values for current ingredients

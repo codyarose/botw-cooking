@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../components/Button'
-import { useRecipeValue } from '../components/Context'
-import { materials } from '../materials'
+import { Button } from 'components/Button'
+import { useRecipeValue } from 'components/Context'
+import { materials } from 'materials'
 
 const foods = materials.food
 
@@ -17,6 +17,7 @@ export const MaterialsContainer = () => {
 			disabled={disabled}
 			onClick={() => updateIngredients!(food.id)}
 		>
+			<img src={`../images/${food.id}.png`} alt={food.name} />
 			{food.name}
 		</Button>
 	)

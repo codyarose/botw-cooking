@@ -1,11 +1,11 @@
 import React, { useState, createContext, useContext, useEffect, ReactNode } from 'react'
-import { useLocalStorage } from '../utils/useLocalStorage'
-import { materials } from '../materials'
-import { extraTime } from '../utils/extraTime'
-import { priceCalculator } from '../utils/priceCalculator'
-import { heartsCalculator } from '../utils/heartsCalculator'
-import { parseBuff } from '../utils/parseBuff'
-import { IMaterial } from '../utils/interfaces'
+import { useLocalStorage } from 'utils/useLocalStorage'
+import { materials } from 'materials'
+import { extraTime } from 'utils/extraTime'
+import { priceCalculator } from 'utils/priceCalculator'
+import { heartsCalculator } from 'utils/heartsCalculator'
+import { parseBuff } from 'utils/parseBuff'
+import { IMaterial } from 'utils/interfaces'
 
 interface IContext {
 	ingredients: IMaterial[]
