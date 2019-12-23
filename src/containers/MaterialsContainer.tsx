@@ -4,27 +4,72 @@ import { Button } from 'components/Button'
 import { useRecipeValue } from 'components/Context'
 import { materials } from 'materials'
 
-const foods = materials.food
+// const materialsArray: IMaterials = materials
 
 export const MaterialsContainer = () => {
 	const { ingredients, updateIngredients, resetState } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
-	const listFood = foods.map(food =>
+
+	const listFood = materials.map(item =>
 		<Button
-			key={food.id}
+			key={item.id}
 			disabled={disabled}
-			onClick={() => updateIngredients!(food.id)}
+			onClick={() => updateIngredients!(item.id)}
 		>
-			<img src={require(`./images/${food.id}.png`)} alt={food.name} />
-			{food.name}
+			<img src={require(`./images/${item.id}.png`)} alt={item.name} />
+			{item.name}
 		</Button>
 	)
+	// const listPlants = materials.plants.map(item =>
+	// 	<Button
+	// 		key={item.id}
+	// 		disabled={disabled}
+	// 		onClick={() => updateIngredients!(item.id)}
+	// 	>
+	// 		<img src={require(`./images/${item.id}.png`)} alt={item.name} />
+	// 		{item.name}
+	// 	</Button>
+	// )
+	// const listCritters = materials.critters.map(item =>
+	// 	<Button
+	// 		key={item.id}
+	// 		disabled={disabled}
+	// 		onClick={() => updateIngredients!(item.id)}
+	// 	>
+	// 		<img src={require(`./images/${item.id}.png`)} alt={item.name} />
+	// 		{item.name}
+	// 	</Button>
+	// )
+	// const listMinerals = materials.minerals.map(item =>
+	// 	<Button
+	// 		key={item.id}
+	// 		disabled={disabled}
+	// 		onClick={() => updateIngredients!(item.id)}
+	// 	>
+	// 		<img src={require(`./images/${item.id}.png`)} alt={item.name} />
+	// 		{item.name}
+	// 	</Button>
+	// )
+	// const listMonsters = materials.monster.map(item =>
+	// 	<Button
+	// 		key={item.id}
+	// 		disabled={disabled}
+	// 		onClick={() => updateIngredients!(item.id)}
+	// 	>
+	// 		<img src={require(`./images/${item.id}.png`)} alt={item.name} />
+	// 		{item.name}
+	// 	</Button>
+	// )
 
 	return (
 		<StyledMaterialsContainer>
 			<Button onClick={resetState}>reset</Button>
 			{listFood}
+			{/* {listPlants}
+			{listCritters}
+			{listMinerals}
+			{listMonsters} */}
 		</StyledMaterialsContainer>
 	)
 }
