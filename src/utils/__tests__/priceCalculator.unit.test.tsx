@@ -1,7 +1,8 @@
-import { priceCalculator } from '../priceCalculator'
+import { priceCalculator } from 'utils/priceCalculator'
+import { IMaterial } from 'utils/interfaces'
 
 describe('priceCalculator', () => {
-	const mock = [
+	const mock: IMaterial[] = [
 		{
 			id: 'Material5',
 			name: "Big Hearty Radish",
@@ -57,8 +58,8 @@ describe('priceCalculator', () => {
 				hearts: 1
 			},
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Base of trees"
@@ -71,8 +72,8 @@ describe('priceCalculator', () => {
 			hearts: 0.5,
 			first: null,
 			buff: {
-				type: null,
-				potency: null
+				type: 'none',
+				potency: 0
 			},
 			locations: [
 				"Hyrule Field",

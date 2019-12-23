@@ -1,8 +1,9 @@
-import { extraTime } from '../extraTime'
+import { extraTime } from 'utils/extraTime'
+import { IMaterial } from 'utils/interfaces'
 
 describe('extraTime', () => {
 	it('Calculates correct extra time from ingredients', () => {
-		const mock = [
+		const mock: IMaterial[] = [
 			{
 				id: 'Material5',
 				name: "Big Hearty Radish",
@@ -58,8 +59,8 @@ describe('extraTime', () => {
 					hearts: 1
 				},
 				buff: {
-					type: null,
-					potency: null
+					type: 'none',
+					potency: 0
 				},
 				locations: [
 					"Base of trees"
@@ -72,8 +73,8 @@ describe('extraTime', () => {
 				hearts: 0.5,
 				first: null,
 				buff: {
-					type: null,
-					potency: null
+					type: 'none',
+					potency: 0
 				},
 				locations: [
 					"Hyrule Field",
