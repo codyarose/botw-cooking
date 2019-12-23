@@ -5,7 +5,7 @@
 - [x] buff type readout
 - [x] buff potency calculator
 - [x] heart shortening over 6
-- [ ] local storage
+- [x] local storage
 - [ ] ingredient images
 - [ ] materials button styles
 - [ ] container styles
