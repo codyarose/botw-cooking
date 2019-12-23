@@ -22,19 +22,14 @@ interface IProvider {
 	children: ReactNode
 }
 
-const findById = (obj: any, id: string) => {
-	for (const key in obj) {
-		if (!obj.hasOwnProperty(key)) continue
-		return obj[key].find((item: IMaterial) => item.id === id)
-	}
+const findById = (array: any[], id: string) => {
+	return array.find((item: IMaterial) => item.id === id)
 }
-
 
 export const RecipeContext = createContext<Partial<IContext>>({})
 
 export const RecipeProvider = ({ children }: IProvider) => {
 
-	// const [ingredients, setIngredients]: any = useState([])
 	const [ingredients, setIngredients]: any = useLocalStorage('ingredients', [])
 	const [time, setTime] = useState(0)
 	const [hearts, setHearts] = useState(0)
