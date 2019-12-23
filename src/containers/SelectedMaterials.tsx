@@ -11,6 +11,7 @@ export const SelectedMaterials = ({ selected }: any) => {
 			key={ingredient.id + index++}
 			onClick={() => removeIngredient && removeIngredient(index)}
 		>
+			<img src={require(`./images/${ingredient.id}.png`)} alt={ingredient.name} />
 			{ingredient.name}
 		</Button>
 	)
