@@ -6,7 +6,7 @@
 - [x] buff potency calculator
 - [x] heart shortening over 6
 - [x] local storage
-- [ ] ingredient images
+- [x] ingredient images
 - [ ] materials button styles
 - [ ] container styles
 - [ ] hover stats
