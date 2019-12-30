@@ -1,37 +1,48 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import styled, { createGlobalStyle } from 'styled-components'
 import { RecipeProvider } from './components/Context'
 import { MaterialsContainer } from './containers/MaterialsContainer'
 import { OutputContainer } from './containers/OutputContainer'
 
 const App: React.FC = () => {
 	return (
-		<RecipeProvider>
-			<OutputContainer />
-			<MaterialsContainer />
-		</RecipeProvider>
+		<Fragment>
+			<GlobalStyle />
+			<StyledAppContainer>
+				<RecipeProvider>
+					<OutputContainer />
+					<MaterialsContainer />
+				</RecipeProvider>
+			</StyledAppContainer>
+		</Fragment>
 	);
 }
 
 export default App;
 
-// each ingredient is additive
+const StyledAppContainer = styled.div`
+	position: relative;
+	padding: 3rem;
+	overflow: hidden;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.25)),
+			url(${require(`./background.jpg`)}) no-repeat center / cover;
+		width: 100%;
+		height: 100%;
+		filter: blur(5px);
+		transform: translate(-50%,-50%) scale(1.1);
+		z-index: -1;
+	}
+`
 
-// single state that shows the total state of the ingredients added
-//	price
-//	hearts
-//	duration
-//	extra hearts
-//	stamina
-//	extra stamina
-//	resistance
-//	cold
-//	heat
-//	electric
-//	fire
-//	buff
-//	hasty
-//	sneaky
-//	mighty
-//	tough
-//	elixir
-//	bonus
+const GlobalStyle = createGlobalStyle`
+	body {
+		margin: 0;
+		color: #fff;
+		font-family: Arial, sans-serif;
+	}
+`
