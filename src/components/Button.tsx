@@ -37,11 +37,14 @@ const StyledButton = styled.button`
 		border-radius: 4px;
 		transform: scale(1.06);
 	}
-	&:hover {
+	&:hover:not(:disabled) {
 		border-color: #fff;
 	}
 	&:focus {
 		outline: none;
+	}
+	&:disabled {
+		opacity: 0.5;
 	}
 	img {
 		width: 75%;
