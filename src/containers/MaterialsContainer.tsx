@@ -28,6 +28,8 @@ export const MaterialsContainer = () => {
 }
 
 const StyledMaterialsContainer = styled.div`
+	max-width: 64rem;
+	margin: 0 auto;
 	--auto-grid-min-size: 9rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
