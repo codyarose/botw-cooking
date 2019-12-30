@@ -24,7 +24,6 @@ export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 
 	return (
 		<StyledHeartsWrap>
-			Hearts:
 			{heartsType === 'temp' && 'Full Recovery'}
 			{heartsCount > 6 && <Heart size={1} abbr={abbrHearts} type={heartsType} />}
 			{heartsCount > 0 && repeatHearts(renderedWholeHearts, heartsType)}
