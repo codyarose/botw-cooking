@@ -33,4 +33,5 @@ const StyledMaterialsContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 	gap: 2rem;
+	padding: 1.5rem 3rem;
 `
