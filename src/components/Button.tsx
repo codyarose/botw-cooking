@@ -1,4 +1,5 @@
 import React, { SFC } from 'react'
+import styled from 'styled-components'
 
 interface IProps {
 	disabled?: boolean
@@ -7,5 +8,55 @@ interface IProps {
 }
 
 export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, id }) => (
-	<button disabled={disabled} onClick={handleClick} id={id}>{children}</button>
+	<StyledButton
+		disabled={disabled}
+		onClick={handleClick}
+		id={id}
+	>
+		<StyledButtonContent>
+			{children}
+		</StyledButtonContent>
+	</StyledButton>
 )
+
+const StyledButton = styled.button`
+	position: relative;
+	height: 0;
+	padding-top: 100%;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	border: 2px solid transparent;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -3px;
+		left: -3px;
+		width: 100%;
+		height: 100%;
+		border: 3px solid rgba(0,0,0,0.5);
+		border-radius: 4px;
+		transform: scale(1.06);
+	}
+	&:hover {
+		border-color: #fff;
+	}
+	&:focus {
+		outline: none;
+	}
+	img {
+		width: 75%;
+		padding-bottom: 0.5rem;
+	}
+`
+
+const StyledButtonContent = styled.span`
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
