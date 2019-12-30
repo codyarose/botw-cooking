@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
+import { Header } from 'components/Header'
 import { RecipeProvider } from './components/Context'
 import { MaterialsContainer } from './containers/MaterialsContainer'
 import { OutputContainer } from './containers/OutputContainer'
@@ -9,6 +10,7 @@ const App: React.FC = () => {
 		<Fragment>
 			<GlobalStyle />
 			<StyledAppContainer>
+				<Header />
 				<RecipeProvider>
 					<OutputContainer />
 					<MaterialsContainer />
@@ -22,7 +24,6 @@ export default App;
 
 const StyledAppContainer = styled.div`
 	position: relative;
-	padding: 3rem;
 	overflow: hidden;
 	&::before {
 		content: '';
@@ -43,6 +44,6 @@ const GlobalStyle = createGlobalStyle`
 	body {
 		margin: 0;
 		color: #fff;
-		font-family: Arial, sans-serif;
+		font-family: Roboto, sans-serif;
 	}
 `
