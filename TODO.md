@@ -7,8 +7,12 @@
 - [x] heart shortening over 6
 - [x] local storage
 - [x] ingredient images
-- [ ] materials button styles
-- [ ] container styles
+- [x] materials button styles
+- [x] container styles
+- [ ] buff emblems
+- [ ] potency translator for buff emblems
+- [ ] buff type emblem on material buttons
+- [ ] creature material effect handling
 - [ ] hover stats
 	- [ ] locations
 	- [ ] buff type
