@@ -5,7 +5,7 @@ import { useRecipeValue } from 'components/Context'
 import { materials } from 'materials'
 
 export const MaterialsContainer = () => {
-	const { ingredients, updateIngredients, resetState } = useRecipeValue()
+	const { ingredients, updateIngredients } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
@@ -22,7 +22,6 @@ export const MaterialsContainer = () => {
 
 	return (
 		<StyledMaterialsContainer>
-			<Button onClick={resetState}>reset</Button>
 			{listFood}
 		</StyledMaterialsContainer>
 	)

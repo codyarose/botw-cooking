@@ -5,7 +5,7 @@ import { Button } from 'components/Button'
 import { IMaterial } from 'utils/interfaces'
 
 export const SelectedMaterials = ({ selected }: any) => {
-	const { removeIngredient } = useRecipeValue()
+	const { removeIngredient, resetState } = useRecipeValue()
 
 	const listIngredients = selected.map((ingredient: IMaterial, index: number) =>
 		<Button
@@ -18,6 +18,7 @@ export const SelectedMaterials = ({ selected }: any) => {
 	)
 	return (
 		<StyledSelectedMaterials>
+			{selected.length > 0 && <Button onClick={resetState}>Reset</Button>}
 			{listIngredients}
 		</StyledSelectedMaterials>
 	)
