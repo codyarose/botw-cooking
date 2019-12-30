@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import CountUp from 'react-countup'
 
 export const PriceContainer = ({ price }: any) => {
-	console.log(price)
 	return (
 		<StyledPrice>
 			<img src={require(`../rupee.png`)} alt='Rupee Icon' />
