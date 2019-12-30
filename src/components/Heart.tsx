@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 interface IHeartContainer {
 	readonly abbr?: number
@@ -20,10 +20,22 @@ export const Heart = ({ size, abbr, type }: IHeartAndContainer) => {
 	)
 }
 
+const StyledHeartAnimation = keyframes`
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+`
+
 const StyledHeartContainer = styled.div<IHeartContainer>`
 	position: relative;
 	width: 20px;
 	margin: 0 2px;
+	animation: ${StyledHeartAnimation} .2s ease-in;
+	transform: scale(0);
+	animation-fill-mode: forwards;
 	&::before {
 		content: '${props => props.abbr && props.abbr}';
 		position: absolute;
@@ -33,7 +45,6 @@ const StyledHeartContainer = styled.div<IHeartContainer>`
 		font-family: Arial;
 		line-height: 0.5;
 		font-size: 1rem;
-		/* color: #fff; */
 	}
 `
 
