@@ -26,6 +26,7 @@ const StyledButton = styled.button`
 	color: #fff;
 	background-color: rgba(0,0,0,0.5);
 	border: 2px solid transparent;
+	transition: border-color .1s ease-out, background-color .1s ease-out;
 	&::before {
 		content: '';
 		position: absolute;
@@ -42,6 +43,9 @@ const StyledButton = styled.button`
 	}
 	&:focus {
 		outline: none;
+	}
+	&:active {
+		background-color: rgba(0,0,0,0.75);
 	}
 	&:disabled {
 		opacity: 0.5;
