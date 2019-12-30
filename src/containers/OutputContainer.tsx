@@ -4,6 +4,7 @@ import { SelectedMaterials } from 'containers/SelectedMaterials'
 import { HeartsContainer } from 'containers/HeartsContainer'
 import { useRecipeValue } from 'components/Context'
 import { secToMin } from 'utils/secToMin'
+import { PriceContainer } from 'containers/PriceContainer'
 
 export const OutputContainer = () => {
 	const { ingredients, time, hearts, price, buff } = useRecipeValue()
@@ -11,7 +12,7 @@ export const OutputContainer = () => {
 	return (
 		<StyledOutputContainer>
 			<SelectedMaterials selected={ingredients} />
-			<div>Price: {price}</div>
+			<PriceContainer price={price || 0} />
 			<HeartsContainer amount={hearts || 0} />
 			<div>Time: {time && secToMin(time)}</div>
 			<div>Buff: {buff && buff.type}</div>
