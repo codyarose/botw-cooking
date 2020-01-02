@@ -27,7 +27,7 @@ const extraTimeFromMonsterParts = (array: IMaterial[]) => {
 	const monsterParts = array.filter((item: any) => item.tier)
 	let result = 0
 	monsterParts.forEach((element: any) => {
-		const fromMonsterParts = parseMonsterParts((element || {}).tier)
+		const fromMonsterParts = parseMonsterParts(element.tier)
 		result += fromMonsterParts!
 	})
 	return result
