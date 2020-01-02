@@ -9,10 +9,10 @@
 - [x] ingredient images
 - [x] materials button styles
 - [x] container styles
+- [x] creature material effect handling
 - [ ] buff emblems
 - [ ] potency translator for buff emblems
 - [ ] buff type emblem on material buttons
-- [ ] creature material effect handling
 - [ ] hover stats
 	- [ ] locations
 	- [ ] buff type
