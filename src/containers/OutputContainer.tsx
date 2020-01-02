@@ -5,6 +5,7 @@ import { HeartsContainer } from 'containers/HeartsContainer'
 import { useRecipeValue } from 'components/Context'
 import { secToMin } from 'utils/secToMin'
 import { PriceContainer } from 'containers/PriceContainer'
+import { BuffIcon } from 'components/BuffIcon'
 
 export const OutputContainer = () => {
 	const { ingredients, time, hearts, price, buff } = useRecipeValue()
@@ -18,6 +19,10 @@ export const OutputContainer = () => {
 				<div>Time: {time && secToMin(time)}</div>
 				<div>Buff: {buff && buff.type}</div>
 				<div>Potency: {buff && buff.potency}</div>
+				{/* {buff && buff.type === 'stamina' || buff && buff.type === 'enduras' &&
+					<StaminaGauge progress={70} type={'enduras'} />
+				} */}
+				<BuffIcon />
 			</StyledOutputTextContainer>
 		</StyledOutputContainer>
 	)
