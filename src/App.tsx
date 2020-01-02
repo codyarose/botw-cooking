@@ -15,7 +15,7 @@ const App: React.FC = () => {
 					<picture>
 						<source type="image/webp" srcSet={`images/background.webp`} />
 						<source type="image/jpeg" srcSet={`images/background.jpg`} />
-						<img src={`images/background.jpg`} />
+						<img src={`images/background.jpg`} alt="" />
 					</picture>
 				</StyledAppBackground>
 				<Header />
