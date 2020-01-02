@@ -13,14 +13,16 @@ export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, 
 		onClick={handleClick}
 		id={id}
 	>
-		<StyledButtonContent>
-			{children}
-		</StyledButtonContent>
+		{children}
 	</StyledButton>
 )
 
 const StyledButton = styled.button`
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	color: #fff;
 	background-color: rgba(0,0,0,0.5);
 	border: 2px solid transparent;
@@ -50,11 +52,4 @@ const StyledButton = styled.button`
 	&:disabled {
 		opacity: 0.5;
 	}
-`
-
-const StyledButtonContent = styled.span`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 `
