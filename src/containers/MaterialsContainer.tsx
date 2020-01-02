@@ -20,7 +20,7 @@ export const MaterialsContainer = () => {
 				<source type="image/png" srcSet={`${item.id}.png`} />
 				<img src={`${item.id}.png`} alt={item.name} />
 			</picture>
-			{item.name}
+			<span className="material__name">{item.name}</span>
 		</Button>
 	)
 

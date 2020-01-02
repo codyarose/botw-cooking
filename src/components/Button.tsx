@@ -52,6 +52,9 @@ const StyledButton = styled.button`
 	&:disabled {
 		opacity: 0.5;
 	}
+	.material__name {
+		padding-bottom: .5rem;
+	}
 	& > svg {
 		color: rgba(255,255,255,.7);
 	}
