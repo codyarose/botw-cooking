@@ -6,9 +6,9 @@ export const PriceContainer = ({ price }: any) => {
 	return (
 		<StyledPrice>
 			<picture>
-				<source type="image/webp" srcSet={`rupee.webp`} />
-				<source type="image/png" srcSet={`rupee.png`} />
-				<img src={`rupee.png`} alt="Rupee Icon" />
+				<source type="image/webp" srcSet={`images/rupee.webp`} />
+				<source type="image/png" srcSet={`images/rupee.png`} />
+				<img src={`images/rupee.png`} alt="Rupee Icon" />
 			</picture>
 			<CountUp
 				end={price || 0}

@@ -13,9 +13,9 @@ export const SelectedMaterials = ({ selected }: any) => {
 			onClick={() => removeIngredient && removeIngredient(index)}
 		>
 			<picture>
-				<source type="image/webp" srcSet={`${item.id}.webp`} />
-				<source type="image/png" srcSet={`${item.id}.png`} />
-				<img src={`${item.id}.png`} alt={item.name} />
+				<source type="image/webp" srcSet={`images/${item.id}.webp`} />
+				<source type="image/png" srcSet={`images/${item.id}.png`} />
+				<img src={`images/${item.id}.png`} alt={item.name} />
 			</picture>
 			<span className="material__name">{item.name}</span>
 		</Button>

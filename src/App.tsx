@@ -32,7 +32,7 @@ const StyledAppContainer = styled.div`
 		top: 50%;
 		left: 50%;
 		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.25)),
-			url(background.jpg) no-repeat center / cover;
+			url(images/background.jpg) no-repeat center / cover;
 		width: 100%;
 		height: 100%;
 		filter: blur(5px);
