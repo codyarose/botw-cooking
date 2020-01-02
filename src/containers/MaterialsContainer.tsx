@@ -15,7 +15,7 @@ export const MaterialsContainer = () => {
 			disabled={disabled}
 			onClick={() => updateIngredients!(item.id)}
 		>
-			<img src={require(`./images/${item.id}.png`)} alt={item.name} />
+			<img src={`${item.id}.png`} alt={item.name} />
 			{item.name}
 		</Button>
 	)
