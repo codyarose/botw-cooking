@@ -4,7 +4,7 @@ import { Header } from 'components/Header'
 import { RecipeProvider } from './components/Context'
 import { MaterialsContainer } from './containers/MaterialsContainer'
 import { OutputContainer } from './containers/OutputContainer'
-import Background from './background.jpg'
+// import Background from '../background.jpg'
 
 const App: React.FC = () => {
 	return (
@@ -32,7 +32,7 @@ const StyledAppContainer = styled.div`
 		top: 50%;
 		left: 50%;
 		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.25)),
-			url(${Background}) no-repeat center / cover;
+			url(background.jpg) no-repeat center / cover;
 		width: 100%;
 		height: 100%;
 		filter: blur(5px);

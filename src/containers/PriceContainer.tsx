@@ -5,7 +5,7 @@ import CountUp from 'react-countup'
 export const PriceContainer = ({ price }: any) => {
 	return (
 		<StyledPrice>
-			<img src={require(`../rupee.png`)} alt='Rupee Icon' />
+			<img src={`rupee.png`} alt='Rupee Icon' />
 			<CountUp
 				end={price || 0}
 				redraw={true}
