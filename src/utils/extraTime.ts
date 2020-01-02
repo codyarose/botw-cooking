@@ -1,6 +1,7 @@
 import { parseBuffTime } from 'utils/parseBuffTime'
 import { findFirsts } from 'utils/findFirsts'
 import { IMaterial } from 'utils/interfaces'
+import { parseMonsterParts } from 'utils/parseMonsterParts'
 
 // Returns the extra time from ingredients that give extra time
 // on the first occurrence of the ingredient
@@ -22,9 +23,20 @@ const extraTimeFromBuff = (array: IMaterial[]) => {
 	return result
 }
 
+const extraTimeFromMonsterParts = (array: IMaterial[]) => {
+	const monsterParts = array.filter((item: any) => item.tier)
+	let result = 0
+	monsterParts.forEach((element: any) => {
+		const fromMonsterParts = parseMonsterParts((element || {}).tier)
+		result += fromMonsterParts!
+	})
+	return result
+}
+
 // Returns total extra time from all ingredients
 export const extraTime = (array: IMaterial[]) => {
 	const fromBuff = extraTimeFromBuff(array)
 	const fromFirst = extraTimeFromFirst(array)
-	return fromBuff + fromFirst
+	const fromMonsterParts = extraTimeFromMonsterParts(array)
+	return fromBuff + fromFirst + fromMonsterParts
 }
