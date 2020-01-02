@@ -4,7 +4,6 @@ import { Header } from 'components/Header'
 import { RecipeProvider } from './components/Context'
 import { MaterialsContainer } from './containers/MaterialsContainer'
 import { OutputContainer } from './containers/OutputContainer'
-// import Background from '../background.jpg'
 
 const App: React.FC = () => {
 	return (
