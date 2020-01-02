@@ -52,4 +52,7 @@ const StyledButton = styled.button`
 	&:disabled {
 		opacity: 0.5;
 	}
+	& > svg {
+		color: rgba(255,255,255,.7);
+	}
 `
