@@ -21,8 +21,6 @@ export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, 
 
 const StyledButton = styled.button`
 	position: relative;
-	height: 0;
-	padding-top: 100%;
 	color: #fff;
 	background-color: rgba(0,0,0,0.5);
 	border: 2px solid transparent;
@@ -52,19 +50,9 @@ const StyledButton = styled.button`
 	&:disabled {
 		opacity: 0.5;
 	}
-	img {
-		width: 75%;
-		padding-bottom: 0.5rem;
-	}
 `
 
 const StyledButtonContent = styled.span`
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
