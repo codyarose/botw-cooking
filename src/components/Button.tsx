@@ -27,6 +27,7 @@ const StyledButton = styled.button`
 	background-color: rgba(0,0,0,0.5);
 	border: 2px solid transparent;
 	transition: border-color .1s ease-out, background-color .1s ease-out;
+	z-index: 0;
 	&::before {
 		content: '';
 		position: absolute;
@@ -37,6 +38,7 @@ const StyledButton = styled.button`
 		border: 3px solid rgba(0,0,0,0.5);
 		border-radius: 4px;
 		transform: scale(1.06);
+		z-index: -1;
 	}
 	&:hover:not(:disabled) {
 		border-color: #fff;

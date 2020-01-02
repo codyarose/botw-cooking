@@ -33,6 +33,15 @@ const StyledSelectedMaterials = styled.div`
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 	gap: 2rem;
 	padding-bottom: 3rem;
+	@media screen and (max-width: 64rem) {
+		--auto-grid-min-size: 6rem;
+	}
+	@media screen and (max-width: 46rem) {
+		grid-gap: 1.5rem;
+	}
+	@media screen and (max-width: 28rem) {
+		--auto-grid-min-size: 4rem;
+	}
 `
 
 const StyledDefaultText = styled.div`

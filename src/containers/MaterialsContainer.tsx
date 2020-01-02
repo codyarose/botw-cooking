@@ -30,9 +30,22 @@ export const MaterialsContainer = () => {
 const StyledMaterialsContainer = styled.div`
 	max-width: 64rem;
 	margin: 0 auto;
-	--auto-grid-min-size: 9rem;
+	--auto-grid-min-size: 7rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 	gap: 2rem;
 	padding: 1.5rem 3rem;
+	@media screen and (max-width: 64rem) {
+		--auto-grid-min-size: 6rem;
+	}
+	@media screen and (max-width: 46rem) {
+		grid-gap: 1.5rem;
+	}
+	@media screen and (max-width: 37.5rem) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	@media screen and (max-width: 28rem) {
+		--auto-grid-min-size: 4rem;
+	}
 `
