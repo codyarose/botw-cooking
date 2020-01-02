@@ -11,6 +11,13 @@ const App: React.FC = () => {
 		<Fragment>
 			<GlobalStyle />
 			<StyledAppContainer>
+				<StyledAppBackground>
+					<picture>
+						<source type="image/webp" srcSet={`images/background.webp`} />
+						<source type="image/jpeg" srcSet={`images/background.jpg`} />
+						<img src={`images/background.jpg`} />
+					</picture>
+				</StyledAppBackground>
 				<Header />
 				<RecipeProvider>
 					<OutputContainer />
@@ -29,15 +36,28 @@ const StyledAppContainer = styled.div`
 	&::before {
 		content: '';
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.25)),
-			url(images/background.jpg) no-repeat center / cover;
+		top: 0;
+		left: 0;
+		background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
 		width: 100%;
 		height: 100%;
-		filter: blur(5px);
-		transform: translate(-50%,-50%) scale(1.1);
 		z-index: -1;
+	}
+`
+
+const StyledAppBackground = styled.div`
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 101%;
+	height: 101%;
+	z-index: -2;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: blur(5px);
 	}
 `
 
