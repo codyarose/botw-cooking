@@ -7,13 +7,17 @@ import { IMaterial } from 'utils/interfaces'
 export const SelectedMaterials = ({ selected }: any) => {
 	const { removeIngredient, resetState } = useRecipeValue()
 
-	const listIngredients = selected.map((ingredient: IMaterial, index: number) =>
+	const listIngredients = selected.map((item: IMaterial, index: number) =>
 		<Button
-			key={ingredient.id + index++}
+			key={item.id + index++}
 			onClick={() => removeIngredient && removeIngredient(index)}
 		>
-			<img src={`${ingredient.id}.png`} alt={ingredient.name} />
-			{ingredient.name}
+			<picture>
+				<source type="image/webp" srcSet={`${item.id}.webp`} />
+				<source type="image/png" srcSet={`${item.id}.png`} />
+				<img src={`${item.id}.png`} alt={item.name} />
+			</picture>
+			{item.name}
 		</Button>
 	)
 	return (

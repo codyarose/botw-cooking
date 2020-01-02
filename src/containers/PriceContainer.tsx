@@ -5,7 +5,11 @@ import CountUp from 'react-countup'
 export const PriceContainer = ({ price }: any) => {
 	return (
 		<StyledPrice>
-			<img src={`rupee.png`} alt='Rupee Icon' />
+			<picture>
+				<source type="image/webp" srcSet={`rupee.webp`} />
+				<source type="image/png" srcSet={`rupee.png`} />
+				<img src={`rupee.png`} alt="Rupee Icon" />
+			</picture>
 			<CountUp
 				end={price || 0}
 				redraw={true}
@@ -19,7 +23,4 @@ const StyledPrice = styled.div`
 	display: flex;
 	align-items: center;
 	font-style: italic;
-	img {
-		width: 30px;
-	}
 `
