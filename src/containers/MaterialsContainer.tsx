@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import LazyLoad from 'react-lazyload'
 import { Button } from 'components/Button'
 import { useRecipeValue } from 'components/Context'
 import { materials } from 'materials'
@@ -10,18 +11,25 @@ export const MaterialsContainer = () => {
 	const disabled = ingredients && ingredients.length === 5 && true
 
 	const listFood = materials.map(item =>
-		<Button
+		<LazyLoad
 			key={item.id}
-			disabled={disabled}
-			onClick={() => updateIngredients!(item.id)}
+			once={true}
+			height={140}
+			offset={140}
 		>
-			<picture>
-				<source type="image/webp" srcSet={`${item.id}.webp`} />
-				<source type="image/png" srcSet={`${item.id}.png`} />
-				<img src={`${item.id}.png`} alt={item.name} />
-			</picture>
-			<span className="material__name">{item.name}</span>
-		</Button>
+			<Button
+				key={item.id}
+				disabled={disabled}
+				onClick={() => updateIngredients!(item.id)}
+			>
+				<picture>
+					<source type="image/webp" srcSet={`${item.id}.webp`} />
+					<source type="image/png" srcSet={`${item.id}.png`} />
+					<img src={`${item.id}.png`} alt={item.name} />
+				</picture>
+				<span className="material__name">{item.name}</span>
+			</Button>
+		</LazyLoad>
 	)
 
 	return (
