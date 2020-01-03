@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
-import { StaminaGauge } from 'components/StaminaGauge'
+import React from 'react'
+import { StaminaGaugeRepeater } from 'utils/StaminaGaugeRepeater'
 import { ReactComponent as HastyIcon } from 'icons/hasty.svg'
 import { ReactComponent as SneakyIcon } from 'icons/sneaky.svg'
 import { ReactComponent as MightyIcon } from 'icons/mighty.svg'
@@ -15,8 +15,9 @@ interface IBuffIcon {
 }
 
 export const BuffIcon = ({ type, potency }: IBuffIcon) => {
+
 	const level = () => {
-		if (type === 'temp-hearts' || 'stamina' || 'enduras') return
+		if (['stamina', 'enduras', 'temp-hearts'].indexOf(type) > 0) return
 
 		let levelNum = null
 		switch (type) {
@@ -43,19 +44,16 @@ export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 	}
 
 	const icon = () => {
-		const staminaLevel = () => {
-
-		}
-
 		switch (type) {
+			case 'stamina':
+			case 'enduras':
+				return <StaminaGaugeRepeater progress={potency} type={type} />
 			case 'attack':
 				return <MightyIcon />
 			case 'cold resist':
 				return <SpicyIcon />
 			case 'defense':
 				return <ToughIcon />
-			case 'enduras':
-				return <StaminaGauge progress={75} type="enduras" />
 			case 'fireproof':
 				return <FireproofIcon />
 			case 'heat resist':
@@ -64,8 +62,6 @@ export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 				return <ElectroIcon />
 			case 'speed':
 				return <HastyIcon />
-			case 'stamina':
-				return <StaminaGauge progress={75} type="stamina" />
 			case 'stealth':
 				return <SneakyIcon />
 			default:
@@ -73,8 +69,8 @@ export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 		}
 	}
 	return (
-		<Fragment>
+		<>
 			{icon()} {level()}
-		</Fragment>
+		</>
 	)
 }
