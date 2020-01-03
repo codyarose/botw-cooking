@@ -17,7 +17,11 @@ interface IBuffIcon {
 export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 
 	const level = () => {
-		if (['stamina', 'enduras', 'temp-hearts'].indexOf(type) > 0) return
+		if (
+			type === 'stamina' ||
+			type === 'enduras' ||
+			type === 'temp-hearts'
+		) return
 
 		let levelNum = null
 		switch (type) {
