@@ -19,4 +19,8 @@ const StyledHeader = styled.div`
 	letter-spacing: 0.02em;
 	border-bottom: 2px solid rgba(255,255,255,.25);
 	color: rgba(255,255,255,0.8);
+	@media screen and (max-width: 37.5rem) {
+		padding: 1rem;
+		font-size: 1.5rem;
+	}
 `
