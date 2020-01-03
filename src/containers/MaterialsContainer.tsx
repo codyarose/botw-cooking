@@ -51,8 +51,8 @@ const StyledMaterialsContainer = styled.div`
 		grid-gap: 1.5rem;
 	}
 	@media screen and (max-width: 37.5rem) {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 	@media screen and (max-width: 28rem) {
 		--auto-grid-min-size: 4rem;
