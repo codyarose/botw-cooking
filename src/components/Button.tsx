@@ -58,4 +58,14 @@ const StyledButton = styled.button`
 	& > svg {
 		color: rgba(255,255,255,.7);
 	}
+	& img {
+		width: 100%;
+		height: auto;
+	}
+	& > svg,
+	& img {
+		@media screen and (max-width: 46rem) {
+			width: 75%;
+		}
+	}
 `
