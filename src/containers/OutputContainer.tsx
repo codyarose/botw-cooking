@@ -17,12 +17,7 @@ export const OutputContainer = () => {
 				<PriceContainer price={price || 0} />
 				<HeartsContainer amount={hearts || 0} />
 				<div>Time: {time && secToMin(time)}</div>
-				<div>Buff: {buff && buff.type}</div>
-				<div>Potency: {buff && buff.potency}</div>
-				{/* {buff && buff.type === 'stamina' || buff && buff.type === 'enduras' &&
-					<StaminaGauge progress={70} type={'enduras'} />
-				} */}
-				<BuffIcon />
+				{buff && <BuffIcon type={buff.type} potency={buff.potency} />}
 			</StyledOutputTextContainer>
 		</StyledOutputContainer>
 	)
