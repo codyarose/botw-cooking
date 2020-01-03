@@ -11,7 +11,7 @@
 - [x] container styles
 - [x] creature material effect handling
 - [x] buff emblems
-- [ ] potency translator for buff emblems
+- [x] potency translator for buff emblems
 - [ ] buff type emblem on material buttons
 - [ ] hover stats
 	- [ ] locations
