@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/botw-cooking/static/js/main.dacd81be.chunk.js",
+    "main.js.map": "/botw-cooking/static/js/main.dacd81be.chunk.js.map",
+    "runtime-main.js": "/botw-cooking/static/js/runtime-main.1feb0bc8.js",
+    "runtime-main.js.map": "/botw-cooking/static/js/runtime-main.1feb0bc8.js.map",
+    "static/js/2.cc765489.chunk.js": "/botw-cooking/static/js/2.cc765489.chunk.js",
+    "static/js/2.cc765489.chunk.js.map": "/botw-cooking/static/js/2.cc765489.chunk.js.map",
+    "index.html": "/botw-cooking/index.html",
+    "precache-manifest.fe870b8ed6a79134e8538cb39c962c9c.js": "/botw-cooking/precache-manifest.fe870b8ed6a79134e8538cb39c962c9c.js",
+    "service-worker.js": "/botw-cooking/service-worker.js",
+    "static/js/2.cc765489.chunk.js.LICENSE": "/botw-cooking/static/js/2.cc765489.chunk.js.LICENSE",
+    "static/media/chilly.45aeb37d.svg": "/botw-cooking/static/media/chilly.45aeb37d.svg",
+    "static/media/electro.33aedffd.svg": "/botw-cooking/static/media/electro.33aedffd.svg",
+    "static/media/fireproof.1f43d0f2.svg": "/botw-cooking/static/media/fireproof.1f43d0f2.svg",
+    "static/media/hasty.5f0938d2.svg": "/botw-cooking/static/media/hasty.5f0938d2.svg",
+    "static/media/mighty.0de86ef7.svg": "/botw-cooking/static/media/mighty.0de86ef7.svg",
+    "static/media/sneaky.5cec611c.svg": "/botw-cooking/static/media/sneaky.5cec611c.svg",
+    "static/media/spicy.3f3eb5e1.svg": "/botw-cooking/static/media/spicy.3f3eb5e1.svg",
+    "static/media/tough.52003d24.svg": "/botw-cooking/static/media/tough.52003d24.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1feb0bc8.js",
+    "static/js/2.cc765489.chunk.js",
+    "static/js/main.dacd81be.chunk.js"
+  ]
+}
