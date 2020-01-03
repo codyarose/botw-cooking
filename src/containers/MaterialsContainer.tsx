@@ -11,25 +11,24 @@ export const MaterialsContainer = () => {
 	const disabled = ingredients && ingredients.length === 5 && true
 
 	const listFood = materials.map(item =>
-		<LazyLoad
+		<Button
 			key={item.id}
-			once={true}
-			height={140}
-			offset={140}
+			disabled={disabled}
+			onClick={() => updateIngredients!(item.id)}
 		>
-			<Button
-				key={item.id}
-				disabled={disabled}
-				onClick={() => updateIngredients!(item.id)}
+			<LazyLoad
+				once={true}
+				height={100}
+				offset={100}
 			>
 				<picture>
 					<source type="image/webp" srcSet={`images/${item.id}.webp`} />
 					<source type="image/png" srcSet={`images/${item.id}.png`} />
 					<img src={`images/${item.id}.png`} alt={item.name} />
 				</picture>
-				<span className="material__name">{item.name}</span>
-			</Button>
-		</LazyLoad>
+			</LazyLoad>
+			<span className="material__name">{item.name}</span>
+		</Button>
 	)
 
 	return (
