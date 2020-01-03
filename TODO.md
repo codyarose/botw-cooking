@@ -10,7 +10,7 @@
 - [x] materials button styles
 - [x] container styles
 - [x] creature material effect handling
-- [ ] buff emblems
+- [x] buff emblems
 - [ ] potency translator for buff emblems
 - [ ] buff type emblem on material buttons
 - [ ] hover stats
@@ -22,3 +22,4 @@
 
 ### Refactor:
 - [x] calculators to use reduce
+- [ ] 'any' types
