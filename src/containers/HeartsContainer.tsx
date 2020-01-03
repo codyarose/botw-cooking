@@ -24,7 +24,7 @@ export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 
 	return (
 		<StyledHeartsWrap>
-			{heartsType === 'temp' && 'Full Recovery'}
+			{heartsType === 'temp' && 'Full Recovery '}
 			{heartsCount > 6 && <Heart size={1} abbr={abbrHearts} type={heartsType} />}
 			{heartsCount > 0 && repeatHearts(renderedWholeHearts, heartsType)}
 			{partialHeart > 0 && <Heart size={partialHeart} type={heartsType} />}
@@ -34,8 +34,3 @@ export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 const StyledHeartsWrap = styled.div`
 			display: flex;
 		`
-
-
-// 1. normal hearts
-// 2. normal hearts abbreviated
-// 3. full recovyer plus temp hearts
