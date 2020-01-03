@@ -34,8 +34,3 @@ export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 const StyledHeartsWrap = styled.div`
 			display: flex;
 		`
-
-
-// 1. normal hearts
-// 2. normal hearts abbreviated
-// 3. full recovyer plus temp hearts
