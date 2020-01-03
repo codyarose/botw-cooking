@@ -1,11 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const StaminaGauge = ({ progress, type }: any) => {
+export interface IStaminaGauge {
+	progress: number
+	type: string
+}
+
+export const StaminaGauge = ({ progress, type }: IStaminaGauge) => {
+	const normalizedProgress = (progress / 5) * 100
 	const radius = 7
 	const strokeWidth = 6
 	const circumference = radius * 2 * Math.PI
-	const strokeDashoffset = circumference - progress / 100 * circumference
+	const strokeDashoffset = circumference - normalizedProgress / 100 * circumference
 	const color = type === 'stamina' ? '#09F151' : 'yellow'
 
 	return (
