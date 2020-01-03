@@ -28,8 +28,9 @@ const StyledOutputContainer = styled.div`
 	margin: 0 auto;
 	padding: 3rem 3rem 1.5rem;
 	@media screen and (max-width: 37.5rem) {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-top: 1.5rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 `
 

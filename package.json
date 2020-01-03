@@ -1,4 +1,5 @@
 {
+  "homepage": "http://codyarose.github.io/botw-cooking",
   "name": "botw-cooking",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +25,9 @@
     "build": "react-scripts build",
     "test": "jest",
     "coverage": "jest --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +50,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
+    "gh-pages": "^2.1.1",
     "jest-styled-components": "^6.3.4",
     "ts-jest": "^24.2.0"
   }

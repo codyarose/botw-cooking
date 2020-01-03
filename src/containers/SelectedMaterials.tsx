@@ -49,6 +49,9 @@ const StyledSelectedMaterials = styled.div`
 	@media screen and (max-width: 46rem) {
 		grid-gap: 1.5rem;
 	}
+	@media screen and (max-width: 37.5rem) {
+		padding-bottom: 1.5rem;
+	}
 	@media screen and (max-width: 28rem) {
 		--auto-grid-min-size: 4rem;
 	}
