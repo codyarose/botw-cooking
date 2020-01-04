@@ -2064,5 +2064,20 @@ export const materials = [
 		locations: [
 			"Lizalfos (Electric)"
 		]
+	},
+	{
+		id: 'material135',
+		name: "Fairy",
+		price: 2,
+		hearts: 5,
+		first: null,
+		buff: {
+			type: 'none',
+			potency: 0
+		},
+		locations: [
+			"Greater Hyrule",
+			"Around Great Fairy Fountains"
+		]
 	}
 ]
