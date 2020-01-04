@@ -10,15 +10,17 @@ import { BuffIcon } from 'components/BuffIcon'
 export const OutputContainer = () => {
 	const { ingredients, time, hearts, price, buff } = useRecipeValue()
 
+	const showTime = ['stamina', 'enduras', 'temp-hearts', undefined].indexOf(buff && buff.type) < 1
+
 	return (
 		<StyledOutputContainer>
 			{<SelectedMaterials selected={ingredients} />}
-			<StyledOutputTextContainer>
+			{ingredients && ingredients.length > 0 && <StyledOutputTextContainer>
 				<PriceContainer price={price || 0} />
 				<HeartsContainer amount={hearts || 0} />
-				<div>Time: {time && secToMin(time)}</div>
+				{showTime && <div>Time: {time && secToMin(time)}</div>}
 				{buff && buff.type && <BuffIcon type={buff.type} potency={buff.potency} />}
-			</StyledOutputTextContainer>
+			</StyledOutputTextContainer>}
 		</StyledOutputContainer>
 	)
 }
