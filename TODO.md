@@ -12,13 +12,15 @@
 - [x] creature material effect handling
 - [x] buff emblems
 - [x] potency translator for buff emblems
+- [ ] buff level meter
 - [ ] buff type emblem on material buttons
 - [ ] hover stats
 	- [ ] locations
 	- [ ] buff type
 
 ### Remove:
--
+- [x] 'Time' when a timed buff isn't active
+- [x] OutputContainer when no ingredients selected
 
 ### Refactor:
 - [x] calculators to use reduce
