@@ -8,7 +8,7 @@ import { parseMonsterParts } from 'utils/parseMonsterParts'
 const extraTimeFromFirst = (array: IMaterial[]) => {
 	const uniqueArray = findFirsts(array, 'duration')
 	// Gets sum of the `first.duration` value from each ingredient
-	return uniqueArray.length && uniqueArray.reduce((acc, item: any) => acc + item.first.duration, 0)
+	return uniqueArray.length && uniqueArray.reduce((acc, item: IMaterial) => acc + item.first!.duration!, 0)
 }
 
 // Returns the extra time from ingredients that have a buff
