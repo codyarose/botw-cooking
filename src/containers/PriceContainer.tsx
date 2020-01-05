@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import CountUp from 'react-countup'
 import { ReactComponent as RupeeIcon } from 'icons/rupee.svg'
 
-export const PriceContainer = ({ price }: any) => {
+interface IPriceContainer {
+	price: number
+}
+
+export const PriceContainer = ({ price }: IPriceContainer) => {
 	return (
 		<StyledPrice>
 			<RupeeIcon />
