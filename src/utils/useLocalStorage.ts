@@ -13,7 +13,6 @@ export const useLocalStorage = (key: string, initialValue: IMaterial[]) => {
 	})
 
 	const setValue = (value: Function) => {
-		console.log(typeof setValue)
 		try {
 			const valueToStore = value instanceof Function ? value(storedValue) : value
 			setStoredValue(valueToStore)
