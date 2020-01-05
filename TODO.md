@@ -12,7 +12,7 @@
 - [x] creature material effect handling
 - [x] buff emblems
 - [x] potency translator for buff emblems
-- [ ] add hourglass emblem
+- [x] add hourglass emblem
 - [ ] buff type emblem on material buttons
 - [ ] hover stats
 	- [ ] locations
@@ -23,5 +23,5 @@
 
 ### Refactor:
 - [x] calculators to use reduce
+- [x] change 'Level' readout to duplicated buff emblem
 - [ ] 'any' types
-- [ ] change 'Level' readout to duplicated buff emblem
