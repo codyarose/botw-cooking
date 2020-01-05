@@ -5,7 +5,7 @@ import { extraTime } from 'utils/extraTime'
 import { priceCalculator } from 'utils/priceCalculator'
 import { heartsCalculator } from 'utils/heartsCalculator'
 import { parseBuff } from 'utils/parseBuff'
-import { IMaterial } from 'utils/interfaces'
+import { IMaterial, IBuff } from 'utils/interfaces'
 
 interface IContext {
 	ingredients: IMaterial[]
@@ -18,10 +18,10 @@ interface IContext {
 	removeIngredient: (index: number) => void
 }
 
-interface IBuff {
-	type: string
-	potency: number
-}
+// export interface IBuff {
+// 	type: string
+// 	potency: number
+// }
 
 interface IProvider {
 	children: ReactNode

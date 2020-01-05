@@ -4,6 +4,11 @@ interface IFirst {
 	[index: string]: any
 }
 
+export interface IBuff {
+	type: string
+	potency: number
+}
+
 export interface IMaterial {
 	id: string
 	name: string
