@@ -14,7 +14,7 @@ export const OutputContainer = () => {
 
 	return (
 		<StyledOutputContainer>
-			{<SelectedMaterials selected={ingredients} />}
+			{ingredients && <SelectedMaterials selected={ingredients} />}
 			{ingredients && ingredients.length > 0 &&
 				<StyledOutputTextContainer>
 					<PriceContainer price={price || 0} />
