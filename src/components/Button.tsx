@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 interface IProps {
 	disabled?: boolean
-	onClick?: () => any
-	id?: any
+	onClick?: () => void
+	id?: string
 }
 
 export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, id }) => (
