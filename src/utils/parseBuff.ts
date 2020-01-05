@@ -11,9 +11,8 @@ export const parseBuff = (array: IMaterial[]) => {
 	// in-game and no buff will be added
 	if (buffTypes.length > 1) return [{ type: 'none', potency: 0 }]
 	// Sum of buff potencies
-	const potency = nonesRemoved.length && nonesRemoved.reduce((acc, item: any) => acc + item.potency, 0)
 	return {
 		type: buffTypes[0],
-		potency: potency
+		potency: nonesRemoved.reduce<number>((acc, item) => acc + item!.potency, 0)
 	}
 }
