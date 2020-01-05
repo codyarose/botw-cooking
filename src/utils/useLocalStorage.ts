@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { IMaterial } from 'utils/interfaces'
 
-export const useLocalStorage = (key: string, initialValue: any) => {
+export const useLocalStorage = (key: string, initialValue: IMaterial[]) => {
 	const [storedValue, setStoredValue] = useState(() => {
 		try {
 			const item = window.localStorage.getItem(key)
@@ -11,7 +12,8 @@ export const useLocalStorage = (key: string, initialValue: any) => {
 		}
 	})
 
-	const setValue = (value: any) => {
+	const setValue = (value: Function) => {
+		console.log(typeof setValue)
 		try {
 			const valueToStore = value instanceof Function ? value(storedValue) : value
 			setStoredValue(valueToStore)
