@@ -18,11 +18,6 @@ interface IContext {
 	removeIngredient: (index: number) => void
 }
 
-// export interface IBuff {
-// 	type: string
-// 	potency: number
-// }
-
 interface IProvider {
 	children: ReactNode
 }
