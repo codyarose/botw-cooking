@@ -4,7 +4,11 @@ import { useRecipeValue } from 'components/Context'
 import { Button } from 'components/Button'
 import { IMaterial } from 'utils/interfaces'
 
-export const SelectedMaterials = ({ selected }: any) => {
+interface ISelectedMaterials {
+	selected: IMaterial[]
+}
+
+export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 	const { removeIngredient, resetState } = useRecipeValue()
 
 	const listIngredients = selected.map((item: IMaterial, index: number) =>
