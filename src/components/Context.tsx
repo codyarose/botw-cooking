@@ -35,7 +35,7 @@ export const RecipeContext = createContext<Partial<IContext>>({})
 
 export const RecipeProvider = ({ children }: IProvider) => {
 
-	const [ingredients, setIngredients]: any = useLocalStorage('ingredients', [])
+	const [ingredients, setIngredients] = useLocalStorage('ingredients', [])
 	const [time, setTime] = useState(0)
 	const [hearts, setHearts] = useState(0)
 	const [price, setPrice] = useState(0)
