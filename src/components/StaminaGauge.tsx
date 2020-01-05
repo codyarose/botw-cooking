@@ -12,7 +12,7 @@ export const StaminaGauge = ({ progress, type }: IStaminaGauge) => {
 	const strokeWidth = 6
 	const circumference = radius * 2 * Math.PI
 	const strokeDashoffset = circumference - normalizedProgress / 100 * circumference
-	const color = type === 'stamina' ? '#09F151' : 'yellow'
+	const color = type === 'stamina' ? 'var(--botw-stamina)' : 'var(--botw-yellow)'
 
 	return (
 		<StyledSVG

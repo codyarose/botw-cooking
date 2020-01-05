@@ -18,7 +18,7 @@ export const Time = ({ seconds }: ITime) => {
 const StyledTime = styled.div`
 	display: flex;
 	align-items: center;
-	color: #86dfae;
+	color: var(--botw-text-green);
 	line-height: 1.2;
 	svg {
 		width: 0.7em;

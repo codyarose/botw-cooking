@@ -61,6 +61,12 @@ const StyledAppBackground = styled.div`
 `
 
 const GlobalStyle = createGlobalStyle`
+	:root {
+		--botw-text-green: #86dfae;
+		--botw-red: #F53D3F;
+		--botw-yellow: #FEFB39;
+		--botw-stamina: #09F151;
+	}
 	body {
 		margin: 0;
 		color: #fff;

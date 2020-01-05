@@ -41,7 +41,7 @@ const StyledButton = styled.button`
 		z-index: -1;
 	}
 	&:hover:not(:disabled) {
-		border-color: #fff;
+		border-color: currentColor;
 	}
 	&:focus {
 		outline: none;
