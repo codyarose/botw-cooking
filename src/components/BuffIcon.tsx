@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { StaminaGaugeRepeater } from 'utils/StaminaGaugeRepeater'
 import { ReactComponent as HastyIcon } from 'icons/hasty.svg'
 import { ReactComponent as SneakyIcon } from 'icons/sneaky.svg'
@@ -23,58 +24,59 @@ export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 			type === 'temp-hearts'
 		) return
 
-		let levelNum = null
 		switch (type) {
 			case 'attack':
 			case 'defense':
 			case 'speed':
-				levelNum = potency >= 7 ? 3 : potency >= 5 ? 2 : 1
-				break
+				return potency >= 7 ? 3 : potency >= 5 ? 2 : 1
 			case 'cold resist':
 			case 'heat resist':
-				levelNum = potency >= 6 ? 2 : 1
-				break
+				return potency >= 6 ? 2 : 1
 			case 'fireproof':
-				levelNum = potency >= 7 ? 2 : 1
-				break
+				return potency >= 7 ? 2 : 1
 			case 'shock resist':
-				levelNum = potency >= 6 ? 3 : potency >= 4 ? 2 : 1
-				break
+				return potency >= 6 ? 3 : potency >= 4 ? 2 : 1
 			case 'stealth':
-				levelNum = potency >= 9 ? 3 : potency >= 6 ? 2 : 1
-				break
+				return potency >= 9 ? 3 : potency >= 6 ? 2 : 1
 		}
-		return `Level: ${levelNum}`
 	}
 
-	const icon = () => {
+	const icon = (i: number) => {
 		switch (type) {
 			case 'stamina':
 			case 'enduras':
-				return <StaminaGaugeRepeater progress={potency} type={type} />
+				return <StaminaGaugeRepeater key={i} progress={potency} type={type} />
 			case 'attack':
-				return <MightyIcon />
+				return <MightyIcon key={i} />
 			case 'cold resist':
-				return <SpicyIcon />
+				return <SpicyIcon key={i} />
 			case 'defense':
-				return <ToughIcon />
+				return <ToughIcon key={i} />
 			case 'fireproof':
-				return <FireproofIcon />
+				return <FireproofIcon key={i} />
 			case 'heat resist':
-				return <ChillyIcon />
+				return <ChillyIcon key={i} />
 			case 'shock resist':
-				return <ElectroIcon />
+				return <ElectroIcon key={i} />
 			case 'speed':
-				return <HastyIcon />
+				return <HastyIcon key={i} />
 			case 'stealth':
-				return <SneakyIcon />
+				return <SneakyIcon key={i} />
 			default:
 				return
 		}
 	}
+
 	return (
-		<>
-			{icon()} {level()}
-		</>
+		<StyledBuffIconContainer>
+			{[...Array(level())].map((_, i) => icon(i))}
+		</StyledBuffIconContainer>
 	)
 }
+
+const StyledBuffIconContainer = styled.div`
+	display: flex;
+	svg {
+		margin-right: 5px;
+	}
+`
