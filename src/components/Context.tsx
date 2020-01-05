@@ -12,17 +12,22 @@ interface IContext {
 	time: number
 	hearts: number
 	price: number
-	buff: any
+	buff: IBuff
 	updateIngredients: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
+}
+
+interface IBuff {
+	type: string
+	potency: number
 }
 
 interface IProvider {
 	children: ReactNode
 }
 
-const findById = (array: any[], id: string) => {
+const findById = (array: IMaterial[], id: string) => {
 	return array.find((item: IMaterial) => item.id === id)
 }
 
