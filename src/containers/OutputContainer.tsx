@@ -3,22 +3,29 @@ import styled from 'styled-components'
 import { SelectedMaterials } from 'containers/SelectedMaterials'
 import { HeartsContainer } from 'containers/HeartsContainer'
 import { useRecipeValue } from 'components/Context'
-import { secToMin } from 'utils/secToMin'
 import { PriceContainer } from 'containers/PriceContainer'
 import { BuffIcon } from 'components/BuffIcon'
+import { Time } from 'components/Time'
 
 export const OutputContainer = () => {
 	const { ingredients, time, hearts, price, buff } = useRecipeValue()
 
+	const showTime = ['stamina', 'enduras', 'temp-hearts', undefined].indexOf(buff && buff.type) < 1
+	const showBuff = buff && buff.type ? true : false
+
 	return (
 		<StyledOutputContainer>
 			{<SelectedMaterials selected={ingredients} />}
-			<StyledOutputTextContainer>
-				<PriceContainer price={price || 0} />
-				<HeartsContainer amount={hearts || 0} />
-				<div>Time: {time && secToMin(time)}</div>
-				{buff && buff.type && <BuffIcon type={buff.type} potency={buff.potency} />}
-			</StyledOutputTextContainer>
+			{ingredients && ingredients.length > 0 &&
+				<StyledOutputTextContainer>
+					<PriceContainer price={price || 0} />
+					<HeartsContainer amount={hearts || 0} />
+					<StyledBuffAndTime>
+						{showBuff && <BuffIcon type={buff.type} potency={buff.potency} />}
+						{showTime && <Time seconds={time || 0} />}
+					</StyledBuffAndTime>
+				</StyledOutputTextContainer>
+			}
 		</StyledOutputContainer>
 	)
 }
@@ -36,11 +43,18 @@ const StyledOutputContainer = styled.div`
 
 const StyledOutputTextContainer = styled.div`
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	background-color: rgba(0,0,0,0.5);
 	border: 3px solid transparent;
-	padding: .5rem;
-	line-height: 1.5;
-	z-index: 0;
+	padding: 1rem .5rem;
+	line-height: 2;
+	z-index: 1;
+	& > * {
+		margin-right: 1rem;
+	}
 	&::before {
 		content: '';
 		position: absolute;
@@ -52,5 +66,12 @@ const StyledOutputTextContainer = styled.div`
 		border: 3px solid rgba(0,0,0,0.5);
 		border-radius: 4px;
 		z-index: -1;
+	}
+`
+
+const StyledBuffAndTime = styled.div`
+	display: flex;
+	& > div:first-of-type {
+		margin-right: 1rem;
 	}
 `

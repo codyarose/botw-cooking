@@ -8,15 +8,19 @@ interface IHeartContainer {
 interface IHeart {
 	readonly size: number
 	readonly type?: string
+	suffix?: string
 }
 
 type IHeartAndContainer = IHeartContainer & IHeart
 
-export const Heart = ({ size, abbr, type }: IHeartAndContainer) => {
+export const Heart = ({ size, abbr, type, suffix }: IHeartAndContainer) => {
 	return (
-		<StyledHeartContainer abbr={abbr}>
-			<StyledHeart size={size} type={type} />
-		</StyledHeartContainer>
+		<>
+			<StyledHeartContainer abbr={abbr}>
+				<StyledHeart size={size} type={type} />
+			</StyledHeartContainer>
+			{suffix && <StyledSuffix>{suffix}</StyledSuffix>}
+		</>
 	)
 }
 
@@ -66,7 +70,7 @@ export const StyledHeart = styled.div<IHeart>`
 		width: 50%;
 		height: 100%;
 		background: ${props => props.type === 'normal' ? '#F53D3F'
-		: props.type === 'temp' && '#FDFC04'};
+		: props.type === 'temp' && '#FEFB39'};
 		border-radius: 10px 10px 0 0;
 		transform: rotate(-45deg);
 		transform-origin: 0 100%;
@@ -76,4 +80,8 @@ export const StyledHeart = styled.div<IHeart>`
 		transform: rotate(45deg);
 		transform-origin: 100% 100%;
 	}
+`
+
+const StyledSuffix = styled.span`
+	margin: 0 3px;
 `
