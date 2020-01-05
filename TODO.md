@@ -12,11 +12,10 @@
 - [x] creature material effect handling
 - [x] buff emblems
 - [x] potency translator for buff emblems
-- [ ] buff level meter
+- [ ] add hourglass emblem
 - [ ] buff type emblem on material buttons
 - [ ] hover stats
 	- [ ] locations
-	- [ ] buff type
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active
@@ -25,3 +24,4 @@
 ### Refactor:
 - [x] calculators to use reduce
 - [ ] 'any' types
+- [ ] change 'Level' readout to duplicated buff emblem
