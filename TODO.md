@@ -25,4 +25,4 @@
 ### Refactor:
 - [x] calculators to use reduce
 - [x] change 'Level' readout to duplicated buff emblem
-- [ ] 'any' types
+- [x] 'any' types
