@@ -16,6 +16,7 @@
 - [ ] buff type emblem on material buttons
 - [ ] hover stats
 	- [ ] locations
+- [ ] better README
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active
