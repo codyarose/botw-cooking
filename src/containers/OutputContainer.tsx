@@ -11,7 +11,6 @@ export const OutputContainer = () => {
 	const { ingredients, time, hearts, price, buff } = useRecipeValue()
 
 	const showTime = ['stamina', 'enduras', 'temp-hearts', undefined].indexOf(buff && buff.type) < 1
-	const showBuff = buff && buff.type ? true : false
 
 	return (
 		<StyledOutputContainer>
@@ -21,7 +20,7 @@ export const OutputContainer = () => {
 					<PriceContainer price={price || 0} />
 					<HeartsContainer amount={hearts || 0} />
 					<StyledBuffAndTime>
-						{showBuff && <BuffIcon type={buff.type} potency={buff.potency} />}
+						{buff && <BuffIcon type={buff.type} potency={buff.potency} />}
 						{showTime && <Time seconds={time || 0} />}
 					</StyledBuffAndTime>
 				</StyledOutputTextContainer>
