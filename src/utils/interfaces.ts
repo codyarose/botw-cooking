@@ -1,6 +1,7 @@
 interface IFirst {
 	duration?: number
 	hearts?: number
+	[index: string]: any
 }
 
 export interface IMaterial {
