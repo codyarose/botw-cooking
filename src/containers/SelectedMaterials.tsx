@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import Tooltip from 'react-simple-tooltip'
 import { useRecipeValue } from 'components/Context'
 import { Button } from 'components/Button'
 import { IMaterial } from 'utils/interfaces'
@@ -12,17 +13,31 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 	const { removeIngredient, resetState } = useRecipeValue()
 
 	const listIngredients = selected.map((item: IMaterial, index: number) =>
-		<Button
+		<Tooltip
 			key={item.id + index++}
-			onClick={() => removeIngredient && removeIngredient(index)}
+			content={item.locations.join(', ')}
+			placement="bottom"
+			customCss={css`
+				white-space: nowrap;
+			`}
+			background="rgba(0,0,0,0.75)"
+			fadeDuration={500}
+			fadeEasing="ease-in-out"
+			fontSize="12px"
+			padding={8}
+			radius={4}
 		>
-			<picture>
-				<source type="image/webp" srcSet={`images/${item.id}.webp`} />
-				<source type="image/png" srcSet={`images/${item.id}.png`} />
-				<img src={`images/${item.id}.png`} alt={item.name} />
-			</picture>
-			<span className="material__name">{item.name}</span>
-		</Button>
+			<Button
+				onClick={() => removeIngredient && removeIngredient(index)}
+			>
+				<picture>
+					<source type="image/webp" srcSet={`images/${item.id}.webp`} />
+					<source type="image/png" srcSet={`images/${item.id}.png`} />
+					<img src={`images/${item.id}.png`} alt={item.name} />
+				</picture>
+				<span className="material__name">{item.name}</span>
+			</Button>
+		</Tooltip>
 	)
 	return (
 		<Fragment>
