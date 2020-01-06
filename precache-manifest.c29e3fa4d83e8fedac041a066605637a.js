@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6eb706d21972a5de95acc962330e1cf8",
+    "revision": "3b309d0e2fc2a3228e08e8a1462e604b",
     "url": "/botw-cooking/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/botw-cooking/static/js/2.f15e53ea.chunk.js.LICENSE"
   },
   {
-    "revision": "84b4bc9479376977297f",
-    "url": "/botw-cooking/static/js/main.e38206c8.chunk.js"
+    "revision": "6b47015c80806dbd37fd",
+    "url": "/botw-cooking/static/js/main.10c252b2.chunk.js"
   },
   {
     "revision": "75a1acf62c49c02b13e9",
