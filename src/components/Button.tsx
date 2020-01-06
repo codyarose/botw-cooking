@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 interface IProps {
 	disabled?: boolean
-	onClick?: () => any
-	id?: any
+	onClick?: () => void
+	id?: string
 }
 
 export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, id }) => (
@@ -23,10 +23,13 @@ const StyledButton = styled.button`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	height: 100%;
 	color: #fff;
 	background-color: rgba(0,0,0,0.5);
 	border: 2px solid transparent;
 	transition: border-color .1s ease-out, background-color .1s ease-out;
+	white-space: normal;
 	z-index: 0;
 	&::before {
 		content: '';
@@ -41,7 +44,7 @@ const StyledButton = styled.button`
 		z-index: -1;
 	}
 	&:hover:not(:disabled) {
-		border-color: #fff;
+		border-color: currentColor;
 	}
 	&:focus {
 		outline: none;

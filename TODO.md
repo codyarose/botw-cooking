@@ -13,9 +13,10 @@
 - [x] buff emblems
 - [x] potency translator for buff emblems
 - [x] add hourglass emblem
+- [x] hover stats
+	- [x] locations
 - [ ] buff type emblem on material buttons
-- [ ] hover stats
-	- [ ] locations
+- [ ] better README
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active
@@ -24,4 +25,4 @@
 ### Refactor:
 - [x] calculators to use reduce
 - [x] change 'Level' readout to duplicated buff emblem
-- [ ] 'any' types
+- [x] 'any' types

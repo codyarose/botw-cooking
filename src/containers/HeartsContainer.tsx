@@ -32,7 +32,7 @@ export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 	)
 }
 const StyledHeartsWrap = styled.div`
-			display: flex;
-			align-items: center;
-			color: #86dfae;
-		`
+	display: flex;
+	align-items: center;
+	color: var(--botw-text-green);
+`

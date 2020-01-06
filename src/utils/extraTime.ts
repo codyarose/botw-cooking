@@ -8,7 +8,7 @@ import { parseMonsterParts } from 'utils/parseMonsterParts'
 const extraTimeFromFirst = (array: IMaterial[]) => {
 	const uniqueArray = findFirsts(array, 'duration')
 	// Gets sum of the `first.duration` value from each ingredient
-	return uniqueArray.length && uniqueArray.reduce((acc, item: any) => acc + item.first.duration, 0)
+	return uniqueArray.length && uniqueArray.reduce((acc, item: IMaterial) => acc + item.first!.duration!, 0)
 }
 
 // Returns the extra time from ingredients that have a buff
@@ -16,18 +16,18 @@ const extraTimeFromBuff = (array: IMaterial[]) => {
 	// Runs parseBuffTime on each ingredients `buff.type` and adds the returned
 	// value to the baseTime parameter
 	let result = 0
-	array.forEach((element: any) => {
-		const fromBuff = parseBuffTime(((element || {}).buff || {}).type)
+	array.forEach((element: IMaterial) => {
+		const fromBuff = parseBuffTime(((element || {}).buff || {}).type!)
 		result += fromBuff
 	})
 	return result
 }
 
 const extraTimeFromMonsterParts = (array: IMaterial[]) => {
-	const monsterParts = array.filter((item: any) => item.tier)
+	const monsterParts = array.filter((item: IMaterial) => item.tier)
 	let result = 0
-	monsterParts.forEach((element: any) => {
-		const fromMonsterParts = parseMonsterParts(element.tier)
+	monsterParts.forEach((element: IMaterial) => {
+		const fromMonsterParts = parseMonsterParts(element.tier!)
 		result += fromMonsterParts!
 	})
 	return result

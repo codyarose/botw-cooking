@@ -69,8 +69,8 @@ export const StyledHeart = styled.div<IHeart>`
 		top: 0;
 		width: 50%;
 		height: 100%;
-		background: ${props => props.type === 'normal' ? '#F53D3F'
-		: props.type === 'temp' && '#FEFB39'};
+		background: ${props => props.type === 'normal' ? 'var(--botw-red)'
+		: props.type === 'temp' && 'var(--botw-yellow)'};
 		border-radius: 10px 10px 0 0;
 		transform: rotate(-45deg);
 		transform-origin: 0 100%;
