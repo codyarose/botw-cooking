@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fece2ea720829047fc35c43ee2848962",
+    "revision": "6eb706d21972a5de95acc962330e1cf8",
     "url": "/botw-cooking/index.html"
   },
   {
-    "revision": "0b95455c9a3b2cafea4d",
-    "url": "/botw-cooking/static/js/2.98359da2.chunk.js"
+    "revision": "332b3482eee015bd1917",
+    "url": "/botw-cooking/static/js/2.f15e53ea.chunk.js"
   },
   {
     "revision": "fd228f9b9a68ce6b23a6cf8b0a38a0e3",
-    "url": "/botw-cooking/static/js/2.98359da2.chunk.js.LICENSE"
+    "url": "/botw-cooking/static/js/2.f15e53ea.chunk.js.LICENSE"
   },
   {
-    "revision": "da76257f041d06410ebb",
-    "url": "/botw-cooking/static/js/main.9810eb83.chunk.js"
+    "revision": "84b4bc9479376977297f",
+    "url": "/botw-cooking/static/js/main.e38206c8.chunk.js"
   },
   {
     "revision": "75a1acf62c49c02b13e9",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0de86ef791e39faf87f407f423fdbf5a",
     "url": "/botw-cooking/static/media/mighty.0de86ef7.svg"
+  },
+  {
+    "revision": "2dd7730bc8dd3c7660526f1e12bc609e",
+    "url": "/botw-cooking/static/media/rupee.2dd7730b.svg"
   },
   {
     "revision": "5cec611cf99137f8c1e004245d04e8d7",
