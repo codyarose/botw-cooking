@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> An app for the Breath of the Wild cooking system. Add ingredients to see the stats of the resulting dish if they were cooked
+> An app for the Breath of the Wild cooking system built with React and Typescript. Add ingredients to see the stats of the resulting dish if they were cooked.
 
 ### ✨ [DEMO](http://codyrose.co/botw-cooking)
 
