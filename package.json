@@ -1,8 +1,15 @@
 {
   "homepage": "http://codyarose.github.io/botw-cooking",
   "name": "botw-cooking",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.2.0",
+  "description": "An app for the Breath of the Wild cooking system",
+  "author": "Cody Rose",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codyarose/botw-cooking.git"
+  },
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.14",
