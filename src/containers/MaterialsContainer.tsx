@@ -37,6 +37,7 @@ export const MaterialsContainer = () => {
 			<Button
 				disabled={disabled}
 				onClick={() => updateIngredients!(item.id)}
+				buff={item.buff.type}
 			>
 				<LazyLoad
 					once={true}

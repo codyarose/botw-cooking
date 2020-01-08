@@ -15,8 +15,9 @@
 - [x] add hourglass emblem
 - [x] hover stats
 	- [x] locations
-- [ ] buff type emblem on material buttons
-- [ ] better README
+- [x] better README
+- [x] buff type emblem on material buttons
+- [ ] more tests
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active

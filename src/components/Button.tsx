@@ -1,18 +1,21 @@
 import React, { SFC } from 'react'
 import styled from 'styled-components'
+import { BuffIcon } from 'components/BuffIcon'
 
 interface IProps {
 	disabled?: boolean
 	onClick?: () => void
 	id?: string
+	buff?: string
 }
 
-export const Button: SFC<IProps> = ({ children, disabled, onClick: handleClick, id }) => (
+export const Button: SFC<IProps> = ({ children, disabled, buff, onClick: handleClick, id }) => (
 	<StyledButton
 		disabled={disabled}
 		onClick={handleClick}
 		id={id}
 	>
+		{buff && <StyledBuffIconWrap><BuffIcon type={buff} emblem={true} /></StyledBuffIconWrap>}
 		{children}
 	</StyledButton>
 )
@@ -56,6 +59,7 @@ const StyledButton = styled.button`
 		opacity: 0.5;
 	}
 	.material__name {
+		color: #fff;
 		padding-bottom: .5rem;
 	}
 	& > svg {
@@ -70,5 +74,16 @@ const StyledButton = styled.button`
 		@media screen and (max-width: 46rem) {
 			width: 75%;
 		}
+	}
+`
+
+const StyledBuffIconWrap = styled.span`
+	position: absolute;
+	top: 5px;
+	right: 0;
+	opacity: .5;
+	color: red;
+	svg {
+		width: 15px;
 	}
 `
