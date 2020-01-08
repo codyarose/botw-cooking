@@ -9,13 +9,16 @@ import { ReactComponent as FireproofIcon } from 'icons/fireproof.svg'
 import { ReactComponent as SpicyIcon } from 'icons/spicy.svg'
 import { ReactComponent as ChillyIcon } from 'icons/chilly.svg'
 import { ReactComponent as ElectroIcon } from 'icons/electro.svg'
+import { ReactComponent as StaminaIcon } from 'icons/stamina.svg'
+import { ReactComponent as HeartIcon } from 'icons/heart.svg'
 
-interface IBuffIcon {
-	type: string
-	potency: number
+export interface IBuffIcon {
+	type?: string
+	potency?: number
+	emblem?: boolean
 }
 
-export const BuffIcon = ({ type, potency }: IBuffIcon) => {
+export const BuffIcon = ({ type, potency, emblem }: IBuffIcon) => {
 
 	const level = () => {
 		if (
@@ -28,24 +31,26 @@ export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 			case 'attack':
 			case 'defense':
 			case 'speed':
-				return potency >= 7 ? 3 : potency >= 5 ? 2 : 1
+				return potency! >= 7 ? 3 : potency! >= 5 ? 2 : 1
 			case 'cold resist':
 			case 'heat resist':
-				return potency >= 6 ? 2 : 1
+				return potency! >= 6 ? 2 : 1
 			case 'fireproof':
-				return potency >= 7 ? 2 : 1
+				return potency! >= 7 ? 2 : 1
 			case 'shock resist':
-				return potency >= 6 ? 3 : potency >= 4 ? 2 : 1
+				return potency! >= 6 ? 3 : potency! >= 4 ? 2 : 1
 			case 'stealth':
-				return potency >= 9 ? 3 : potency >= 6 ? 2 : 1
+				return potency! >= 9 ? 3 : potency! >= 6 ? 2 : 1
 		}
 	}
 
-	const icon = (i: number) => {
+	const icon = (i?: number) => {
 		switch (type) {
 			case 'stamina':
 			case 'enduras':
-				return <StaminaGaugeRepeater key={i} progress={potency} type={type} />
+				return emblem ?
+					<StaminaIcon color={type === 'stamina' ? 'var(--botw-stamina)' : 'var(--botw-yellow)'} key={i} />
+					: <StaminaGaugeRepeater key={i} progress={potency! | 0} type={type} />
 			case 'attack':
 				return <MightyIcon key={i} />
 			case 'cold resist':
@@ -63,7 +68,7 @@ export const BuffIcon = ({ type, potency }: IBuffIcon) => {
 			case 'stealth':
 				return <SneakyIcon key={i} />
 			default:
-				return
+				return emblem && type === 'temp-hearts' && <HeartIcon key={i} color="var(--botw-yellow)" />
 		}
 	}
 
