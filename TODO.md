@@ -18,6 +18,11 @@
 - [x] better README
 - [x] buff type emblem on material buttons
 - [ ] more tests
+- [ ] filtering
+	- [ ] text input to filter name
+	- [ ] radio/checkbox to filter type
+- [ ] react native
+	- [ ] - swipe between categories
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active
