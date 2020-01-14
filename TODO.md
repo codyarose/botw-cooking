@@ -23,6 +23,7 @@
 	- [ ] radio/checkbox to filter type
 - [ ] react native
 	- [ ] - swipe between categories
+- [ ] create reusable fade in lazyload component
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active
@@ -32,3 +33,4 @@
 - [x] calculators to use reduce
 - [x] change 'Level' readout to duplicated buff emblem
 - [x] 'any' types
+- [ ] consider changing unused/null values in materials.ts to []/{}
