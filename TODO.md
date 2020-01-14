@@ -34,4 +34,4 @@
 - [x] calculators to use reduce
 - [x] change 'Level' readout to duplicated buff emblem
 - [x] 'any' types
-- [ ] consider changing unused/null values in materials.ts to []/{}
+- [x] consider changing unused/null values in materials.ts to []/{}
