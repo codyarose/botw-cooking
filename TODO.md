@@ -19,6 +19,7 @@
 - [x] buff type emblem on material buttons
 - [ ] more tests
 - [ ] filtering
+	- [ ] tags
 	- [ ] text input to filter name
 	- [ ] radio/checkbox to filter type
 - [ ] react native
