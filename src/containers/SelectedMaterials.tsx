@@ -29,7 +29,7 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 		>
 			<Button
 				onClick={() => removeIngredient && removeIngredient(index)}
-				buff={item.buff!.type}
+				buff={item.buff && item.buff.type}
 			>
 				<picture>
 					<source type="image/webp" srcSet={`images/${item.id}.webp`} />
