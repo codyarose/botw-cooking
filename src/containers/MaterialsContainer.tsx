@@ -30,7 +30,7 @@ export const MaterialsContainer = () => {
 			padding={8}
 			radius={4}
 		>
-			<FadeIn height={120}>
+			<FadeIn height={120} duration={200} easing={'ease-in-out'}>
 				{onLoad => (
 					<Button
 						disabled={disabled}
