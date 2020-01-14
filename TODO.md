@@ -17,6 +17,7 @@
 	- [x] locations
 - [x] better README
 - [x] buff type emblem on material buttons
+- [x] create reusable fade in lazyload component
 - [ ] more tests
 - [ ] filtering
 	- [ ] tags
@@ -24,7 +25,6 @@
 	- [ ] radio/checkbox to filter type
 - [ ] react native
 	- [ ] - swipe between categories
-- [ ] create reusable fade in lazyload component
 
 ### Remove:
 - [x] 'Time' when a timed buff isn't active
