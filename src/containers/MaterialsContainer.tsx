@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import LazyLoad from 'react-lazyload'
+import { FadeIn } from 'components/FadeIn'
 import Tooltip from 'react-simple-tooltip'
 import { Button } from 'components/Button'
 import { useRecipeValue } from 'components/Context'
@@ -34,24 +34,22 @@ export const MaterialsContainer = () => {
 			padding={8}
 			radius={4}
 		>
-			<Button
-				disabled={disabled}
-				onClick={() => updateIngredients!(item.id)}
-				buff={item.buff.type}
-			>
-				<LazyLoad
-					once={true}
-					offset={100}
-					placeholder={<div style={placeholderStyle} />}
-				>
-					<picture>
-						<source type="image/webp" srcSet={`images/${item.id}.webp`} />
-						<source type="image/png" srcSet={`images/${item.id}.png`} />
-						<img src={`images/${item.id}.png`} alt={item.name} />
-					</picture>
-				</LazyLoad>
-				<span className="material__name">{item.name}</span>
-			</Button >
+			<FadeIn height={120}>
+				{onLoad => (
+					<Button
+						disabled={disabled}
+						onClick={() => updateIngredients!(item.id)}
+						buff={item.buff.type}
+					>
+						<picture onLoad={onLoad}>
+							<source type="image/webp" srcSet={`images/${item.id}.webp`} />
+							<source type="image/png" srcSet={`images/${item.id}.png`} />
+							<img src={`images/${item.id}.png`} alt={item.name} />
+						</picture>
+						<span className="material__name">{item.name}</span>
+					</Button >
+				)}
+			</FadeIn>
 		</Tooltip >
 	)
 
