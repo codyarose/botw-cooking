@@ -15,10 +15,6 @@ export const MaterialsContainer = () => {
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
-	const placeholderStyle = {
-		height: '100px'
-	};
-
 	const listFood = materials.map(item =>
 		<Tooltip
 			key={item.id}
