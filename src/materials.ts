@@ -8,10 +8,7 @@ export const materials = [
 			duration: 20,
 			hearts: 0.25
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Base of trees"
 		]
@@ -22,10 +19,7 @@ export const materials = [
 		price: 3,
 		hearts: 0.5,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Hyrule Field",
 			"East Necluda"
@@ -99,10 +93,7 @@ export const materials = [
 		first: {
 			duration: 60
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Nests in trees and cliffs"
 		]
@@ -131,10 +122,7 @@ export const materials = [
 			duration: 10,
 			hearts: 0.25
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Dropped by sparrows"
 		]
@@ -222,10 +210,7 @@ export const materials = [
 		first: {
 			duration: 50
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"East Wind store in Hateno Village",
 			"Merchant Yammo at Tabantha Bridge Stable",
@@ -240,10 +225,7 @@ export const materials = [
 		first: {
 			duration: 50
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"High Spirits Produce store in Kakariko Village",
 			"The Slippery Falcon store in Rito Village",
@@ -258,10 +240,7 @@ export const materials = [
 		first: {
 			duration: 60
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Goron Gusto Shop in Goron City",
 			"Merchant Yammo at Tabantha Bridge Stable"
@@ -379,10 +358,7 @@ export const materials = [
 		price: 3,
 		hearts: 0.5,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Hyrule Field",
 			"West Necluda"
@@ -394,10 +370,7 @@ export const materials = [
 		price: 6,
 		hearts: 1,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Hyrule Field",
 			"West Necluda"
@@ -498,10 +471,7 @@ export const materials = [
 		price: 4,
 		hearts: 1,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"East Necluda",
 			"Gerudo Desert"
@@ -513,10 +483,7 @@ export const materials = [
 		price: 8,
 		hearts: 1,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Wood Pigeon",
 			"Mountain Crow",
@@ -532,10 +499,7 @@ export const materials = [
 		price: 15,
 		hearts: 1.5,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Rainbow Pigeon",
 			"Hotfeather Pigeon",
@@ -550,10 +514,7 @@ export const materials = [
 		price: 35,
 		hearts: 3,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Water Buffalo",
 			"Snowcoat Fox",
@@ -566,10 +527,7 @@ export const materials = [
 		price: 8,
 		hearts: 1,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Woodland Boar",
 			"Mountain Goat"
@@ -581,10 +539,7 @@ export const materials = [
 		price: 15,
 		hearts: 1.5,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Red-Tusked Boar",
 			"Mountain Buck",
@@ -598,10 +553,7 @@ export const materials = [
 		price: 35,
 		hearts: 3,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"White Pigeon",
 			"Eldin Ostrich"
@@ -645,10 +597,7 @@ export const materials = [
 		first: {
 			duration: 30
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore Deposits",
 			"Marot Mart in Zora's Domain",
@@ -676,10 +625,7 @@ export const materials = [
 		price: 20,
 		hearts: 1,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"West Necluda"
 		]
@@ -841,10 +787,7 @@ export const materials = [
 		price: 3,
 		hearts: 0.5,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Gerudo Highlands",
 			"Hebra Mountains"
@@ -903,10 +846,7 @@ export const materials = [
 		first: {
 			duration: 50
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Goron Gusto Shop in Goron City",
 			"The Slippery Falcon store in Rito Village",
@@ -983,10 +923,7 @@ export const materials = [
 		first: {
 			duration: 30
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Cut tall grass in Necluda",
 			"East Wind store in Hateno Village",
@@ -1000,10 +937,7 @@ export const materials = [
 		price: 3,
 		hearts: 1,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Hyrule Field",
 			"Akkala Highlands"
@@ -1078,10 +1012,7 @@ export const materials = [
 		first: {
 			duration: 30
 		},
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Cut tall grass in Tabantha Fields",
 			"The Slippery Falcon store in Rito Village",
@@ -1379,10 +1310,7 @@ export const materials = [
 		price: 30,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus",
@@ -1395,10 +1323,7 @@ export const materials = [
 		price: 500,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus"
@@ -1410,10 +1335,7 @@ export const materials = [
 		price: 5,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus",
@@ -1426,10 +1348,7 @@ export const materials = [
 		price: 70,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Luminous ore deposits",
 			"Stone Talus (Luminous)"
@@ -1441,10 +1360,7 @@ export const materials = [
 		price: 60,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus"
@@ -1456,10 +1372,7 @@ export const materials = [
 		price: 210,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus (Rare, Igneo)"
@@ -1471,10 +1384,7 @@ export const materials = [
 		price: 260,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus (Rare, Frost)"
@@ -1486,10 +1396,7 @@ export const materials = [
 		price: 180,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Ore deposits",
 			"Stone Talus (Rare, Igneo, Frost)"
@@ -1501,10 +1408,7 @@ export const materials = [
 		price: 80,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Guardian Stalker, Skywatcher, Turret, Sentry, and Scouts III & IV"
@@ -1516,10 +1420,7 @@ export const materials = [
 		price: 30,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"All Guardian types except Scout I"
@@ -1531,10 +1432,7 @@ export const materials = [
 		price: 12,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"All Guardian types"
@@ -1546,10 +1444,7 @@ export const materials = [
 		price: 40,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"All Guardian types except Scout I"
@@ -1561,10 +1456,7 @@ export const materials = [
 		price: 15,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"All Guardian types"
@@ -1576,10 +1468,7 @@ export const materials = [
 		price: 8,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Bokoblins"
@@ -1591,10 +1480,7 @@ export const materials = [
 		price: 20,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Bokoblins (Blue or stronger)"
@@ -1606,10 +1492,7 @@ export const materials = [
 		price: 3,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Bokoblins"
@@ -1621,10 +1504,7 @@ export const materials = [
 		price: 5,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Chuchus (Blue)"
@@ -1636,10 +1516,7 @@ export const materials = [
 		price: 6,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Keese (Electric)"
@@ -1651,10 +1528,7 @@ export const materials = [
 		price: 6,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Keese (Fire)"
@@ -1666,10 +1540,7 @@ export const materials = [
 		price: 200,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Guardian Stalker, Skywatcher, and Turret"
@@ -1681,10 +1552,7 @@ export const materials = [
 		price: 80,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Hinox"
@@ -1696,10 +1564,7 @@ export const materials = [
 		price: 20,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Hinox"
@@ -1711,10 +1576,7 @@ export const materials = [
 		price: 35,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Hinox"
@@ -1726,10 +1588,7 @@ export const materials = [
 		price: 6,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Keese (Ice)"
@@ -1741,10 +1600,7 @@ export const materials = [
 		price: 35,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Lizalfos (Ice-Breath)"
@@ -1756,10 +1612,7 @@ export const materials = [
 		price: 20,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Keese"
@@ -1771,10 +1624,7 @@ export const materials = [
 		price: 2,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Keese (Normal)"
@@ -1786,10 +1636,7 @@ export const materials = [
 		price: 10,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Lizalfos"
@@ -1801,10 +1648,7 @@ export const materials = [
 		price: 28,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Lizalfos (Normal)"
@@ -1816,10 +1660,7 @@ export const materials = [
 		price: 15,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Lizalfos"
@@ -1831,10 +1672,7 @@ export const materials = [
 		price: 200,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Lynels"
@@ -1846,10 +1684,7 @@ export const materials = [
 		price: 50,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Lynels"
@@ -1861,10 +1696,7 @@ export const materials = [
 		price: 40,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Lynels"
@@ -1876,10 +1708,7 @@ export const materials = [
 		price: 12,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Moblins"
@@ -1891,10 +1720,7 @@ export const materials = [
 		price: 25,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Moblins (Blue or stronger)"
@@ -1906,10 +1732,7 @@ export const materials = [
 		price: 5,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Moblins"
@@ -1921,10 +1744,7 @@ export const materials = [
 		price: 30,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Molduga"
@@ -1936,10 +1756,7 @@ export const materials = [
 		price: 110,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Molduga"
@@ -1951,10 +1768,7 @@ export const materials = [
 		price: 5,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Octoroks"
@@ -1966,10 +1780,7 @@ export const materials = [
 		price: 25,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Octoroks"
@@ -1981,10 +1792,7 @@ export const materials = [
 		price: 10,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 1,
 		locations: [
 			"Octoroks"
@@ -1996,10 +1804,7 @@ export const materials = [
 		price: 10,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Chuchus (Red)"
@@ -2011,10 +1816,7 @@ export const materials = [
 		price: 35,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Lizalfos (Fire-Breath)"
@@ -2026,10 +1828,7 @@ export const materials = [
 		price: 10,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Chuchus (White)"
@@ -2041,10 +1840,7 @@ export const materials = [
 		price: 10,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 2,
 		locations: [
 			"Chuchus (Yellow)"
@@ -2056,10 +1852,7 @@ export const materials = [
 		price: 35,
 		hearts: 0,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		tier: 3,
 		locations: [
 			"Lizalfos (Electric)"
@@ -2071,10 +1864,7 @@ export const materials = [
 		price: 2,
 		hearts: 5,
 		first: null,
-		buff: {
-			type: 'none',
-			potency: 0
-		},
+		buff: {},
 		locations: [
 			"Greater Hyrule",
 			"Around Great Fairy Fountains"
