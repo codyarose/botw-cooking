@@ -35,3 +35,6 @@
 - [x] change 'Level' readout to duplicated buff emblem
 - [x] 'any' types
 - [x] consider changing unused/null values in materials.ts to []/{}
+- [ ] tooltips that are too wide
+- [ ] materials order to match game
+	- [ ] image file names to material name
