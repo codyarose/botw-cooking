@@ -18,7 +18,7 @@ export const materials = [
 		name: "Apple",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Hyrule Field",
@@ -30,7 +30,7 @@ export const materials = [
 		name: "Armored Carp",
 		price: 10,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 2
@@ -45,7 +45,7 @@ export const materials = [
 		name: "Armored Porgy",
 		price: 10,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 3
@@ -60,7 +60,7 @@ export const materials = [
 		name: "Big Hearty Radish",
 		price: 15,
 		hearts: 4,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 5
@@ -75,7 +75,7 @@ export const materials = [
 		name: "Big Hearty Truffle",
 		price: 15,
 		hearts: 3,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 4
@@ -103,7 +103,7 @@ export const materials = [
 		name: "Bright-Eyed Crab",
 		price: 10,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "stamina",
 			potency: 2
@@ -132,7 +132,7 @@ export const materials = [
 		name: "Chillfin Trout",
 		price: 6,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "heat resist",
 			potency: 2
@@ -147,7 +147,7 @@ export const materials = [
 		name: "Chillshroom",
 		price: 4,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "heat resist",
 			potency: 2
@@ -162,7 +162,7 @@ export const materials = [
 		name: "Courser Bee Honey",
 		price: 10,
 		hearts: 2,
-		first: null,
+		first: {},
 		buff: {
 			type: "stamina",
 			potency: 2
@@ -177,7 +177,7 @@ export const materials = [
 		name: "Endura Shroom",
 		price: 6,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "enduras",
 			potency: 1
@@ -192,7 +192,7 @@ export const materials = [
 		name: "Fleet-Lotus Seeds",
 		price: 5,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 2
@@ -251,7 +251,7 @@ export const materials = [
 		name: "Hearty Bass",
 		price: 18,
 		hearts: 2,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 2
@@ -266,7 +266,7 @@ export const materials = [
 		name: "Hearty Blueshell Snail",
 		price: 15,
 		hearts: 3,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 3
@@ -281,7 +281,7 @@ export const materials = [
 		name: "Hearty Durian",
 		price: 15,
 		hearts: 3,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 4
@@ -296,7 +296,7 @@ export const materials = [
 		name: "Hearty Radish",
 		price: 8,
 		hearts: 2.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 3
@@ -312,7 +312,7 @@ export const materials = [
 		name: "Hearty Salmon",
 		price: 10,
 		hearts: 4,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 4
@@ -327,7 +327,7 @@ export const materials = [
 		name: "Hearty Truffle",
 		price: 6,
 		hearts: 2,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 1
@@ -342,7 +342,7 @@ export const materials = [
 		name: "Hydromelon",
 		price: 4,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "heat resist",
 			potency: 1
@@ -357,7 +357,7 @@ export const materials = [
 		name: "Hylian Shroom",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Hyrule Field",
@@ -369,7 +369,7 @@ export const materials = [
 		name: "Hyrule Bass",
 		price: 6,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Hyrule Field",
@@ -381,7 +381,7 @@ export const materials = [
 		name: "Ironshell Crab",
 		price: 8,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 2
@@ -396,7 +396,7 @@ export const materials = [
 		name: "Ironshroom",
 		price: 5,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 2
@@ -411,7 +411,7 @@ export const materials = [
 		name: "Mighty Bananas",
 		price: 5,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "attack",
 			potency: 2
@@ -426,7 +426,7 @@ export const materials = [
 		name: "Mighty Carp",
 		price: 10,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "attack",
 			potency: 2
@@ -441,7 +441,7 @@ export const materials = [
 		name: "Mighty Porgy",
 		price: 10,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "attack",
 			potency: 3
@@ -456,7 +456,7 @@ export const materials = [
 		name: "Monster Extract",
 		price: 3,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "random",
 			potency: 0
@@ -470,7 +470,7 @@ export const materials = [
 		name: "Palm Fruit",
 		price: 4,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"East Necluda",
@@ -482,7 +482,7 @@ export const materials = [
 		name: "Raw Bird Drumstick",
 		price: 8,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Wood Pigeon",
@@ -498,7 +498,7 @@ export const materials = [
 		name: "Raw Bird Thigh",
 		price: 15,
 		hearts: 1.5,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Rainbow Pigeon",
@@ -513,7 +513,7 @@ export const materials = [
 		name: "Raw Gourmet Meat",
 		price: 35,
 		hearts: 3,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Water Buffalo",
@@ -526,7 +526,7 @@ export const materials = [
 		name: "Raw Meat",
 		price: 8,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Woodland Boar",
@@ -538,7 +538,7 @@ export const materials = [
 		name: "Raw Prime Meat",
 		price: 15,
 		hearts: 1.5,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Red-Tusked Boar",
@@ -552,7 +552,7 @@ export const materials = [
 		name: "Raw Whole Bird",
 		price: 35,
 		hearts: 3,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"White Pigeon",
@@ -564,7 +564,7 @@ export const materials = [
 		name: "Razorclaw Crab",
 		price: 8,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "attack",
 			potency: 2
@@ -579,7 +579,7 @@ export const materials = [
 		name: "Razorshroom",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 1
@@ -609,7 +609,7 @@ export const materials = [
 		name: "Rushroom",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 1
@@ -624,7 +624,7 @@ export const materials = [
 		name: "Sanke Carp",
 		price: 20,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"West Necluda"
@@ -635,7 +635,7 @@ export const materials = [
 		name: "Silent Shroom",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "stealth",
 			potency: 2
@@ -650,7 +650,7 @@ export const materials = [
 		name: "Sizzlefin Trout",
 		price: 6,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "cold resist",
 			potency: 2
@@ -665,7 +665,7 @@ export const materials = [
 		name: "Sneaky River Snail",
 		price: 6,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "stealth",
 			potency: 1
@@ -680,7 +680,7 @@ export const materials = [
 		name: "Spicy Pepper",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "cold resist",
 			potency: 1
@@ -695,7 +695,7 @@ export const materials = [
 		name: "Stamella Shroom",
 		price: 5,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "stamina",
 			potency: 1
@@ -710,7 +710,7 @@ export const materials = [
 		name: "Staminoka Bass",
 		price: 18,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "stamina",
 			potency: 4
@@ -725,7 +725,7 @@ export const materials = [
 		name: "Stealthfin Trout",
 		price: 10,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "stealth",
 			potency: 2
@@ -740,7 +740,7 @@ export const materials = [
 		name: "Sunshroom",
 		price: 4,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "cold resist",
 			potency: 2
@@ -755,7 +755,7 @@ export const materials = [
 		name: "Voltfin Trout",
 		price: 6,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {
 			type: "shock resist",
 			potency: 2
@@ -771,7 +771,7 @@ export const materials = [
 		name: "Voltfruit",
 		price: 4,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "shock resist",
 			potency: 1
@@ -786,7 +786,7 @@ export const materials = [
 		name: "Wildberry",
 		price: 3,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Gerudo Highlands",
@@ -798,7 +798,7 @@ export const materials = [
 		name: "Zapshroom",
 		price: 4,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "shock resist",
 			potency: 2
@@ -813,7 +813,7 @@ export const materials = [
 		name: "Armoranth",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 1
@@ -828,7 +828,7 @@ export const materials = [
 		name: "Blue Nightshade",
 		price: 4,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "stealth",
 			potency: 1
@@ -859,7 +859,7 @@ export const materials = [
 		name: "Cool Safflina",
 		price: 3,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "heat resist",
 			potency: 1
@@ -876,7 +876,7 @@ export const materials = [
 		name: "Electric Safflina",
 		price: 3,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "shock resist",
 			potency: 1
@@ -891,7 +891,7 @@ export const materials = [
 		name: "Endura Carrot",
 		price: 30,
 		hearts: 2,
-		first: null,
+		first: {},
 		buff: {
 			type: "enduras",
 			potency: 4
@@ -906,7 +906,7 @@ export const materials = [
 		name: "Fortified Pumpkin",
 		price: 5,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 2
@@ -936,7 +936,7 @@ export const materials = [
 		name: "Hyrule Herb",
 		price: 3,
 		hearts: 1,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Hyrule Field",
@@ -948,7 +948,7 @@ export const materials = [
 		name: "Mighty Thistle",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "attack",
 			potency: 1
@@ -963,7 +963,7 @@ export const materials = [
 		name: "Silent Princess",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "stealth",
 			potency: 3
@@ -978,7 +978,7 @@ export const materials = [
 		name: "Swift Carrot",
 		price: 4,
 		hearts: 0.5,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 1
@@ -993,7 +993,7 @@ export const materials = [
 		name: "Swift Violet",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 2
@@ -1024,7 +1024,7 @@ export const materials = [
 		name: "Warm Safflina",
 		price: 3,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "cold resist",
 			potency: 1
@@ -1039,7 +1039,7 @@ export const materials = [
 		name: "Bladed Rhino Beetle",
 		price: 4,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "attack",
 			potency: 1
@@ -1054,7 +1054,7 @@ export const materials = [
 		name: "Cold Darner",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "heat resist",
 			potency: 2
@@ -1071,7 +1071,7 @@ export const materials = [
 		name: "Electric Darner",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "shock resist",
 			potency: 2
@@ -1087,7 +1087,7 @@ export const materials = [
 		name: "Energetic Rhino Beetle",
 		price: 30,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "stamina",
 			potency: 6
@@ -1102,7 +1102,7 @@ export const materials = [
 		name: "Fireproof Lizard",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "fireproof",
 			potency: 1
@@ -1117,7 +1117,7 @@ export const materials = [
 		name: "Hearty Lizard",
 		price: 20,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "temp-hearts",
 			potency: 4
@@ -1133,7 +1133,7 @@ export const materials = [
 		name: "Hightail Lizard",
 		price: 20,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 1
@@ -1149,7 +1149,7 @@ export const materials = [
 		name: "Hot-Footed Frog",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "speed",
 			potency: 2
@@ -1165,7 +1165,7 @@ export const materials = [
 		name: "Restless Cricket",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "stamina",
 			potency: 1
@@ -1182,7 +1182,7 @@ export const materials = [
 		name: "Rugged Rhino Beetle",
 		price: 4,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "defense",
 			potency: 1
@@ -1197,7 +1197,7 @@ export const materials = [
 		name: "Smotherwing Butterfly",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "fireproof",
 			potency: 2
@@ -1213,7 +1213,7 @@ export const materials = [
 		name: "Summerwing Butterfly",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "cold resist",
 			potency: 1
@@ -1229,7 +1229,7 @@ export const materials = [
 		name: "Sunset Firefly",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "stealth",
 			potency: 1
@@ -1245,7 +1245,7 @@ export const materials = [
 		name: "Thunderwing Butterfly",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "shock resist",
 			potency: 1
@@ -1261,7 +1261,7 @@ export const materials = [
 		name: "Tireless Frog",
 		price: 20,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "enduras",
 			potency: 2
@@ -1277,7 +1277,7 @@ export const materials = [
 		name: "Warm Darner",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "cold resist",
 			potency: 2
@@ -1293,7 +1293,7 @@ export const materials = [
 		name: "Winterwing Butterfly",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {
 			type: "heat resist",
 			potency: 2
@@ -1309,7 +1309,7 @@ export const materials = [
 		name: "Amber",
 		price: 30,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1322,7 +1322,7 @@ export const materials = [
 		name: "Diamond",
 		price: 500,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1334,7 +1334,7 @@ export const materials = [
 		name: "Flint",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1347,7 +1347,7 @@ export const materials = [
 		name: "Luminous Stone",
 		price: 70,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Luminous ore deposits",
@@ -1359,7 +1359,7 @@ export const materials = [
 		name: "Opal",
 		price: 60,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1371,7 +1371,7 @@ export const materials = [
 		name: "Ruby",
 		price: 210,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1383,7 +1383,7 @@ export const materials = [
 		name: "Sapphire",
 		price: 260,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1395,7 +1395,7 @@ export const materials = [
 		name: "Topaz",
 		price: 180,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Ore deposits",
@@ -1407,7 +1407,7 @@ export const materials = [
 		name: "Ancient Core",
 		price: 80,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1419,7 +1419,7 @@ export const materials = [
 		name: "Ancient Gear",
 		price: 30,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1431,7 +1431,7 @@ export const materials = [
 		name: "Ancient Screw",
 		price: 12,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1443,7 +1443,7 @@ export const materials = [
 		name: "Ancient Shaft",
 		price: 40,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1455,7 +1455,7 @@ export const materials = [
 		name: "Ancient Spring",
 		price: 15,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1467,7 +1467,7 @@ export const materials = [
 		name: "Bokoblin Fang",
 		price: 8,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1479,7 +1479,7 @@ export const materials = [
 		name: "Bokoblin Guts",
 		price: 20,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1491,7 +1491,7 @@ export const materials = [
 		name: "Bokoblin Horn",
 		price: 3,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1503,7 +1503,7 @@ export const materials = [
 		name: "Chuchu Jelly",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1515,7 +1515,7 @@ export const materials = [
 		name: "Electric Keese Wing",
 		price: 6,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1527,7 +1527,7 @@ export const materials = [
 		name: "Fire Keese Wing",
 		price: 6,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1539,7 +1539,7 @@ export const materials = [
 		name: "Giant Ancient Core",
 		price: 200,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1551,7 +1551,7 @@ export const materials = [
 		name: "Hinox Guts",
 		price: 80,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1563,7 +1563,7 @@ export const materials = [
 		name: "Hinox Toenail",
 		price: 20,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1575,7 +1575,7 @@ export const materials = [
 		name: "Hinox Tooth",
 		price: 35,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1587,7 +1587,7 @@ export const materials = [
 		name: "Ice Keese Wing",
 		price: 6,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1599,7 +1599,7 @@ export const materials = [
 		name: "Icy Lizalfos Tail",
 		price: 35,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1611,7 +1611,7 @@ export const materials = [
 		name: "Keese Eyeball",
 		price: 20,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1623,7 +1623,7 @@ export const materials = [
 		name: "Keese Wing",
 		price: 2,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1635,7 +1635,7 @@ export const materials = [
 		name: "Lizalfos Horn",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1647,7 +1647,7 @@ export const materials = [
 		name: "Lizalfos Tail",
 		price: 28,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1659,7 +1659,7 @@ export const materials = [
 		name: "Lizalfos Talon",
 		price: 15,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1671,7 +1671,7 @@ export const materials = [
 		name: "Lynel Guts",
 		price: 200,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1683,7 +1683,7 @@ export const materials = [
 		name: "Lynel Hoof",
 		price: 50,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1695,7 +1695,7 @@ export const materials = [
 		name: "Lynel Horn",
 		price: 40,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1707,7 +1707,7 @@ export const materials = [
 		name: "Moblin Fang",
 		price: 12,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1719,7 +1719,7 @@ export const materials = [
 		name: "Moblin Guts",
 		price: 25,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1731,7 +1731,7 @@ export const materials = [
 		name: "Moblin Horn",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1743,7 +1743,7 @@ export const materials = [
 		name: "Molduga Fin",
 		price: 30,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1755,7 +1755,7 @@ export const materials = [
 		name: "Molduga Guts",
 		price: 110,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1767,7 +1767,7 @@ export const materials = [
 		name: "Octo Balloon",
 		price: 5,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1779,7 +1779,7 @@ export const materials = [
 		name: "Octorok Eyeball",
 		price: 25,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1791,7 +1791,7 @@ export const materials = [
 		name: "Octorok Tentacle",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 1,
 		locations: [
@@ -1803,7 +1803,7 @@ export const materials = [
 		name: "Red Chuchu Jelly",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1815,7 +1815,7 @@ export const materials = [
 		name: "Red Lizalfos Tail",
 		price: 35,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1827,7 +1827,7 @@ export const materials = [
 		name: "White Chuchu Jelly",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1839,7 +1839,7 @@ export const materials = [
 		name: "Yellow Chuchu Jelly",
 		price: 10,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 2,
 		locations: [
@@ -1851,7 +1851,7 @@ export const materials = [
 		name: "Yellow Lizalfos Tail",
 		price: 35,
 		hearts: 0,
-		first: null,
+		first: {},
 		buff: {},
 		tier: 3,
 		locations: [
@@ -1863,7 +1863,7 @@ export const materials = [
 		name: "Fairy",
 		price: 2,
 		hearts: 5,
-		first: null,
+		first: {},
 		buff: {},
 		locations: [
 			"Greater Hyrule",
