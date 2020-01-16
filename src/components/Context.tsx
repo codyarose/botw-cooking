@@ -40,7 +40,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [hearts, setHearts] = useState(0)
 	const [price, setPrice] = useState(0)
 	const [buff, setBuff] = useState()
-	const [filter, setFilter] = useState({ term: "", category: "" })
+	const [filter, setFilter] = useState({ term: "", category: "all" })
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))

@@ -6,7 +6,7 @@ export const FiltersContainer: React.FC = () => {
 	const { handleFilter } = useRecipeValue()
 
 	const [term, setTerm] = useState("")
-	const [category, setCategory] = useState("")
+	const [category, setCategory] = useState("all")
 	const categoryOptions = [
 		'all',
 		'general',
@@ -38,6 +38,7 @@ export const FiltersContainer: React.FC = () => {
 			<div>
 				{categoryOptions.map(option =>
 					<Radio
+						key={option}
 						group="category"
 						value={option}
 						label={option.charAt(0).toUpperCase() + option.slice(1)}
