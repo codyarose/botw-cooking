@@ -7,7 +7,5 @@ export const filterMaterials = (term: string, key: any, category: string) => {
 	const filteredByTerm = materials.filter((obj: any) => termPattern.test(obj[key]))
 	const filteredByCategory = filteredByTerm.filter((obj: any) => categoryPattern.test(obj['tags']))
 
-	console.log(filteredByCategory)
-
 	return category === 'all' ? filteredByTerm : filteredByCategory
 }
