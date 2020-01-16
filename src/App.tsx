@@ -4,6 +4,7 @@ import { Header } from 'components/Header'
 import { RecipeProvider } from './components/Context'
 import { MaterialsContainer } from './containers/MaterialsContainer'
 import { OutputContainer } from './containers/OutputContainer'
+import { FiltersContainer } from './containers/FiltersContainer'
 
 const App: React.FC = () => {
 	return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
 				<Header />
 				<RecipeProvider>
 					<OutputContainer />
+					<FiltersContainer />
 					<MaterialsContainer />
 				</RecipeProvider>
 			</StyledAppContainer>
