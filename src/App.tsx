@@ -34,6 +34,7 @@ export default App;
 const StyledAppContainer = styled.div`
 	position: relative;
 	overflow: hidden;
+	min-height: 100vh;
 	&::before {
 		content: '';
 		position: absolute;
