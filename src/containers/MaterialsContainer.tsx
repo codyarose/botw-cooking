@@ -16,22 +16,22 @@ export const MaterialsContainer = () => {
 	const disabled = ingredients && ingredients.length === 5 && true
 
 	const listFood = materials.map(item =>
-		<Tooltip
-			key={item.id}
-			content={item.locations.join(', ')}
-			placement="bottom"
-			customCss={css`
+		<FadeIn height={120} duration={200} easing={'ease-in-out'} key={item.id}>
+			{onLoad => (
+				<Tooltip
+
+					content={item.locations.join(', ')}
+					placement="bottom"
+					customCss={css`
 				white-space: nowrap;
 			`}
-			background="rgba(0,0,0,0.75)"
-			fadeDuration={500}
-			fadeEasing="ease-in-out"
-			fontSize="12px"
-			padding={8}
-			radius={4}
-		>
-			<FadeIn height={120} duration={200} easing={'ease-in-out'}>
-				{onLoad => (
+					background="rgba(0,0,0,0.75)"
+					fadeDuration={500}
+					fadeEasing="ease-in-out"
+					fontSize="12px"
+					padding={8}
+					radius={4}
+				>
 					<Button
 						disabled={disabled}
 						onClick={() => updateIngredients!(item.id)}
@@ -44,9 +44,9 @@ export const MaterialsContainer = () => {
 						</picture>
 						<span className="material__name">{item.name}</span>
 					</Button >
-				)}
-			</FadeIn>
-		</Tooltip >
+				</Tooltip >
+			)}
+		</FadeIn>
 	)
 
 	return (
