@@ -3,50 +3,51 @@ import styled, { css } from 'styled-components'
 import { FadeIn } from 'components/FadeIn'
 import Tooltip from 'react-simple-tooltip'
 import { Button } from 'components/Button'
+import { filterMaterials } from 'utils/filterMaterials'
 import { useRecipeValue } from 'components/Context'
-import { materials } from 'materials'
 
 interface IMaterialsContainer {
 	readonly disabled?: boolean
 }
 
 export const MaterialsContainer = () => {
-	const { ingredients, updateIngredients } = useRecipeValue()
+	const { ingredients, updateIngredients, filter } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
-	const listFood = materials.map(item =>
-		<FadeIn height={120} duration={200} easing={'ease-in-out'} key={item.id}>
-			{onLoad => (
-				<Tooltip
+	const filteredMaterials = filterMaterials(filter!.term || "", 'name', filter!.category || "")
 
-					content={item.locations.join(', ')}
-					placement="bottom"
-					customCss={css`
+	const listFood = filteredMaterials.map(item =>
+		<Tooltip
+			content={item.locations.join(', ')}
+			placement="bottom"
+			customCss={css`
 				white-space: nowrap;
 			`}
-					background="rgba(0,0,0,0.75)"
-					fadeDuration={500}
-					fadeEasing="ease-in-out"
-					fontSize="12px"
-					padding={8}
-					radius={4}
-				>
-					<Button
-						disabled={disabled}
-						onClick={() => updateIngredients!(item.id)}
-						buff={item.buff.type}
-					>
+			background="rgba(0,0,0,0.75)"
+			fadeDuration={500}
+			fadeEasing="ease-in-out"
+			fontSize="12px"
+			padding={8}
+			radius={4}
+		>
+			<Button
+				disabled={disabled}
+				onClick={() => updateIngredients!(item.id)}
+				buff={item.buff.type}
+			>
+				<FadeIn height={95} duration={200} easing={'ease-in-out'} key={item.id}>
+					{onLoad => (
 						<picture onLoad={onLoad}>
 							<source type="image/webp" srcSet={`images/${item.id}.webp`} />
 							<source type="image/png" srcSet={`images/${item.id}.png`} />
 							<img src={`images/${item.id}.png`} alt={item.name} />
 						</picture>
-						<span className="material__name">{item.name}</span>
-					</Button >
-				</Tooltip >
-			)}
-		</FadeIn>
+					)}
+				</FadeIn>
+				<span className="material__name">{item.name}</span>
+			</Button >
+		</Tooltip >
 	)
 
 	return (
