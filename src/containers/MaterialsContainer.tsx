@@ -19,6 +19,7 @@ export const MaterialsContainer = () => {
 
 	const listFood = filteredMaterials.map(item =>
 		<Tooltip
+			key={item.id}
 			content={item.locations.join(', ')}
 			placement="bottom"
 			customCss={css`
@@ -36,7 +37,7 @@ export const MaterialsContainer = () => {
 				onClick={() => updateIngredients!(item.id)}
 				buff={item.buff.type}
 			>
-				<FadeIn height={95} duration={200} easing={'ease-in-out'} key={item.id}>
+				<FadeIn height={95} duration={200} easing={'ease-in-out'}>
 					{onLoad => (
 						<picture onLoad={onLoad}>
 							<source type="image/webp" srcSet={`images/${item.id}.webp`} />
