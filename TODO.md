@@ -20,9 +20,10 @@
 - [x] create reusable fade in lazyload component
 - [ ] more tests
 - [ ] filtering
-	- [ ] tags
-	- [ ] text input to filter name
-	- [ ] radio/checkbox to filter type
+	- [x] tags
+	- [x] text input to filter name
+	- [x] radio/checkbox to filter type
+	- [ ] placeholder for no items found
 - [ ] react native
 	- [ ] - swipe between categories
 
