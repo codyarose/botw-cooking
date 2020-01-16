@@ -13,11 +13,14 @@ interface IContext {
 	hearts: number
 	price: number
 	buff: IBuff
-	filter: string
+	filter: {
+		term: string
+		category: string
+	}
 	updateIngredients: (id: string) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
-	handleFilter: (term: string) => void
+	handleFilter: (term: string, category: string) => void
 }
 
 interface IProvider {
@@ -37,7 +40,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [hearts, setHearts] = useState(0)
 	const [price, setPrice] = useState(0)
 	const [buff, setBuff] = useState()
-	const [filter, setFilter] = useState("")
+	const [filter, setFilter] = useState({ term: "", category: "" })
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
@@ -72,7 +75,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					})
 					setIngredients(newIngredients)
 				},
-				handleFilter: (term) => setFilter(term)
+				handleFilter: (term, category) => setFilter({ ...filter, term, category })
 			}}
 		>
 			{children}
