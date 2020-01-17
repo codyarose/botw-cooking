@@ -35,7 +35,7 @@ export const FiltersContainer: React.FC = () => {
 	}, [term, category])
 
 	return (
-		<StyledFiltersContainer>
+		<StyledFiltersContainer onSubmit={(e: any) => e.preventDefault()}>
 			<StyledSearchInput onChange={handleTermChange} type="text" placeholder="Search..." />
 			<StyledRadioContainer>
 				{categoryOptions.map(option =>
