@@ -18,11 +18,12 @@
 - [x] better README
 - [x] buff type emblem on material buttons
 - [x] create reusable fade in lazyload component
-- [x] filtering
+- [ ] filtering
 	- [x] tags
 	- [x] text input to filter name
 	- [x] radio/checkbox to filter type
 	- [x] placeholder for no items found
+	- [ ] responsive styles
 - [ ] more tests
 - [ ] react native
 	- [ ] - swipe between categories
