@@ -1,12 +1,6 @@
 ## Todo
 
 ### Add:
-- [ ] filtering
-	- [x] tags
-	- [x] text input to filter name
-	- [x] radio/checkbox to filter type
-	- [x] placeholder for no items found
-	- [ ] responsive styles
 - [ ] more tests
 - [ ] react native
 	- [ ] - swipe between categories
@@ -40,6 +34,12 @@
 - [x] better README
 - [x] buff type emblem on material buttons
 - [x] create reusable fade in lazyload component
+- [x] filtering
+	- [x] tags
+	- [x] text input to filter name
+	- [x] radio/checkbox to filter type
+	- [x] placeholder for no items found
+	- [x] responsive styles
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
