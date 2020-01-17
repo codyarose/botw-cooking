@@ -53,7 +53,7 @@ export const MaterialsContainer = () => {
 
 	return (
 		<StyledMaterialsContainer disabled={disabled}>
-			{listFood}
+			{!filteredMaterials!.length ? <StyledNone>Nothing found...</StyledNone> : listFood}
 		</StyledMaterialsContainer>
 	)
 }
@@ -78,4 +78,13 @@ const StyledMaterialsContainer = styled.div<IMaterialsContainer>`
 	@media screen and(max-width: 28rem) {
 		--auto-grid-min-size: 4rem;
 	}
+`
+
+const StyledNone = styled.div`
+	width: 100%;
+	grid-column: 1 / -1;
+	font-size: 2rem;
+	text-align: center;
+	color: rgba(255,255,255,.75);
+	margin-top: 2rem;
 `
