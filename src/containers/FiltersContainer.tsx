@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from 'react'
+import styled from 'styled-components'
 import { useRecipeValue } from 'components/Context'
 import { Radio } from 'components/Radio'
 
@@ -34,9 +35,9 @@ export const FiltersContainer: React.FC = () => {
 	}, [term, category])
 
 	return (
-		<form>
-			<input onChange={handleTermChange} type="text" />
-			<div>
+		<StyledFiltersContainer>
+			<StyledSearchInput onChange={handleTermChange} type="text" placeholder="Search..." />
+			<StyledRadioContainer>
 				{categoryOptions.map(option =>
 					<Radio
 						key={option}
@@ -47,7 +48,36 @@ export const FiltersContainer: React.FC = () => {
 						checked={category === option}
 					/>
 				)}
-			</div>
-		</form>
+			</StyledRadioContainer>
+		</StyledFiltersContainer>
 	)
 }
+
+const StyledFiltersContainer = styled.form`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
+const StyledSearchInput = styled.input`
+	width: 50vw;
+	min-width: 300px;
+	border: none;
+	border-bottom: 2px solid rgba(255,255,255,0.5);
+	outline: none;
+	box-shadow: none;
+	background-color: transparent;
+	padding: .5rem 2rem;
+	font-size: 2rem;
+	color: inherit;
+	transition: border-color 0.2s ease-in-out;
+	margin-bottom: 1rem;
+	&:focus {
+		border-color: #fff;
+	}
+	&::placeholder {
+		color: rgba(255,255,255,0.5);
+	}
+`
+const StyledRadioContainer = styled.div`
+	display: flex;
+`
