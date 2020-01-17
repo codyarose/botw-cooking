@@ -26,6 +26,7 @@ export const Radio: React.FC<Props> = ({ group, value, label, onChange, checked 
 }
 
 const StyledRadio = styled.div`
+	margin: 0 .1rem .5rem;
 	input[type="radio"] {
 		&:checked,
 		&:not(:checked) {
@@ -38,6 +39,11 @@ const StyledRadio = styled.div`
 			cursor: pointer;
 			display: inline-block;
 			padding: .5rem;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		&:not(:checked) + label:hover {
+			background-color: rgba(0,0,0,0.25);
 		}
 		&:checked + label:before,
 		&:not(:checked) + label:before {
@@ -49,7 +55,6 @@ const StyledRadio = styled.div`
 			height: 100%;
 			background-color: rgba(0,0,0,0.5);
 			transition: opacity 0.2s ease-out;
-			border-radius: 4px;
 			z-index: -1;
 		}
 		&:not(:checked) + label:before {
