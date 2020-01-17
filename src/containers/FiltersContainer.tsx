@@ -30,6 +30,7 @@ export const FiltersContainer: React.FC = () => {
 
 	useEffect(() => {
 		handleFilter!(term, category)
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [term, category])
 
 	return (
