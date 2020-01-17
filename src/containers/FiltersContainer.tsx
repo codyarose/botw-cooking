@@ -10,19 +10,19 @@ export const FiltersContainer: React.FC = () => {
 	const [category, setCategory] = useState("all")
 	const categoryOptions = [
 		'all',
-		'general',
-		'hearty',
-		'sneaky',
-		'hasty',
-		'tough',
-		'energizing',
 		'chilly',
-		'enduring',
-		'mighty',
-		'spicy',
 		'electro',
+		'enduring',
+		'energizing',
 		'fireproof',
-		'monster'
+		'general',
+		'hasty',
+		'hearty',
+		'mighty',
+		'monster',
+		'sneaky',
+		'spicy',
+		'tough',
 	]
 
 	const handleTermChange = (e: ChangeEvent<HTMLInputElement>) => setTerm(e.target.value)
@@ -36,7 +36,12 @@ export const FiltersContainer: React.FC = () => {
 
 	return (
 		<StyledFiltersContainer onSubmit={(e: any) => e.preventDefault()}>
-			<StyledSearchInput onChange={handleTermChange} type="text" placeholder="Search..." />
+			<StyledSearchInput
+				type="text"
+				onChange={handleTermChange}
+				placeholder="Search..."
+				autoFocus
+			/>
 			<StyledRadioContainer>
 				{categoryOptions.map(option =>
 					<Radio
