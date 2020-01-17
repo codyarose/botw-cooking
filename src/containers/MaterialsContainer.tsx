@@ -11,13 +11,13 @@ interface IMaterialsContainer {
 }
 
 export const MaterialsContainer = () => {
-	const { ingredients, updateIngredients, filter } = useRecipeValue()
+	const { ingredients, updateIngredients, filters } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
-	const filteredMaterials = filterMaterials(filter!.term || "", 'name', filter!.category || "")
+	const filteredMaterials = filters && filterMaterials(filters.term, 'name', filters.category)
 
-	const listFood = filteredMaterials.map(item =>
+	const listFood = filteredMaterials && filteredMaterials.map(item =>
 		<Tooltip
 			key={item.id}
 			content={item.locations.join(', ')}
