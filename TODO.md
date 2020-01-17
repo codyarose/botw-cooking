@@ -18,12 +18,12 @@
 - [x] better README
 - [x] buff type emblem on material buttons
 - [x] create reusable fade in lazyload component
-- [ ] more tests
-- [ ] filtering
+- [x] filtering
 	- [x] tags
 	- [x] text input to filter name
 	- [x] radio/checkbox to filter type
-	- [ ] placeholder for no items found
+	- [x] placeholder for no items found
+- [ ] more tests
 - [ ] react native
 	- [ ] - swipe between categories
 
@@ -36,6 +36,7 @@
 - [x] change 'Level' readout to duplicated buff emblem
 - [x] 'any' types
 - [x] consider changing unused/null values in materials.ts to []/{}
+- [ ] radio and buttons tabIndex
 - [ ] tooltips that are too wide
 - [ ] materials order to match game
 	- [ ] image file names to material name
