@@ -1,6 +1,28 @@
 ## Todo
 
 ### Add:
+- [ ] filtering
+	- [x] tags
+	- [x] text input to filter name
+	- [x] radio/checkbox to filter type
+	- [x] placeholder for no items found
+	- [ ] responsive styles
+- [ ] more tests
+- [ ] react native
+	- [ ] - swipe between categories
+
+### Remove:
+
+### Refactor:
+- [ ] radio and buttons tabIndex
+- [ ] tooltips that are too wide
+- [ ] materials order to match game
+	- [ ] image file names to material name
+
+<details>
+<summary>Done</summary>
+
+### Added:
 - [x] temp hearts
 - [x] buff type readout
 - [x] buff potency calculator
@@ -18,26 +40,15 @@
 - [x] better README
 - [x] buff type emblem on material buttons
 - [x] create reusable fade in lazyload component
-- [ ] filtering
-	- [x] tags
-	- [x] text input to filter name
-	- [x] radio/checkbox to filter type
-	- [x] placeholder for no items found
-	- [ ] responsive styles
-- [ ] more tests
-- [ ] react native
-	- [ ] - swipe between categories
 
-### Remove:
+### Removed:
 - [x] 'Time' when a timed buff isn't active
 - [x] OutputContainer when no ingredients selected
 
-### Refactor:
+### Refactored:
 - [x] calculators to use reduce
 - [x] change 'Level' readout to duplicated buff emblem
 - [x] 'any' types
 - [x] consider changing unused/null values in materials.ts to []/{}
-- [ ] radio and buttons tabIndex
-- [ ] tooltips that are too wide
-- [ ] materials order to match game
-	- [ ] image file names to material name
+
+</details>
