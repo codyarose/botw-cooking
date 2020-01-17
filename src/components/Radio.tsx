@@ -26,7 +26,7 @@ export const Radio: React.FC<Props> = ({ group, value, label, onChange, checked 
 }
 
 const StyledRadio = styled.div`
-	margin: 0 .1rem .5rem;
+	margin: 0 .1rem;
 	input[type="radio"] {
 		&:checked,
 		&:not(:checked) {

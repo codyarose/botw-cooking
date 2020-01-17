@@ -62,10 +62,13 @@ const StyledFiltersContainer = styled.form`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 64rem;
+	padding: 1rem 3rem;
+	margin: 0 auto;
 `
 const StyledSearchInput = styled.input`
-	width: 50vw;
-	min-width: 300px;
+	width: 100%;
+	max-width: 50vw;
 	border: none;
 	border-bottom: 2px solid rgba(255,255,255,0.5);
 	outline: none;
@@ -76,6 +79,9 @@ const StyledSearchInput = styled.input`
 	color: inherit;
 	transition: border-color 0.2s ease-in-out;
 	margin-bottom: 1rem;
+	@media screen and (max-width:46em) {
+		font-size: 1.5rem;
+	}
 	&:focus {
 		border-color: #fff;
 	}
@@ -85,4 +91,6 @@ const StyledSearchInput = styled.input`
 `
 const StyledRadioContainer = styled.div`
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 `
