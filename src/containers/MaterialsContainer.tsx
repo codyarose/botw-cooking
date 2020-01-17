@@ -1,7 +1,6 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { FadeIn } from 'components/FadeIn'
-import Tooltip from 'react-simple-tooltip'
 import { Button } from 'components/Button'
 import { filterMaterials } from 'utils/filterMaterials'
 import { useRecipeValue } from 'components/Context'
@@ -18,37 +17,23 @@ export const MaterialsContainer = () => {
 	const filteredMaterials = filters && filterMaterials(filters.term, 'name', filters.category)
 
 	const listFood = filteredMaterials && filteredMaterials.map(item =>
-		<Tooltip
+		<Button
 			key={item.id}
-			content={item.locations.join(', ')}
-			placement="bottom"
-			customCss={css`
-				white-space: nowrap;
-			`}
-			background="rgba(0,0,0,0.75)"
-			fadeDuration={500}
-			fadeEasing="ease-in-out"
-			fontSize="12px"
-			padding={8}
-			radius={4}
+			disabled={disabled}
+			onClick={() => updateIngredients!(item.id)}
+			buff={item.buff.type}
 		>
-			<Button
-				disabled={disabled}
-				onClick={() => updateIngredients!(item.id)}
-				buff={item.buff.type}
-			>
-				<FadeIn height={95} duration={200} easing={'ease-in-out'}>
-					{onLoad => (
-						<picture onLoad={onLoad}>
-							<source type="image/webp" srcSet={`images/${item.id}.webp`} />
-							<source type="image/png" srcSet={`images/${item.id}.png`} />
-							<img src={`images/${item.id}.png`} alt={item.name} />
-						</picture>
-					)}
-				</FadeIn>
-				<span className="material__name">{item.name}</span>
-			</Button >
-		</Tooltip >
+			<FadeIn height={95} duration={200} easing={'ease-in-out'}>
+				{onLoad => (
+					<picture onLoad={onLoad}>
+						<source type="image/webp" srcSet={`images/${item.id}.webp`} />
+						<source type="image/png" srcSet={`images/${item.id}.png`} />
+						<img src={`images/${item.id}.png`} alt={item.name} />
+					</picture>
+				)}
+			</FadeIn>
+			<span className="material__name">{item.name}</span>
+		</Button >
 	)
 
 	return (
