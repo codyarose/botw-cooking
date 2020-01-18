@@ -11,20 +11,23 @@ interface ISelectedMaterials {
 export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 	const { removeIngredient, resetState } = useRecipeValue()
 
-	const listIngredients = selected.map((item: IMaterial, index: number) =>
-		<Button
-			key={item.id}
-			onClick={() => removeIngredient && removeIngredient(index)}
-			buff={item.buff && item.buff.type}
-		>
-			<picture>
-				<source type="image/webp" srcSet={`images/${item.id}.webp`} />
-				<source type="image/png" srcSet={`images/${item.id}.png`} />
-				<img src={`images/${item.id}.png`} alt={item.name} />
-			</picture>
-			<span className="material__name">{item.name}</span>
-		</Button>
-	)
+	const listIngredients = selected.map((item: IMaterial, index: number) => {
+		const imageName = item.name.replace(/\s/g, "-")
+		return (
+			<Button
+				key={item.id + index++}
+				onClick={() => removeIngredient && removeIngredient(index)}
+				buff={item.buff && item.buff.type}
+			>
+				<picture>
+					<source type="image/webp" srcSet={`images/${imageName}.webp`} />
+					<source type="image/png" srcSet={`images/${imageName}.png`} />
+					<img src={`images/${imageName}.png`} alt={item.name} />
+				</picture>
+				<span className="material__name">{item.name}</span>
+			</Button>
+		)
+	})
 	return (
 		<Fragment>
 			{selected.length < 1

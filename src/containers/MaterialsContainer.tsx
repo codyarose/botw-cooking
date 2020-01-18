@@ -16,25 +16,28 @@ export const MaterialsContainer = () => {
 
 	const filteredMaterials = filters && filterMaterials(filters.term, 'name', filters.category)
 
-	const listFood = filteredMaterials && filteredMaterials.map(item =>
-		<Button
-			key={item.id}
-			disabled={disabled}
-			onClick={() => updateIngredients!(item.id)}
-			buff={item.buff.type}
-		>
-			<FadeIn height={95} duration={200} easing={'ease-in-out'}>
-				{onLoad => (
-					<picture onLoad={onLoad}>
-						<source type="image/webp" srcSet={`images/${item.id}.webp`} />
-						<source type="image/png" srcSet={`images/${item.id}.png`} />
-						<img src={`images/${item.id}.png`} alt={item.name} />
-					</picture>
-				)}
-			</FadeIn>
-			<span className="material__name">{item.name}</span>
-		</Button >
-	)
+	const listFood = filteredMaterials && filteredMaterials.map(item => {
+		const imageName = item.name.replace(/\s/g, "-")
+		return (
+			<Button
+				key={item.id}
+				disabled={disabled}
+				onClick={() => updateIngredients!(item.id)}
+				buff={item.buff.type}
+			>
+				<FadeIn height={95} duration={200} easing={'ease-in-out'}>
+					{onLoad => (
+						<picture onLoad={onLoad}>
+							<source type="image/webp" srcSet={`images/${imageName}.webp`} />
+							<source type="image/png" srcSet={`images/${imageName}.png`} />
+							<img src={`images/${imageName}.png`} alt={item.name} />
+						</picture>
+					)}
+				</FadeIn>
+				<span className="material__name">{item.name}</span>
+			</Button >
+		)
+	})
 
 	return (
 		<StyledMaterialsContainer disabled={disabled}>
