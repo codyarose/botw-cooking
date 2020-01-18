@@ -1,6 +1,11 @@
 ## Todo
 
 ### Add:
+- [ ] custom tooltip component
+- [ ] recipe output
+	- [ ] recipes list
+	- [ ] add more tags to materials
+	- [ ] recipe images
 - [ ] more tests
 - [ ] react native
 	- [ ] - swipe between categories
@@ -9,8 +14,6 @@
 
 ### Refactor:
 - [ ] radio and buttons tabIndex
-- [ ] materials order to match game
-	- [x] image file names to material name
 
 <details>
 <summary>Done</summary>
@@ -49,5 +52,7 @@
 - [x] change 'Level' readout to duplicated buff emblem
 - [x] 'any' types
 - [x] consider changing unused/null values in materials.ts to []/{}
+- [x] materials order to match game
+	- [x] image file names to material name
 
 </details>
