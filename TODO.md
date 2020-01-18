@@ -1,7 +1,7 @@
 ## Todo
 
 ### Add:
-- [ ] custom tooltip component
+- [ ] stats for dragon materials, star fragment, wood
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -42,6 +42,8 @@
 	- [x] radio/checkbox to filter type
 	- [x] placeholder for no items found
 	- [x] responsive styles
+- [x] custom tooltip component
+- [x] images for dragon materials, star fragment, wood
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
