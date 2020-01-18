@@ -10,7 +10,7 @@ export interface IBuff {
 }
 
 export interface IMaterial {
-	id: string
+	id: number
 	name: string
 	price: number
 	hearts: number

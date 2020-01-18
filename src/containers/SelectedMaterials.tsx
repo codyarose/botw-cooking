@@ -15,7 +15,7 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 		const imageName = item.name.replace(/\s/g, "-")
 		return (
 			<Button
-				key={item.id + index++}
+				key={item.name + index++}
 				onClick={() => removeIngredient && removeIngredient(index)}
 				buff={item.buff && item.buff.type}
 			>

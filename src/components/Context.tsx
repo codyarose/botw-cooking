@@ -17,7 +17,7 @@ interface IContext {
 		term: string
 		category: string
 	}
-	updateIngredients: (id: string) => void
+	updateIngredients: (id: number) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
 	handleFilter: (term: string, category: string) => any
@@ -27,7 +27,7 @@ interface IProvider {
 	children: ReactNode
 }
 
-const findById = (array: IMaterial[], id: string) => {
+const findById = (array: IMaterial[], id: number) => {
 	return array.find((item: IMaterial) => item.id === id)
 }
 
