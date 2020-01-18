@@ -9,9 +9,8 @@
 
 ### Refactor:
 - [ ] radio and buttons tabIndex
-- [ ] tooltips that are too wide
 - [ ] materials order to match game
-	- [ ] image file names to material name
+	- [x] image file names to material name
 
 <details>
 <summary>Done</summary>
