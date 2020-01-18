@@ -13,6 +13,7 @@
 
 ### Refactor:
 - [ ] materials grid on mobile
+- [ ] performance issues
 - [ ] radio and buttons tabIndex
 
 <details>
