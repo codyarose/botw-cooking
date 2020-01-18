@@ -1,7 +1,6 @@
 ## Todo
 
 ### Add:
-- [ ] stats for dragon materials, star fragment, wood
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -13,6 +12,7 @@
 ### Remove:
 
 ### Refactor:
+- [ ] materials grid on mobile
 - [ ] radio and buttons tabIndex
 
 <details>
@@ -44,6 +44,7 @@
 	- [x] responsive styles
 - [x] custom tooltip component
 - [x] images for dragon materials, star fragment, wood
+- [x] stats for dragon materials, star fragment, wood
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
