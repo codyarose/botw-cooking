@@ -827,9 +827,11 @@ export const materials = [
 		id: 54,
 		name: "Star Fragment",
 		tags: ["general"],
-		price: 0,
+		price: 300,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 60,
+		},
 		buff: {},
 		locations: []
 	},
@@ -837,9 +839,11 @@ export const materials = [
 		id: 55,
 		name: "Dinraal's Scale",
 		tags: ["monster"],
-		price: 0,
+		price: 150,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 60,
+		},
 		buff: {},
 		locations: []
 	},
@@ -847,9 +851,11 @@ export const materials = [
 		id: 56,
 		name: "Dinraal's Claw",
 		tags: ["monster"],
-		price: 0,
+		price: 180,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 180,
+		},
 		buff: {},
 		locations: []
 	},
@@ -857,9 +863,11 @@ export const materials = [
 		id: 57,
 		name: "Shard of Dinraal's Fang",
 		tags: ["monster"],
-		price: 0,
+		price: 250,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 600,
+		},
 		buff: {},
 		locations: []
 	},
@@ -867,7 +875,7 @@ export const materials = [
 		id: 58,
 		name: "Shard of Dinraal's Horn",
 		tags: ["monster"],
-		price: 0,
+		price: 300,
 		hearts: 0,
 		first: {},
 		buff: {},
@@ -877,9 +885,11 @@ export const materials = [
 		id: 59,
 		name: "Naydra's Scale",
 		tags: ["monster"],
-		price: 0,
+		price: 150,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 60,
+		},
 		buff: {},
 		locations: []
 	},
@@ -887,9 +897,11 @@ export const materials = [
 		id: 60,
 		name: "Naydra's Claw",
 		tags: ["monster"],
-		price: 0,
+		price: 180,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 180,
+		},
 		buff: {},
 		locations: []
 	},
@@ -897,9 +909,11 @@ export const materials = [
 		id: 61,
 		name: "Shard of Naydra's Fang",
 		tags: ["monster"],
-		price: 0,
+		price: 250,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 600,
+		},
 		buff: {},
 		locations: []
 	},
@@ -907,9 +921,11 @@ export const materials = [
 		id: 62,
 		name: "Shard of Naydra's Horn",
 		tags: ["monster"],
-		price: 0,
+		price: 300,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 1800,
+		},
 		buff: {},
 		locations: []
 	},
@@ -917,9 +933,11 @@ export const materials = [
 		id: 63,
 		name: "Farosh's Scale",
 		tags: ["monster"],
-		price: 0,
+		price: 150,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 60,
+		},
 		buff: {},
 		locations: []
 	},
@@ -927,9 +945,11 @@ export const materials = [
 		id: 64,
 		name: "Farosh's Claw",
 		tags: ["monster"],
-		price: 0,
+		price: 180,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 180,
+		},
 		buff: {},
 		locations: []
 	},
@@ -937,9 +957,11 @@ export const materials = [
 		id: 65,
 		name: "Shard of Farosh's Fang",
 		tags: ["monster"],
-		price: 0,
+		price: 250,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 600,
+		},
 		buff: {},
 		locations: []
 	},
@@ -947,9 +969,11 @@ export const materials = [
 		id: 66,
 		name: "Shard of Farosh's Horn",
 		tags: ["monster"],
-		price: 0,
+		price: 300,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 1800,
+		},
 		buff: {},
 		locations: []
 	},
@@ -2139,7 +2163,7 @@ export const materials = [
 		id: 149,
 		name: "Wood",
 		tags: ["general"],
-		price: 0,
+		price: 2,
 		hearts: 0,
 		first: {},
 		buff: {},
