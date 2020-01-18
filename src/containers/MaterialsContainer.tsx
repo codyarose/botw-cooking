@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FadeIn } from 'components/FadeIn'
 import { Button } from 'components/Button'
+import { LocationIcon } from 'components/LocationIcon'
 import { filterMaterials } from 'utils/filterMaterials'
 import { useRecipeValue } from 'components/Context'
 
@@ -25,6 +26,7 @@ export const MaterialsContainer = () => {
 				onClick={() => updateIngredients!(item.id)}
 				buff={item.buff.type}
 			>
+				<LocationIcon content={item.locations} />
 				<FadeIn height={95} duration={200} easing={'ease-in-out'}>
 					{onLoad => (
 						<picture onLoad={onLoad}>
