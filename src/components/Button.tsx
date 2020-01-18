@@ -32,8 +32,9 @@ const StyledButton = styled.button`
 	background-color: rgba(0,0,0,0.5);
 	border: 2px solid transparent;
 	transition: border-color .1s ease-out, background-color .1s ease-out;
+	cursor: pointer;
 	white-space: normal;
-	z-index: 0;
+	z-index: 1;
 	&::before {
 		content: '';
 		position: absolute;
@@ -82,7 +83,6 @@ const StyledBuffIconWrap = styled.span`
 	top: 5px;
 	right: 0;
 	opacity: .5;
-	color: red;
 	svg {
 		width: 15px;
 	}
