@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc6f09d19cdaf3c961b9f7abc52a863f",
+    "revision": "57b25b4d5f01983f5823f3a974e82aaf",
     "url": "/botw-cooking/index.html"
   },
   {
-    "revision": "2ae3f45586a3ccf2b087",
-    "url": "/botw-cooking/static/js/2.e8875cc4.chunk.js"
+    "revision": "c8aa400e419bab1185c6",
+    "url": "/botw-cooking/static/js/2.c4d6471d.chunk.js"
   },
   {
     "revision": "fd228f9b9a68ce6b23a6cf8b0a38a0e3",
-    "url": "/botw-cooking/static/js/2.e8875cc4.chunk.js.LICENSE"
+    "url": "/botw-cooking/static/js/2.c4d6471d.chunk.js.LICENSE"
   },
   {
-    "revision": "e73cb11e7be22cd72dae",
-    "url": "/botw-cooking/static/js/main.fe99c44c.chunk.js"
+    "revision": "4391e5ddb7d0dd17f963",
+    "url": "/botw-cooking/static/js/main.e6788e73.chunk.js"
   },
   {
     "revision": "75a1acf62c49c02b13e9",
@@ -36,20 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/botw-cooking/static/media/hasty.5f0938d2.svg"
   },
   {
-    "revision": "43ce81b680ce9d53f1112337b978f5ee",
-    "url": "/botw-cooking/static/media/heart.43ce81b6.svg"
+    "revision": "d1fa4f55a0158dbb5aef59731d0249a3",
+    "url": "/botw-cooking/static/media/heart.d1fa4f55.svg"
   },
   {
-    "revision": "afcb11c11cca5ce2a8e4389a0ca84b52",
-    "url": "/botw-cooking/static/media/hourglass.afcb11c1.svg"
+    "revision": "5d3e755e9fcad0b6024d49b46eacbf37",
+    "url": "/botw-cooking/static/media/hourglass.5d3e755e.svg"
   },
   {
     "revision": "0de86ef791e39faf87f407f423fdbf5a",
     "url": "/botw-cooking/static/media/mighty.0de86ef7.svg"
   },
   {
-    "revision": "2dd7730bc8dd3c7660526f1e12bc609e",
-    "url": "/botw-cooking/static/media/rupee.2dd7730b.svg"
+    "revision": "999432b7efe2b47263c2ff8c1af5df1d",
+    "url": "/botw-cooking/static/media/rupee.999432b7.svg"
   },
   {
     "revision": "5cec611cf99137f8c1e004245d04e8d7",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/botw-cooking/static/media/spicy.3f3eb5e1.svg"
   },
   {
-    "revision": "1cdc47b64ec011104d1ab18322f60cab",
-    "url": "/botw-cooking/static/media/stamina.1cdc47b6.svg"
+    "revision": "bb4563eb5d92a6ef74cc750c3c18ecd8",
+    "url": "/botw-cooking/static/media/stamina.bb4563eb.svg"
   },
   {
     "revision": "52003d24b86234407c673df556c43b71",
