@@ -13,7 +13,7 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 	const { removeIngredient, resetState } = useRecipeValue()
 
 	const listIngredients = selected.map((item: IMaterial, index: number) => {
-		const imageName = item.name.replace(/\s/g, "-")
+		const imageName = item.name.replace(/\s/g, "-").toLowerCase()
 		return (
 			<Button
 				key={item.name + index++}

@@ -19,7 +19,7 @@ export const MaterialsContainer = () => {
 	const filteredMaterials = filters && filterMaterials(filters.term, 'name', filters.category)
 
 	const listFood = filteredMaterials && filteredMaterials.map(item => {
-		const imageName = item.name.replace(/\s/g, "-")
+		const imageName = item.name.replace(/\s/g, "-").toLowerCase()
 		return (
 			<Button
 				key={item.id}
