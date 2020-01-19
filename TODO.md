@@ -1,7 +1,6 @@
 ## Todo
 
 ### Add:
-- [ ] locations for dragon parts, star fragment, wood
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -46,6 +45,8 @@
 - [x] custom tooltip component
 - [x] images for dragon materials, star fragment, wood
 - [x] stats for dragon materials, star fragment, wood
+- [x] locations for dragon parts, star fragment, wood
+- [x] smaller background image file size because it's being blurred anyways
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
@@ -60,5 +61,6 @@
 	- [x] image file names to material name
 - [x] materials grid on mobile
 - [x] locations icon only on desktop
+- [x] consider using non-image background for performance
 
 </details>

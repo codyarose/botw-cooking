@@ -4,6 +4,7 @@ import { useRecipeValue } from 'components/Context'
 import { Button } from 'components/Button'
 import { IMaterial } from 'utils/interfaces'
 import { LocationIcon } from 'components/LocationIcon'
+import Media from 'react-media'
 
 interface ISelectedMaterials {
 	selected: IMaterial[]
@@ -20,7 +21,9 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 				onClick={() => removeIngredient && removeIngredient(index)}
 				buff={item.buff && item.buff.type}
 			>
-				<LocationIcon content={item.locations} />
+				<Media query="(min-width: 735px)" render={() => (
+					<LocationIcon content={item.locations} />
+				)} />
 				<picture>
 					<source type="image/webp" srcSet={`images/${imageName}.webp`} />
 					<source type="image/png" srcSet={`images/${imageName}.png`} />

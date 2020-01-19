@@ -12,11 +12,7 @@ const App: React.FC = () => {
 			<GlobalStyle />
 			<StyledAppContainer>
 				<StyledAppBackground>
-					<picture>
-						<source type="image/webp" srcSet={`images/background.webp`} />
-						<source type="image/jpeg" srcSet={`images/background.jpg`} />
-						<img src={`images/background.jpg`} alt="" />
-					</picture>
+					<img src={`images/background.jpg`} alt="" />
 				</StyledAppBackground>
 				<Header />
 				<RecipeProvider>
@@ -59,7 +55,7 @@ const StyledAppBackground = styled.div`
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		filter: blur(5px);
+		filter: blur(15px);
 	}
 `
 
