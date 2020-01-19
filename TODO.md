@@ -2,6 +2,7 @@
 
 ### Add:
 - [ ] locations for dragon parts, star fragment, wood
+- [ ] smaller images for mobile
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -13,6 +14,7 @@
 ### Remove:
 
 ### Refactor:
+- [ ] consider using non-image background for performance
 - [ ] performance issues
 - [ ] radio and buttons tabIndex
 
