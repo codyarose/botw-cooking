@@ -833,7 +833,9 @@ export const materials = [
 			duration: 60,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Fall from the sky at night between 9:00 PM and 3:00 AM",
+		]
 	},
 	{
 		id: 55,
@@ -845,7 +847,9 @@ export const materials = [
 			duration: 60,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the body of Dinraal",
+		]
 	},
 	{
 		id: 56,
@@ -857,7 +861,9 @@ export const materials = [
 			duration: 180,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the claw of Dinraal",
+		]
 	},
 	{
 		id: 57,
@@ -869,7 +875,9 @@ export const materials = [
 			duration: 600,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the face of Dinraal",
+		]
 	},
 	{
 		id: 58,
@@ -881,7 +889,9 @@ export const materials = [
 			duration: 1800,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the horn of Dinraal",
+		]
 	},
 	{
 		id: 59,
@@ -893,7 +903,9 @@ export const materials = [
 			duration: 60,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the body of Naydra",
+		]
 	},
 	{
 		id: 60,
@@ -905,7 +917,9 @@ export const materials = [
 			duration: 180,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the claw of Naydra",
+		]
 	},
 	{
 		id: 61,
@@ -917,7 +931,9 @@ export const materials = [
 			duration: 600,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the face of Naydra",
+		]
 	},
 	{
 		id: 62,
@@ -929,7 +945,9 @@ export const materials = [
 			duration: 1800,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the horn of Naydra",
+		]
 	},
 	{
 		id: 63,
@@ -941,7 +959,9 @@ export const materials = [
 			duration: 60,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the body of Farosh",
+		]
 	},
 	{
 		id: 64,
@@ -953,7 +973,9 @@ export const materials = [
 			duration: 180,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the claw of Farosh",
+		]
 	},
 	{
 		id: 65,
@@ -965,7 +987,9 @@ export const materials = [
 			duration: 600,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the face of Farosh",
+		]
 	},
 	{
 		id: 66,
@@ -977,7 +1001,9 @@ export const materials = [
 			duration: 1800,
 		},
 		buff: {},
-		locations: []
+		locations: [
+			"Dropped by shooting the horn of Farosh",
+		]
 	},
 	{
 		id: 67,
@@ -2160,15 +2186,5 @@ export const materials = [
 		locations: [
 			"Guardian Stalker, Skywatcher, and Turret"
 		]
-	},
-	{
-		id: 149,
-		name: "Wood",
-		tags: ["general"],
-		price: 2,
-		hearts: 0,
-		first: {},
-		buff: {},
-		locations: []
 	},
 ]
