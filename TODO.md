@@ -1,6 +1,8 @@
 ## Todo
 
 ### Add:
+- [ ] '?' tooltip in header with explanation
+- [ ] sticky SelectedMaterials and stats output on scroll
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
