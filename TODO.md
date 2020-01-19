@@ -12,7 +12,6 @@
 ### Remove:
 
 ### Refactor:
-- [ ] materials grid on mobile
 - [ ] performance issues
 - [ ] radio and buttons tabIndex
 
@@ -58,5 +57,7 @@
 - [x] consider changing unused/null values in materials.ts to []/{}
 - [x] materials order to match game
 	- [x] image file names to material name
+- [x] materials grid on mobile
+- [x] locations icon only on desktop
 
 </details>
