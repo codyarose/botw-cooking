@@ -13,16 +13,21 @@ interface IContext {
 	hearts: number
 	price: number
 	buff: IBuff
-	updateIngredients: (id: string) => void
+	filters: {
+		term: string
+		category: string
+	}
+	updateIngredients: (id: number) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
+	handleFilter: (term: string, category: string) => any
 }
 
 interface IProvider {
 	children: ReactNode
 }
 
-const findById = (array: IMaterial[], id: string) => {
+const findById = (array: IMaterial[], id: number) => {
 	return array.find((item: IMaterial) => item.id === id)
 }
 
@@ -35,6 +40,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [hearts, setHearts] = useState(0)
 	const [price, setPrice] = useState(0)
 	const [buff, setBuff] = useState()
+	const [filters, setFilters] = useState({ term: "", category: "all" })
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
@@ -51,6 +57,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 				hearts,
 				price,
 				buff,
+				filters,
 				updateIngredients: (id) => {
 					const itemData = findById(materials, id)
 
@@ -67,7 +74,8 @@ export const RecipeProvider = ({ children }: IProvider) => {
 						return i !== index - 1
 					})
 					setIngredients(newIngredients)
-				}
+				},
+				handleFilter: (term, category) => setFilters({ ...filters, term, category })
 			}}
 		>
 			{children}

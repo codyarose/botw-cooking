@@ -10,14 +10,14 @@ export interface IBuff {
 }
 
 export interface IMaterial {
-	id: string
+	id: number
 	name: string
 	price: number
 	hearts: number
 	first?: null | IFirst
 	buff?: {
-		type: string
-		potency: number
+		type?: string
+		potency?: number
 	}
 	tier?: number
 	locations: string[]
