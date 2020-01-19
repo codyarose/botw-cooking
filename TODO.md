@@ -1,6 +1,7 @@
 ## Todo
 
 ### Add:
+- [ ] locations for dragon parts, star fragment, wood
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
