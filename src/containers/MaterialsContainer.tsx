@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Media from 'react-media'
 import { FadeIn } from 'components/FadeIn'
 import { Button } from 'components/Button'
 import { LocationIcon } from 'components/LocationIcon'
@@ -26,7 +27,9 @@ export const MaterialsContainer = () => {
 				onClick={() => updateIngredients!(item.id)}
 				buff={item.buff.type}
 			>
-				<LocationIcon content={item.locations} />
+				<Media query="(min-width: 735px)" render={() => (
+					<LocationIcon content={item.locations} />
+				)} />
 				<FadeIn height={95} duration={200} easing={'ease-in-out'}>
 					{onLoad => (
 						<picture onLoad={onLoad}>
@@ -51,21 +54,21 @@ export const MaterialsContainer = () => {
 const StyledMaterialsContainer = styled.div<IMaterialsContainer>`
 	max-width: 64rem;
 	margin: 0 auto;
-	--auto-grid-min-size: 7rem;
+	--auto-grid-min-size: 6rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 	gap: 2rem;
 	padding: 1.5rem 3rem;
 	${props => props.disabled && 'pointer-events: none'};
-	@media screen and(max-width: 46rem) {
-		--auto-grid-min-size: 6rem;
+	@media screen and (max-width: 50rem) {
 		grid-gap: 1.5rem;
-	}
-	@media screen and(max-width: 37.5rem) {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
-	@media screen and(max-width: 28rem) {
+	@media screen and (max-width: 40rem) {
+		--auto-grid-min-size: 5rem;
+	}
+	@media screen and (max-width: 28rem) {
 		--auto-grid-min-size: 4rem;
 	}
 `

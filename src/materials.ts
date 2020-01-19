@@ -877,7 +877,9 @@ export const materials = [
 		tags: ["monster"],
 		price: 300,
 		hearts: 0,
-		first: {},
+		first: {
+			duration: 1800,
+		},
 		buff: {},
 		locations: []
 	},
