@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Header } from 'components/Header'
-import { RecipeProvider } from './components/Context'
-import { MaterialsContainer } from './containers/MaterialsContainer'
-import { OutputContainer } from './containers/OutputContainer'
-import { FiltersContainer } from './containers/FiltersContainer'
+import { RecipeProvider } from 'components/Context'
+import { MaterialsContainer } from 'containers/MaterialsContainer'
+import { OutputContainer } from 'containers/OutputContainer'
+import { FiltersContainer } from 'containers/FiltersContainer'
 
 const App: React.FC = () => {
 	return (
