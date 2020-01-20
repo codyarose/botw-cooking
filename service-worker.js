@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/botw-cooking/precache-manifest.cdbf45a924e46b5d4ef10053f1fcea7c.js"
+  "/botw-cooking/precache-manifest.9dd158a3253471205da7de576f3319b2.js"
 );
 
 self.addEventListener('message', (event) => {
