@@ -21,32 +21,31 @@ export const MaterialsContainer = () => {
 	const listFood = filteredMaterials && filteredMaterials.map(item => {
 		const imageName = item.name.replace(/\s/g, "-").toLowerCase()
 		return (
-			<Button
-				key={item.id}
-				disabled={disabled}
-				onClick={() => updateIngredients!(item.id)}
-				buff={item.buff.type}
-			>
-				<Media query="(min-width: 735px)" render={() => (
-					<LocationIcon content={item.locations} />
-				)} />
-				<FadeIn height={95} duration={200} easing={'ease-in-out'}>
-					{onLoad => (
+			<FadeIn key={item.id} height={'auto'} duration={200} easing={'ease-in-out'}>
+				{onLoad => (
+					<Button
+						disabled={disabled}
+						onClick={() => updateIngredients!(item.id)}
+						buff={item.buff.type}
+					>
+						<Media query="(min-width: 735px)" render={() => (
+							<LocationIcon content={item.locations} />
+						)} />
 						<picture onLoad={onLoad}>
 							<source type="image/webp" srcSet={`images/${imageName}.webp`} />
 							<source type="image/png" srcSet={`images/${imageName}.png`} />
 							<img src={`images/${imageName}.png`} alt={item.name} />
 						</picture>
-					)}
-				</FadeIn>
-				<span className="material__name">{item.name}</span>
-			</Button >
+						<span className="material__name">{item.name}</span>
+					</Button >
+				)}
+			</FadeIn>
 		)
 	})
 
 	return (
 		<StyledMaterialsContainer disabled={disabled}>
-			{!filteredMaterials!.length ? <StyledNone>Nothing found...</StyledNone> : listFood}
+			{filteredMaterials && !filteredMaterials.length ? <StyledNone>Nothing found...</StyledNone> : listFood}
 		</StyledMaterialsContainer>
 	)
 }
