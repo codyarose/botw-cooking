@@ -2,7 +2,6 @@
 
 ### Add:
 - [ ] '?' tooltip in header with explanation
-- [ ] sticky SelectedMaterials and stats output on scroll
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -49,6 +48,7 @@
 - [x] stats for dragon materials, star fragment, wood
 - [x] locations for dragon parts, star fragment, wood
 - [x] smaller background image file size because it's being blurred anyways
+- [x] sticky SelectedMaterials and stats output on scroll
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
