@@ -1,7 +1,6 @@
 import React, { FC, createRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { useRecipeValue } from 'components/Context'
-import { ISticky } from 'utils/interfaces'
 
 export const StickyComponent: FC = ({ children }) => {
 	const { toggleSticky } = useRecipeValue()
