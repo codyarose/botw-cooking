@@ -20,7 +20,7 @@ export const Button: SFC<IProps> = ({ children, disabled, buff, onClick: handleC
 	</StyledButton>
 )
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
 	position: relative;
 	display: flex;
 	flex-direction: column;

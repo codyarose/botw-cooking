@@ -6,41 +6,33 @@ import { useRecipeValue } from 'components/Context'
 import { PriceContainer } from 'containers/PriceContainer'
 import { BuffIcon } from 'components/BuffIcon'
 import { Time } from 'components/Time'
+import { StyledSticky } from 'components/StickyComponent'
+import { ISticky } from 'utils/interfaces'
+import { StyledButton } from 'components/Button'
 
 export const OutputContainer = () => {
-	const { ingredients, time, hearts, price, buff } = useRecipeValue()
+	const { ingredients, time, hearts, price, buff, isSticky } = useRecipeValue()
 
 	const showTime = ['stamina', 'enduras', 'temp-hearts', undefined].indexOf(buff && buff.type) < 1
 
 	return (
-		<StyledOutputContainer>
+		<StyledOutputContainer isSticky={isSticky}>
 			{ingredients && <SelectedMaterials selected={ingredients} />}
 			{ingredients && ingredients.length > 0 &&
 				<StyledOutputTextContainer>
 					<PriceContainer price={price || 0} />
 					<HeartsContainer amount={hearts || 0} />
-					<StyledBuffAndTime>
+					{showTime && <StyledBuffAndTime>
 						{buff && <BuffIcon type={buff.type} potency={buff.potency} />}
 						{showTime && <Time seconds={time || 0} />}
-					</StyledBuffAndTime>
+					</StyledBuffAndTime>}
 				</StyledOutputTextContainer>
 			}
 		</StyledOutputContainer>
 	)
 }
 
-const StyledOutputContainer = styled.div`
-	max-width: 64rem;
-	margin: 0 auto;
-	padding: 3rem 3rem 1.5rem;
-	@media screen and (max-width: 37.5rem) {
-		padding-top: 1.5rem;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
-	}
-`
-
-const StyledOutputTextContainer = styled.div`
+export const StyledOutputTextContainer = styled.div`
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -51,8 +43,13 @@ const StyledOutputTextContainer = styled.div`
 	padding: 1rem .5rem;
 	line-height: 2;
 	z-index: 1;
+	@media screen and (max-width: 46rem) {
+		padding: .5rem;
+		line-height: 1.5;
+	}
 	& > * {
-		margin-right: 1rem;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
 	}
 	&::before {
 		content: '';
@@ -65,6 +62,45 @@ const StyledOutputTextContainer = styled.div`
 		border: 3px solid rgba(0,0,0,0.5);
 		border-radius: 4px;
 		z-index: -1;
+	}
+`
+
+const StyledOutputContainer = styled.div<ISticky>`
+	max-width: 64rem;
+	margin: 0 auto;
+	padding: 3rem 3rem 1.5rem;
+	@media screen and (max-width: 50rem) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	@media screen and (max-width: 37.5rem) {
+		padding-top: 1.5rem;
+	}
+	${StyledSticky} & {
+		transition: padding .2s ease-in-out, background-color .2s ease-in-out;
+		${({ isSticky }) => isSticky && `
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			background-color: rgba(0,0,0,0.75);
+		`}
+	}
+	${StyledOutputTextContainer} {
+		transition: transform .2s ease-in-out;
+		${({ isSticky }) => isSticky && `
+			padding: 0;
+			@media screen and (max-width: 25rem) {
+				font-size: .75em;
+			}
+		`}
+	}
+	${StyledOutputTextContainer},
+	${StyledButton} {
+		transition: background-color .2s ease-in-out;
+		${({ isSticky }) => isSticky && 'background-color: rgba(0,0,0,0);'}
+		&::before {
+			transition: border-color .2s ease-in-out;
+			${({ isSticky }) => isSticky && 'border-color: rgba(0,0,0,0);'}
+		}
 	}
 `
 

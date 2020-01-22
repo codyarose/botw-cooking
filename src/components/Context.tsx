@@ -17,10 +17,12 @@ interface IContext {
 		term: string
 		category: string
 	}
+	isSticky: boolean
 	updateIngredients: (id: number) => void
 	resetState: () => void
 	removeIngredient: (index: number) => void
 	handleFilter: (term: string, category: string) => any
+	toggleSticky: (value: boolean) => void
 }
 
 interface IProvider {
@@ -41,6 +43,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [price, setPrice] = useState(0)
 	const [buff, setBuff] = useState()
 	const [filters, setFilters] = useState({ term: "", category: "all" })
+	const [isSticky, setIsSticky] = useState(false)
 
 	useEffect(() => {
 		setTime(extraTime(ingredients) + (ingredients.length * 30))
@@ -58,6 +61,7 @@ export const RecipeProvider = ({ children }: IProvider) => {
 				price,
 				buff,
 				filters,
+				isSticky,
 				updateIngredients: (id) => {
 					const itemData = findById(materials, id)
 
@@ -75,7 +79,8 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					})
 					setIngredients(newIngredients)
 				},
-				handleFilter: (term, category) => setFilters({ ...filters, term, category })
+				handleFilter: (term, category) => setFilters({ ...filters, term, category }),
+				toggleSticky: (value) => setIsSticky(value)
 			}}
 		>
 			{children}

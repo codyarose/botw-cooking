@@ -5,13 +5,15 @@ import { Button } from 'components/Button'
 import { IMaterial } from 'utils/interfaces'
 import { LocationIcon } from 'components/LocationIcon'
 import Media from 'react-media'
+import { StyledSticky } from 'components/StickyComponent'
+import { ISticky } from 'utils/interfaces'
 
 interface ISelectedMaterials {
 	selected: IMaterial[]
 }
 
 export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
-	const { removeIngredient, resetState } = useRecipeValue()
+	const { removeIngredient, resetState, isSticky } = useRecipeValue()
 
 	const listIngredients = selected.map((item: IMaterial, index: number) => {
 		const imageName = item.name.replace(/\s/g, "-").toLowerCase()
@@ -36,8 +38,10 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 	return (
 		<Fragment>
 			{selected.length < 1
-				? <StyledDefaultText>Add an ingredient</StyledDefaultText>
-				: <StyledSelectedMaterials>
+				? <StyledDefaultText isSticky={isSticky}>
+					Add an ingredient
+					</StyledDefaultText>
+				: <StyledSelectedMaterials isSticky={isSticky}>
 					{selected.length > 0 &&
 						<Button onClick={resetState}>
 							<svg width="50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -52,7 +56,7 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 	)
 }
 
-const StyledSelectedMaterials = styled.div`
+export const StyledSelectedMaterials = styled.div<ISticky>`
 	--auto-grid-min-size: 9rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -62,17 +66,24 @@ const StyledSelectedMaterials = styled.div`
 		--auto-grid-min-size: 6rem;
 	}
 	@media screen and (max-width: 46rem) {
-		grid-gap: 1.5rem;
+		gap: 1.5rem;
 	}
 	@media screen and (max-width: 37.5rem) {
 		padding-bottom: 1.5rem;
 	}
 	@media screen and (max-width: 28rem) {
-		--auto-grid-min-size: 4rem;
+		--auto-grid-min-size: 3rem;
+	}
+	${StyledSticky} & {
+		transition: padding .2s ease-in-out;
+		${({ isSticky }) => isSticky && `
+			padding-bottom: 1rem;
+			row-gap: 0.5rem;
+		`}
 	}
 `
 
-const StyledDefaultText = styled.div`
+const StyledDefaultText = styled.div<ISticky>`
 	text-align: center;
 	font-style: italic;
 	letter-spacing: 0.02em;

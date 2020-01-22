@@ -22,3 +22,8 @@ export interface IMaterial {
 	tier?: number
 	locations: string[]
 }
+
+export interface ISticky {
+	isSticky?: boolean
+	ingredients?: any[]
+}
