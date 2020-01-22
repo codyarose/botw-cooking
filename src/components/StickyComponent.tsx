@@ -1,15 +1,9 @@
 import React, { FC, createRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { useRecipeValue } from 'components/Context'
-// import { StyledSelectedMaterials } from 'containers/SelectedMaterials'
-// import { StyledOutputTextContainer } from 'containers/OutputContainer'
+import { ISticky } from 'utils/interfaces'
 
-interface Props {
-	readonly isSticky?: boolean
-}
-
-export const StickyComponent: FC<Props> = ({ children }) => {
-	// const [isSticky, setIsSticky] = useState(false)
+export const StickyComponent: FC = ({ children }) => {
 	const { toggleSticky } = useRecipeValue()
 	const ref: any = createRef()
 
@@ -34,14 +28,6 @@ export const StickyComponent: FC<Props> = ({ children }) => {
 export const StyledSticky = styled.div`
 	position: sticky;
 	top: -1px;
+	overflow: hidden;
 	z-index: 2;
-`
-
-export const StyledInnerSticky = styled.div<Props>`
-
-
-
-		/* transition: background-color .2s ease-in-out;
-		${({ isSticky }) => isSticky && 'background-color: rgba(0,0,0,0.75);'}
-	}  */
 `

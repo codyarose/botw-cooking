@@ -17,6 +17,7 @@ export const OutputContainer = () => {
 
 	return (
 		<StyledOutputContainer isSticky={isSticky}>
+			{/* <StyledOutputContainerBackground /> */}
 			{ingredients && <SelectedMaterials selected={ingredients} />}
 			{ingredients && ingredients.length > 0 &&
 				<StyledOutputTextContainer>
@@ -32,7 +33,9 @@ export const OutputContainer = () => {
 	)
 }
 
-export const StyledOutputTextContainer = styled.div`
+// const StyledOutputContainerBackground = styled.div
+
+const StyledOutputTextContainer = styled.div`
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -66,6 +69,7 @@ export const StyledOutputTextContainer = styled.div`
 `
 
 const StyledOutputContainer = styled.div<ISticky>`
+	position: relative;
 	max-width: 64rem;
 	margin: 0 auto;
 	padding: 3rem 3rem 1.5rem;
@@ -76,12 +80,26 @@ const StyledOutputContainer = styled.div<ISticky>`
 	@media screen and (max-width: 37.5rem) {
 		padding-top: 1.5rem;
 	}
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		height: 100%;
+		background-color: transparent;
+		transition: background-color .2s ease-in-out;
+		z-index: -1;
+	}
 	${StyledSticky} & {
-		transition: padding .2s ease-in-out, background-color .2s ease-in-out;
+		transition: padding .2s ease-in-out;
 		${({ isSticky }) => isSticky && `
 			padding-top: 1rem;
 			padding-bottom: 1rem;
-			background-color: rgba(0,0,0,0.75);
+			&::before {
+				background-color: rgba(0,0,0,0.75);
+			}
 		`}
 	}
 	${StyledOutputTextContainer} {

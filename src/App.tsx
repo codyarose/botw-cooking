@@ -17,11 +17,9 @@ const App: FC = () => {
 				</StyledAppBackground>
 				<Header />
 				<RecipeProvider>
-
 					<StickyComponent>
 						<OutputContainer />
 					</StickyComponent>
-
 					<FiltersContainer />
 					<MaterialsContainer />
 				</RecipeProvider>
@@ -54,10 +52,15 @@ const StyledAppBackground = styled.div`
 	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 	z-index: -2;
 	img {
-		width: 100%;
-		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 105%;
+		height: 101%;
 		object-fit: cover;
 		filter: blur(15px);
 	}

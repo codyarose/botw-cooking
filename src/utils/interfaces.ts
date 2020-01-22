@@ -25,5 +25,4 @@ export interface IMaterial {
 
 export interface ISticky {
 	isSticky?: boolean
-	ingredients?: any[]
 }
