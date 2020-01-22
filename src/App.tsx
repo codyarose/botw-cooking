@@ -1,12 +1,13 @@
-import React, { Fragment } from 'react';
+import React, { FC, Fragment } from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
 import { Header } from 'components/Header'
 import { RecipeProvider } from 'components/Context'
 import { MaterialsContainer } from 'containers/MaterialsContainer'
 import { OutputContainer } from 'containers/OutputContainer'
 import { FiltersContainer } from 'containers/FiltersContainer'
+import { StickyComponent } from 'components/StickyComponent'
 
-const App: React.FC = () => {
+const App: FC = () => {
 	return (
 		<Fragment>
 			<GlobalStyle />
@@ -16,7 +17,11 @@ const App: React.FC = () => {
 				</StyledAppBackground>
 				<Header />
 				<RecipeProvider>
-					<OutputContainer />
+
+					<StickyComponent>
+						<OutputContainer />
+					</StickyComponent>
+
 					<FiltersContainer />
 					<MaterialsContainer />
 				</RecipeProvider>
@@ -29,7 +34,6 @@ export default App;
 
 const StyledAppContainer = styled.div`
 	position: relative;
-	overflow: hidden;
 	min-height: 100vh;
 	&::before {
 		content: '';
@@ -48,8 +52,8 @@ const StyledAppBackground = styled.div`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 101%;
-	height: 101%;
+	width: 100%;
+	height: 100%;
 	z-index: -2;
 	img {
 		width: 100%;
