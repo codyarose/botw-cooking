@@ -21,7 +21,7 @@ export const OutputContainer = () => {
 	return (
 		<Transition in={isSticky} timeout={200}>
 			{(state) => (
-				<StyledOutputContainer state={state}>
+				<StyledOutputContainer aria-label="Ingredient stats container" state={state}>
 					{ingredients && <SelectedMaterials selected={ingredients} />}
 					{ingredients && ingredients.length > 0 &&
 						<StyledOutputTextContainer state={state}>
@@ -39,7 +39,7 @@ export const OutputContainer = () => {
 	)
 }
 
-const StyledOutputContainer = styled.div<ITransitionState>`
+const StyledOutputContainer = styled.section<ITransitionState>`
 	position: relative;
 	max-width: 64rem;
 	margin: 0 auto;

@@ -35,12 +35,13 @@ export const FiltersContainer: React.FC = () => {
 	}, [term, category])
 
 	return (
-		<StyledFiltersContainer onSubmit={(e: any) => e.preventDefault()}>
+		<StyledFiltersContainer onSubmit={(e: any) => e.preventDefault()} aria-label="Ingredient filters">
 			<StyledSearchInput
 				type="text"
 				onChange={handleTermChange}
 				placeholder="Search..."
 				tabIndex={0}
+				aria-label="Text search to filter ingredients by name"
 			/>
 			<StyledRadioContainer>
 				{categoryOptions.map(option =>

@@ -45,7 +45,7 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 			{(state) => (
 				selected.length < 1
 					? <StyledDefaultText state={state}>
-						Add an ingredient
+						Add an ingredient to start
 					</StyledDefaultText>
 					: <StyledSelectedMaterials state={state}>
 						<Button onClick={resetState} tabIndex={0}>
@@ -83,11 +83,10 @@ export const StyledSelectedMaterials = styled.div<ITransitionState>`
 `
 
 const StyledDefaultText = styled.div<ITransitionState>`
-	position: relative;
 	text-align: center;
 	font-style: italic;
 	letter-spacing: 0.02em;
 	color: rgba(255,255,255,.5);
+	padding-bottom: 1rem;
 	transition: top .2s ease-in-out;
-	top: ${({ state }) => (state === "entering" || state === "entered") ? "-0.5rem" : "0"};
 `

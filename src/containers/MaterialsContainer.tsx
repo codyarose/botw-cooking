@@ -45,7 +45,7 @@ export const MaterialsContainer = () => {
 	})
 
 	return (
-		<StyledMaterialsContainer disabled={disabled}>
+		<StyledMaterialsContainer disabled={disabled} aria-label="List of all ingredients">
 			{filteredMaterials && !filteredMaterials.length ? <StyledNone>Nothing found...</StyledNone> : listFood}
 		</StyledMaterialsContainer>
 	)
@@ -61,7 +61,7 @@ const StyledMaterialsContainer = styled.div<IMaterialsContainer>`
 	padding: 1.5rem 3rem;
 	${props => props.disabled && 'pointer-events: none'};
 	@media screen and (max-width: 50rem) {
-		grid-gap: 1.5rem;
+		gap: 1.5rem;
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -70,6 +70,7 @@ const StyledMaterialsContainer = styled.div<IMaterialsContainer>`
 	}
 	@media screen and (max-width: 28rem) {
 		--auto-grid-min-size: 4rem;
+		gap: 1rem;
 	}
 `
 
