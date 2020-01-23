@@ -1,8 +1,6 @@
 ## Todo
 
 ### Add:
-- [ ] '?' tooltip in header with explanation
-- [ ] sticky SelectedMaterials and stats output on scroll
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -14,8 +12,6 @@
 ### Remove:
 
 ### Refactor:
-- [ ] performance issues
-- [ ] radio and buttons tabIndex
 
 <details>
 <summary>Done</summary>
@@ -49,6 +45,9 @@
 - [x] stats for dragon materials, star fragment, wood
 - [x] locations for dragon parts, star fragment, wood
 - [x] smaller background image file size because it's being blurred anyways
+- [x] sticky SelectedMaterials and stats output on scroll
+- [x] '?' tooltip in header with explanation
+- [x] footer
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
@@ -64,5 +63,7 @@
 - [x] materials grid on mobile
 - [x] locations icon only on desktop
 - [x] consider using non-image background for performance
+- [x] radio and buttons tabIndex
+- [x] performance issues
 
 </details>

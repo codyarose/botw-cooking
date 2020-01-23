@@ -13,7 +13,7 @@ const getStyle = (duration: number, easing: string) => ({
 	transition: `opacity ${duration}ms ${easing}`,
 	opacity: 0,
 	display: 'inline-block',
-	height: '100%'
+	height: '100%',
 })
 
 const transitionStyles: any = {

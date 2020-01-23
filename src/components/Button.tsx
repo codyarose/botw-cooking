@@ -7,20 +7,22 @@ interface IProps {
 	onClick?: () => void
 	id?: string
 	buff?: string
+	tabIndex?: number
 }
 
-export const Button: SFC<IProps> = ({ children, disabled, buff, onClick: handleClick, id }) => (
+export const Button: SFC<IProps> = ({ children, disabled, buff, onClick: handleClick, id, tabIndex }) => (
 	<StyledButton
 		disabled={disabled}
 		onClick={handleClick}
 		id={id}
+		tabIndex={tabIndex}
 	>
 		{buff && <StyledBuffIconWrap><BuffIcon type={buff} emblem={true} /></StyledBuffIconWrap>}
 		{children}
 	</StyledButton>
 )
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -52,6 +54,7 @@ const StyledButton = styled.button`
 	}
 	&:focus {
 		outline: none;
+		border-color: currentColor;
 	}
 	&:active {
 		background-color: rgba(0,0,0,0.75);

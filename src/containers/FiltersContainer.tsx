@@ -40,7 +40,7 @@ export const FiltersContainer: React.FC = () => {
 				type="text"
 				onChange={handleTermChange}
 				placeholder="Search..."
-				autoFocus
+				tabIndex={0}
 			/>
 			<StyledRadioContainer>
 				{categoryOptions.map(option =>
@@ -51,6 +51,7 @@ export const FiltersContainer: React.FC = () => {
 						label={option.charAt(0).toUpperCase() + option.slice(1)}
 						onChange={handleRadioChange}
 						checked={category === option}
+						tabIndex={0}
 					/>
 				)}
 			</StyledRadioContainer>

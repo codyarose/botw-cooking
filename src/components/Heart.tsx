@@ -48,7 +48,7 @@ const StyledHeartContainer = styled.div<IHeartContainer>`
 		z-index: 1;
 		font-family: Arial;
 		line-height: 0.5;
-		font-size: 1rem;
+		font-size: 1em;
 	}
 `
 

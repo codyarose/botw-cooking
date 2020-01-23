@@ -7,9 +7,10 @@ interface Props {
 	label: string
 	onChange: (e: any) => void
 	checked: boolean
+	tabIndex?: number
 }
 
-export const Radio: React.FC<Props> = ({ group, value, label, onChange, checked }: Props) => {
+export const Radio: React.FC<Props> = ({ group, value, label, onChange, checked, tabIndex }: Props) => {
 	return (
 		<StyledRadio>
 			<input
@@ -19,6 +20,7 @@ export const Radio: React.FC<Props> = ({ group, value, label, onChange, checked 
 				value={value}
 				onChange={onChange}
 				checked={checked}
+				tabIndex={tabIndex}
 			/>
 			<label htmlFor={value}>{label}</label>
 		</StyledRadio>
@@ -38,8 +40,9 @@ const StyledRadio = styled.div`
 			position: relative;
 			cursor: pointer;
 			display: inline-block;
-			padding: .5rem;
+			padding: 6px;
 			border-radius: 4px;
+			border: 2px solid transparent;
 			overflow: hidden;
 		}
 		&:not(:checked) + label:hover {
@@ -62,6 +65,10 @@ const StyledRadio = styled.div`
 		}
 		&:checked + label:before {
 			opacity: 1;
+		}
+		&:checked:focus + label,
+		&:not(:checked):focus + label {
+			border-color: #fff;
 		}
 	}
 `
