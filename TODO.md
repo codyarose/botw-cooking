@@ -1,7 +1,6 @@
 ## Todo
 
 ### Add:
-- [ ] '?' tooltip in header with explanation
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
@@ -49,6 +48,7 @@
 - [x] locations for dragon parts, star fragment, wood
 - [x] smaller background image file size because it's being blurred anyways
 - [x] sticky SelectedMaterials and stats output on scroll
+- [x] '?' tooltip in header with explanation
 
 ### Removed:
 - [x] 'Time' when a timed buff isn't active
