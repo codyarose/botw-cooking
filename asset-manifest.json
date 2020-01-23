@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/botw-cooking/static/js/main.0ce3e696.chunk.js",
-    "main.js.map": "/botw-cooking/static/js/main.0ce3e696.chunk.js.map",
+    "main.js": "/botw-cooking/static/js/main.fe8df813.chunk.js",
+    "main.js.map": "/botw-cooking/static/js/main.fe8df813.chunk.js.map",
     "runtime-main.js": "/botw-cooking/static/js/runtime-main.1feb0bc8.js",
     "runtime-main.js.map": "/botw-cooking/static/js/runtime-main.1feb0bc8.js.map",
     "static/js/2.f0e31231.chunk.js": "/botw-cooking/static/js/2.f0e31231.chunk.js",
     "static/js/2.f0e31231.chunk.js.map": "/botw-cooking/static/js/2.f0e31231.chunk.js.map",
     "index.html": "/botw-cooking/index.html",
-    "precache-manifest.3bddf6910fa7f03e2bb0ba54104464a4.js": "/botw-cooking/precache-manifest.3bddf6910fa7f03e2bb0ba54104464a4.js",
+    "precache-manifest.0afca8584c480afba28061239e0bc48c.js": "/botw-cooking/precache-manifest.0afca8584c480afba28061239e0bc48c.js",
     "service-worker.js": "/botw-cooking/service-worker.js",
     "static/js/2.f0e31231.chunk.js.LICENSE": "/botw-cooking/static/js/2.f0e31231.chunk.js.LICENSE",
     "static/media/chilly.45aeb37d.svg": "/botw-cooking/static/media/chilly.45aeb37d.svg",
@@ -27,6 +27,6 @@
   "entrypoints": [
     "static/js/runtime-main.1feb0bc8.js",
     "static/js/2.f0e31231.chunk.js",
-    "static/js/main.0ce3e696.chunk.js"
+    "static/js/main.fe8df813.chunk.js"
   ]
 }
