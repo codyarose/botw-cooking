@@ -13,17 +13,23 @@ const App: FC = () => {
 		<Fragment>
 			<GlobalStyle />
 			<StyledAppContainer>
-				<StyledAppBackground>
-					<img src={`images/background.jpg`} alt="" />
+				<StyledAppBackground aria-hidden="true">
+					<picture>
+						<source type="image/webp" srcSet={`images/background.webp`} />
+						<source type="image/png" srcSet={`images/background.png`} />
+						<img src={`images/background.png`} alt="App background" />
+					</picture>
 				</StyledAppBackground>
 				<Header />
-				<RecipeProvider>
-					<StickyComponent>
-						<OutputContainer />
-					</StickyComponent>
-					<FiltersContainer />
-					<MaterialsContainer />
-				</RecipeProvider>
+				<main>
+					<RecipeProvider>
+						<StickyComponent>
+							<OutputContainer />
+						</StickyComponent>
+						<FiltersContainer />
+						<MaterialsContainer />
+					</RecipeProvider>
+				</main>
 				<Footer />
 			</StyledAppContainer>
 		</Fragment>

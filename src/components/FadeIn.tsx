@@ -14,6 +14,7 @@ const getStyle = (duration: number, easing: string) => ({
 	opacity: 0,
 	display: 'inline-block',
 	height: '100%',
+	width: '100%',
 })
 
 const transitionStyles: any = {
