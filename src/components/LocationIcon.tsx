@@ -11,7 +11,7 @@ export const LocationIcon: React.FC<Props> = ({ content }) => {
 			<img
 				src={`images/location.png`}
 				alt="Locations Icon"
-				title={`Location${content.length > 1 && 's'}: ${content.join(', ')}`}
+				title={`Location${content.length > 1 ? 's' : ''}: ${content.join(', ')}`}
 			/>
 		</StyledLocationIcon>
 	)

@@ -6,6 +6,7 @@ import { MaterialsContainer } from 'containers/MaterialsContainer'
 import { OutputContainer } from 'containers/OutputContainer'
 import { FiltersContainer } from 'containers/FiltersContainer'
 import { StickyComponent } from 'components/StickyComponent'
+import { Footer } from 'components/Footer'
 
 const App: FC = () => {
 	return (
@@ -23,6 +24,7 @@ const App: FC = () => {
 					<FiltersContainer />
 					<MaterialsContainer />
 				</RecipeProvider>
+				<Footer />
 			</StyledAppContainer>
 		</Fragment>
 	);
