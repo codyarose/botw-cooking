@@ -21,7 +21,7 @@ const App: FC = () => {
 					</picture>
 				</StyledAppBackground>
 				<Header />
-				<main>
+				<StyledMain>
 					<RecipeProvider>
 						<StickyComponent>
 							<OutputContainer />
@@ -29,7 +29,7 @@ const App: FC = () => {
 						<FiltersContainer />
 						<MaterialsContainer />
 					</RecipeProvider>
-				</main>
+				</StyledMain>
 				<Footer />
 			</StyledAppContainer>
 		</Fragment>
@@ -72,6 +72,10 @@ const StyledAppBackground = styled.div`
 		object-fit: cover;
 		filter: blur(15px);
 	}
+`
+
+const StyledMain = styled.main`
+	min-height: 100vh;
 `
 
 const GlobalStyle = createGlobalStyle`
