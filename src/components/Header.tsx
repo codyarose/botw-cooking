@@ -11,7 +11,7 @@ export const Header = () => {
 					content={`
 						Add ingredients to see the stats of the resulting item if you were to cook them together in-game
 					`}
-					tabIndex={1}
+					tabIndex={0}
 				/>
 			</StyledHeaderContent>
 		</StyledHeader>
