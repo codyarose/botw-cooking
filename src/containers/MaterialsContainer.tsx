@@ -27,6 +27,7 @@ export const MaterialsContainer = () => {
 						disabled={disabled}
 						onClick={() => updateIngredients!(item.id)}
 						buff={item.buff.type}
+						tabIndex={0}
 					>
 						<Media query="(min-width: 735px)" render={() => (
 							<LocationIcon content={item.locations} />

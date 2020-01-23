@@ -13,7 +13,7 @@
 
 ### Refactor:
 - [ ] performance issues
-- [ ] radio and buttons tabIndex
+- [x] radio and buttons tabIndex
 
 <details>
 <summary>Done</summary>
