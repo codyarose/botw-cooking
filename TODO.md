@@ -1,6 +1,7 @@
 ## Todo
 
 ### Add:
+- [ ] footer
 - [ ] recipe output
 	- [ ] recipes list
 	- [ ] add more tags to materials
