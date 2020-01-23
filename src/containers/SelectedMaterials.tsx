@@ -57,22 +57,19 @@ export const SelectedMaterials = ({ selected }: ISelectedMaterials) => {
 
 export const StyledSelectedMaterials = styled.div<ITransitionState>`
 	position: relative;
-	--auto-grid-min-size: 9rem;
+	--auto-grid-min-size: 15%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 	gap: 2rem;
 	padding-bottom: ${({ state }) => state === "entering" || state === "entered" ? "2.5rem" : "3rem"};
 	${({ state }) => state === ("entering" || state === "entered") && "row-gap: 0.5rem;"}
-	@media screen and (max-width: 64rem) {
-		--auto-grid-min-size: 6rem;
-	}
 	@media screen and (max-width: 46rem) {
 		gap: 1rem;
 	}
 	@media screen and (max-width: 37.5rem) {
 		padding-bottom: 1.5rem;
 	}
-	@media screen and (max-width: 28rem) {
+	@media screen and (max-width: 32rem) {
 		--auto-grid-min-size: 4rem;
 	}
 `
