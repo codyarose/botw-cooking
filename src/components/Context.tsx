@@ -19,7 +19,6 @@ interface IContext {
 	}
 	isSticky: boolean
 	updateIngredients: (id: number) => void
-	resetState: () => void
 	removeIngredient: (index: number) => void
 	handleFilter: (term: string, category: string) => any
 	toggleSticky: (value: boolean) => void
@@ -66,12 +65,6 @@ export const RecipeProvider = ({ children }: IProvider) => {
 					const itemData = findById(materials, id)
 
 					setIngredients((prevIngredients: Array<object>) => [...prevIngredients, itemData])
-				},
-				resetState: () => {
-					setIngredients([])
-					setTime(0)
-					setHearts(0)
-					setBuff('')
 				},
 				removeIngredient: (index) => {
 					const newIngredients = ingredients.filter((_: object, i: number) => {

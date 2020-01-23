@@ -27,7 +27,7 @@ export const StyledButton = styled.button`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 	height: 100%;
 	color: #fff;
@@ -65,6 +65,9 @@ export const StyledButton = styled.button`
 	.material__name {
 		color: #fff;
 		padding-bottom: .5rem;
+		@media screen and (max-width: 25rem) {
+			font-size: 9px;
+		}
 	}
 	& > svg {
 		color: rgba(255,255,255,.7);
