@@ -12,8 +12,6 @@
 ### Remove:
 
 ### Refactor:
-- [ ] performance issues
-- [x] radio and buttons tabIndex
 
 <details>
 <summary>Done</summary>
@@ -64,5 +62,7 @@
 - [x] materials grid on mobile
 - [x] locations icon only on desktop
 - [x] consider using non-image background for performance
+- [x] radio and buttons tabIndex
+- [x] performance issues
 
 </details>
