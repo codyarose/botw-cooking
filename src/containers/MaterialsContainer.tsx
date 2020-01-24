@@ -1,52 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
-import Media from 'react-media'
-import { FadeIn } from 'components/FadeIn'
-import { Button } from 'components/Button'
-import { LocationIcon } from 'components/LocationIcon'
 import { filterMaterials } from 'utils/filterMaterials'
 import { useRecipeValue } from 'components/Context'
+import { ListMaterials } from 'components/ListMaterials'
 
 interface IMaterialsContainer {
 	readonly disabled?: boolean
 }
 
 export const MaterialsContainer = () => {
-	const { ingredients, updateIngredients, filters } = useRecipeValue()
+	const { ingredients, filters } = useRecipeValue()
 
 	const disabled = ingredients && ingredients.length === 5 && true
 
 	const filteredMaterials = filters && filterMaterials(filters.term, 'name', filters.category)
 
-	const listFood = filteredMaterials && filteredMaterials.map(item => {
-		const imageName = item.name.replace(/\s/g, "-").toLowerCase()
-		return (
-			<FadeIn key={item.id} height={'auto'} duration={200} easing={'ease-in-out'}>
-				{onLoad => (
-					<Button
-						disabled={disabled}
-						onClick={() => updateIngredients!(item.id)}
-						buff={item.buff.type}
-						tabIndex={0}
-					>
-						<Media query="(min-width: 735px)" render={() => (
-							<LocationIcon content={item.locations} />
-						)} />
-						<picture onLoad={onLoad}>
-							<source type="image/webp" srcSet={`images/${imageName}.webp`} />
-							<source type="image/png" srcSet={`images/${imageName}.png`} />
-							<img src={`images/${imageName}.png`} alt={item.name} />
-						</picture>
-						<span className="material__name">{item.name}</span>
-					</Button >
-				)}
-			</FadeIn>
-		)
-	})
-
 	return (
 		<StyledMaterialsContainer disabled={disabled} aria-label="List of all ingredients">
-			{filteredMaterials && !filteredMaterials.length ? <StyledNone>Nothing found...</StyledNone> : listFood}
+			{filteredMaterials && !filteredMaterials.length
+				? <StyledNone>Nothing found...</StyledNone>
+				: <ListMaterials
+					array={filteredMaterials!}
+					onClickType={"update"}
+					buttonDisabled={disabled}
+				/>
+			}
 		</StyledMaterialsContainer>
 	)
 }
@@ -54,23 +32,10 @@ export const MaterialsContainer = () => {
 const StyledMaterialsContainer = styled.div<IMaterialsContainer>`
 	max-width: 64rem;
 	margin: 0 auto;
-	--auto-grid-min-size: 6rem;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-	gap: 2rem;
 	padding: 1.5rem 3rem;
-	${props => props.disabled && 'pointer-events: none'};
 	@media screen and (max-width: 50rem) {
-		gap: 1.5rem;
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
-	}
-	@media screen and (max-width: 40rem) {
-		--auto-grid-min-size: 5rem;
-	}
-	@media screen and (max-width: 28rem) {
-		--auto-grid-min-size: 4rem;
-		gap: 1rem;
 	}
 `
 

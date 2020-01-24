@@ -1,10 +1,6 @@
 ## Todo
 
 ### Add:
-- [ ] recipe output
-	- [ ] recipes list
-	- [ ] add more tags to materials
-	- [ ] recipe images
 - [ ] more tests
 - [ ] react native
 	- [ ] - swipe between categories

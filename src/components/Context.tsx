@@ -45,10 +45,10 @@ export const RecipeProvider = ({ children }: IProvider) => {
 	const [isSticky, setIsSticky] = useState(false)
 
 	useEffect(() => {
-		setTime(extraTime(ingredients) + (ingredients.length * 30))
-		setPrice(priceCalculator(ingredients))
-		setHearts(heartsCalculator(ingredients))
-		setBuff(parseBuff(ingredients))
+		ingredients && setTime(extraTime(ingredients) + (ingredients.length * 30))
+		ingredients && setPrice(priceCalculator(ingredients))
+		ingredients && setHearts(heartsCalculator(ingredients))
+		ingredients && setBuff(parseBuff(ingredients))
 	}, [ingredients])
 
 	return (
