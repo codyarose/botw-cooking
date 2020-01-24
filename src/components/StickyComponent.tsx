@@ -4,7 +4,7 @@ import { useRecipeValue } from 'components/Context'
 
 export const StickyComponent: FC = ({ children }) => {
 	const { toggleSticky } = useRecipeValue()
-	const ref: any = createRef()
+	const ref = createRef<HTMLDivElement>()
 
 	useEffect(() => {
 		const cachedRef: any = ref.current,
