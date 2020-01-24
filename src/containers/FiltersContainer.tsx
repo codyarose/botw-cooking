@@ -3,27 +3,28 @@ import styled from 'styled-components'
 import { useRecipeValue } from 'components/Context'
 import { Radio } from 'components/Radio'
 
+const categoryOptions = [
+	'all',
+	'chilly',
+	'electro',
+	'enduring',
+	'energizing',
+	'fireproof',
+	'general',
+	'hasty',
+	'hearty',
+	'mighty',
+	'monster',
+	'sneaky',
+	'spicy',
+	'tough',
+]
+
 export const FiltersContainer: React.FC = () => {
 	const { handleFilter } = useRecipeValue()
 
 	const [term, setTerm] = useState("")
 	const [category, setCategory] = useState("all")
-	const categoryOptions = [
-		'all',
-		'chilly',
-		'electro',
-		'enduring',
-		'energizing',
-		'fireproof',
-		'general',
-		'hasty',
-		'hearty',
-		'mighty',
-		'monster',
-		'sneaky',
-		'spicy',
-		'tough',
-	]
 
 	const handleTermChange = (e: ChangeEvent<HTMLInputElement>) => setTerm(e.target.value)
 

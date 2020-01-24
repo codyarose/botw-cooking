@@ -7,6 +7,10 @@ interface IHearts {
 	amount: number
 }
 
+const repeatHearts = (count: number, type: string) => {
+	return [...Array(count)].map((_, i) => <Heart key={i} size={1} type={type} />)
+}
+
 export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 	const { buff } = useRecipeValue()
 
@@ -17,10 +21,6 @@ export const HeartsContainer: SFC<IHearts> = ({ amount }) => {
 	const wholeHearts = Math.floor(heartsCount)
 	const renderedWholeHearts = wholeHearts > 6 ? (wholeHearts - abbrHearts) : wholeHearts
 	const partialHeart = heartsCount % 1
-
-	const repeatHearts = (count: number, type: string) => {
-		return [...Array(count)].map((_, i) => <Heart key={i} size={1} type={type} />)
-	}
 
 	return (
 		<StyledHeartsWrap>

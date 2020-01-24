@@ -29,7 +29,7 @@ export const FadeIn: React.FC<Props> = ({ height, duration, easing, children }) 
 	const onLoad = useCallback(() => setLoaded(true), [])
 
 	return (
-		<LazyLoad height={height} offset={150}>
+		<LazyLoad height={height} offsetVertical={100}>
 			<Transition in={loaded} timeout={duration ? duration : 200}>
 				{loaded =>
 					<div style={{ ...getStyle(duration!, easing!), ...transitionStyles[loaded] }}>
