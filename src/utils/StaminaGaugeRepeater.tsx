@@ -1,6 +1,6 @@
 import React from 'react'
-import { StaminaGauge, IStaminaGauge } from 'components/StaminaGauge'
-import { minMax } from 'utils/minMax'
+import { StaminaGauge, IStaminaGauge } from '../components/StaminaGauge'
+import { minMax } from './minMax'
 
 export const StaminaGaugeRepeater = ({ progress, type }: IStaminaGauge) => {
 	let staminaCount = 0

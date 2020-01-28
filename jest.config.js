@@ -1,23 +1,15 @@
 module.exports = {
-	roots: [
-		'src'
-	],
-	moduleDirectories: ['node_modules', 'src'],
-	moduleNameMapper: {
-		'src/(.*)': '<rootDir>/src/$1'
-	},
+	roots: ['<rootDir>/src'],
 	transform: {
-		'^.+\\.tsx?$': 'ts-jest'
+		'^.+\\.(ts|tsx)?$' : 'ts-jest',
 	},
-	testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-	'moduleFileExtensions': [
-		'ts',
-		'tsx',
-		'js',
-		'jsx',
-		'json',
-		'node'
+	testMatch: ['<rootDir>/src/**/__tests__/**/*.ts?(x)'],
+	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+	testPathIgnorePatterns: ['/node_modules/', '/public/'],
+	setupFilesAfterEnv: [
+		'@testing-library/jest-dom/extend-expect',
 	],
-	setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
-	snapshotSerializers: ['enzyme-to-json/serializer'],
+	moduleNameMapper: {
+		"\\.(css|scss|svg)$": "identity-obj-proxy"
+	}
 }

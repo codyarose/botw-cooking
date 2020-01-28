@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StaminaGaugeRepeater } from 'utils/StaminaGaugeRepeater'
-import { ReactComponent as HastyIcon } from 'icons/hasty.svg'
-import { ReactComponent as SneakyIcon } from 'icons/sneaky.svg'
-import { ReactComponent as MightyIcon } from 'icons/mighty.svg'
-import { ReactComponent as ToughIcon } from 'icons/tough.svg'
-import { ReactComponent as FireproofIcon } from 'icons/fireproof.svg'
-import { ReactComponent as SpicyIcon } from 'icons/spicy.svg'
-import { ReactComponent as ChillyIcon } from 'icons/chilly.svg'
-import { ReactComponent as ElectroIcon } from 'icons/electro.svg'
-import { ReactComponent as StaminaIcon } from 'icons/stamina.svg'
-import { ReactComponent as HeartIcon } from 'icons/heart.svg'
+import { StaminaGaugeRepeater } from '../utils/StaminaGaugeRepeater'
+import { ReactComponent as HastyIcon } from '../icons/hasty.svg'
+import { ReactComponent as SneakyIcon } from '../icons/sneaky.svg'
+import { ReactComponent as MightyIcon } from '../icons/mighty.svg'
+import { ReactComponent as ToughIcon } from '../icons/tough.svg'
+import { ReactComponent as FireproofIcon } from '../icons/fireproof.svg'
+import { ReactComponent as SpicyIcon } from '../icons/spicy.svg'
+import { ReactComponent as ChillyIcon } from '../icons/chilly.svg'
+import { ReactComponent as ElectroIcon } from '../icons/electro.svg'
+import { ReactComponent as StaminaIcon } from '../icons/stamina.svg'
+import { ReactComponent as HeartIcon } from '../icons/heart.svg'
 
 export interface IBuffIcon {
 	type?: string
@@ -74,7 +74,10 @@ export const BuffIcon = ({ type, potency, emblem }: IBuffIcon) => {
 
 	return (
 		<StyledBuffIconContainer>
-			{[...Array(level())].map((_, i) => icon(i))}
+			{emblem
+				? icon()
+				: [...Array(level())].map((_, i) => icon(i))
+			}
 		</StyledBuffIconContainer>
 	)
 }

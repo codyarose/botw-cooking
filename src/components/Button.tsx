@@ -1,10 +1,10 @@
 import React, { SFC } from 'react'
 import styled from 'styled-components'
-import { BuffIcon } from 'components/BuffIcon'
+import { BuffIcon } from './BuffIcon'
 
-interface IProps {
+export interface IProps {
 	disabled?: boolean
-	onClick?: () => void
+	onClick: () => void
 	id?: string
 	buff?: string
 	tabIndex?: number
