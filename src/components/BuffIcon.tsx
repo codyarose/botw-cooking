@@ -12,13 +12,13 @@ import { ReactComponent as ElectroIcon } from '../icons/electro.svg'
 import { ReactComponent as StaminaIcon } from '../icons/stamina.svg'
 import { ReactComponent as HeartIcon } from '../icons/heart.svg'
 
-export interface IBuffIcon {
+export interface IProps {
 	type?: string
 	potency?: number
 	emblem?: boolean
 }
 
-export const BuffIcon = ({ type, potency, emblem }: IBuffIcon) => {
+export const BuffIcon = ({ type, potency, emblem }: IProps) => {
 
 	const level = () => {
 		if (
@@ -64,7 +64,7 @@ export const BuffIcon = ({ type, potency, emblem }: IBuffIcon) => {
 			case 'shock resist':
 				return <ElectroIcon key={i} />
 			case 'speed':
-				return <HastyIcon key={i} />
+				return <HastyIcon key={i} data-testid={`hasty`} />
 			case 'stealth':
 				return <SneakyIcon key={i} />
 			default:
@@ -73,7 +73,7 @@ export const BuffIcon = ({ type, potency, emblem }: IBuffIcon) => {
 	}
 
 	return (
-		<StyledBuffIconContainer>
+		<StyledBuffIconContainer data-testid="BuffIcon">
 			{emblem
 				? icon()
 				: [...Array(level())].map((_, i) => icon(i))
