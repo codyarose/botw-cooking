@@ -22,5 +22,12 @@ describe('<Button>', () => {
 		renderButton({ onClick: done() })
 		fireEvent.click(elem)
 	})
+	test('should render BuffIcon if given buff prop', async () => {
+		const { getAllByTestId } = renderButton({
+			buff: 'speed'
+		})
+		expect(getAllByTestId("hasty")).toHaveLength(1)
+		expect(getAllByTestId("hasty")).not.toHaveLength(3)
+	})
 
 })
