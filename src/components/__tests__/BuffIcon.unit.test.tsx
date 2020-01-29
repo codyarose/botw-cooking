@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import { BuffIcon, IProps } from '../BuffIcon'
-import { ReactComponent as HastyIcon } from '../../icons/hasty.svg'
 
 function renderBuffIcon(props: Partial<IProps> = {}) {
 	const defaultProps: IProps = {
