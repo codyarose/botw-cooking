@@ -10,7 +10,7 @@ export const Footer: FC<Props> = () => {
 	return (
 		<StyledFooter>
 			<StyledFooterContent>
-				<a href="https://codyrose.co" title="Cody's GitHub Profile">
+				<a href="https://github.com/codyarose" title="Cody's GitHub Profile">
 					<GithubIcon />
 				</a>
 			</StyledFooterContent>
