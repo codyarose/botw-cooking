@@ -8,7 +8,7 @@
 
 > An app for the Breath of the Wild cooking system built with React and Typescript. Add ingredients to see the stats of the resulting dish if they were cooked.
 
-### ✨ [DEMO](http://codyrose.co/botw-cooking)
+### ✨ [DEMO](https://codyarose.github.io/botw-cooking/)
 
 ## Install
 
@@ -32,7 +32,7 @@ npm test
 
 👤 **Cody Rose**
 
-* Website: https://codyrose.co
+* Website: https://codyarose.com
 * Github: [@codyarose](https://github.com/codyarose)
 * LinkedIn: https://www.linkedin.com/in/codyarose/
 
